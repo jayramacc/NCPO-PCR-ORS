@@ -44,10 +44,11 @@
 </head>
 <body>
 
+
 	<header id="header">
 		<hgroup>
 			<h1 class="site_title"><a href="admin.php">PCR Admin</a></h1>
-			<h2 class="section_title">Change Password</h2><div class="btn_view_site"><a href="login.php">Log out </a></div>
+			<h2 class="section_title">Dashboard</h2><div class="btn_view_site"><a href="login.php">Log out </a></div>
 		</hgroup>
 	</header> <!-- end of header bar -->
 	
@@ -69,8 +70,6 @@
 		<h3>ADMIN</h3>
 		<ul class="toggle">
 			<li class="icn_new_article"><a href="onlineform.php">Notification</a></li>
-			
-			<li class="icn_categories"><a href="verification.php">Search</a></li>
 			<!--<li class="icn_tags"><a href="#">Tags</a></li>-->
 		</ul>
 		<h3>APPLICANT</h3>
