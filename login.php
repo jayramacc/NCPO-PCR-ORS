@@ -99,7 +99,7 @@
                     <img align="left" height="90" src="assets/img/logo.jpg">
                 </div>
                 <center style="color:blue;">
-                <h1 style="font-weight:50;line-height:50px;font-size:32px"><strong>APPLICANT VERIFICATION FORM</strong> </h1>
+                <h1 style="font-weight:50;line-height:50px;font-size:32px"><strong>EMPLOYEE LOGIN</strong> </h1>
                 <div class="description">
                     <p>Please provide the details below.</p>
                 </div>
@@ -124,8 +124,8 @@
       <div class="card-body">
         <form>
           <div class="form-group">
-            <label for="exampleInputUser">Username</label>
-            <input class="form-control" id="user" type="email" tyep="username" placeholder="Username" >
+            <label for="exampleInputUser">ID</label>
+            <input class="form-control" id="user" type="email" tyep="username" placeholder="ID" >
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Password</label>

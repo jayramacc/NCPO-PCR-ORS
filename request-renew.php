@@ -98,7 +98,7 @@
                 <center style="color:blue;">
                 <h1 style="font-weight:50;line-height:50px;font-size:32px"><strong>REQUEST/RENEW FORM</strong> </h1>
                 <div class="description">
-                    <p>Fill up the Request/Renew form.</p>
+                    <p>Please enter your private key</p>
                 </div>
              </center>
             </div>
@@ -117,12 +117,12 @@
                             </div>
                             <div class="col-md-12" >
                                 <center><h4 class ="infoheader">
-                                    APPLICANT INFORMATION
+                                    PRIVATE KEY
                                 </h4></center>
                             </div>
                             <div class="col-md-12" >
                                 <center>
-                                    <span style="color:black;font-weight: 600;">*** To search just type the last 6 digits of your Reference Code ***</span><br/><br/>
+                                    <span style="color:black;font-weight: 600;">*** To search just type private key ***</span><br/><br/>
                                     <span style="color:green;font-weight: 600;display: none" id="searchloader">Searching...</span>
                                     <span style="color:red;font-weight: 600;display: none" id="searcherror"></span>
                                 </center>
