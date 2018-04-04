@@ -75,7 +75,7 @@
                     </li>
 
                       <li class="dropdown">
-                        <a href="login.php">SIGN UP/LOGIN <i class="fa fa-globe"></i>
+                        <a href="login.php">EMPLOYEE LOGIN <i class="fa fa-globe"></i>
                             <span>login account</span>
                         </a>
 
@@ -122,7 +122,7 @@
                             </div>
                             <div class="col-md-12" >
                                 <center>
-                                    <span style="color:black;font-weight: 600;"">*** To search just type the last 6 digits of your Reference Code ***</span><br/><br/>
+                                    <span style="color:black;font-weight: 600;">*** To search just type the last 6 digits of your Reference Code ***</span><br/><br/>
                                     <span style="color:green;font-weight: 600;display: none" id="searchloader">Searching...</span>
                                     <span style="color:red;font-weight: 600;display: none" id="searcherror"></span>
                                 </center>
@@ -145,60 +145,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6 field" >
-                                <div class="col-md-4 lbl">
-                                    <label>Last Name <span style="color:red">*</span></label>
-                                </div>
-                                <div class="col-md-8" >
-                                                                            <input class="form-control" name="c_applicant_lname" id="c_applicant_lname" value="" placeholder="Last Name" >
-                                                                    
-                                </div>
-                            </div>
-                            <div class="col-md-6 field" >
-                                <div class="col-md-4 lbl">
-                                    <label>First Name <span style="color:red">*</span></label>
-                                </div>
-                                <div class="col-md-8" >
-                                                                    <input class="form-control" name="c_applicant_fname" id="c_applicant_fname" value="" placeholder="First Name" >
-                                                                    
-                                </div>
-                            </div>
-                            <div class="col-md-6 field" >
-                                <div class="col-md-4 lbl">
-                                    <label>Middle Name</label>
-                                </div>
-                                <div class="col-md-8" >
-                                                                            <input class="form-control" name="c_applicant_mname" id="c_applicant_mname" value="" placeholder="Middle Name" >
-                                                                    </div>
-                            </div>
-                            <div class="col-md-6 field" >
-                                <div class="col-md-4 lbl">
-                                    <label>Date of Birth <span style="color:red">*</span></label>
-                                </div>
-                                <div class="col-md-8" >
-                                    <table id="bdatedateID">
-                                        <tr>
-
-                                            <td style="width:47%">
-                                                <select class="form-control"  id="bdateMonth" name="bdateMonth" style="padding:0px">
-                                                    <option value="">Month</option>
-
-                                                                                    </select>
-                                            </td>
-                                            <td style="width:29%">
-                                                <select class="form-control"  id="bdateDay" name="bdateDay" style="padding:0px">
-                                                    <option value="">Day</option>
-
-                                                    </select>
-                                            </td>
-                                            <td>
-                                                <input id="bdateYear" class="form-control" placeholder="Year" value="" name="bdateYear" style="padding:4px">
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    
-                                </div>
-                            </div>
+                            
                                     <div class="col-md-12 field" >
                                 <div class="col-md-2 lbl">
                                     <label>Purpose<span style="color:red">*</span></label>

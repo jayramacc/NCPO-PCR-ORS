@@ -93,7 +93,7 @@
                     </li>
 
                      <li class="dropdown">
-                        <a href="login.php">SIGN UP/LOGIN <i class="fa fa-globe"></i>
+                        <a href="login.php"> EMPLOYEE LOGIN <i class="fa fa-globe"></i>
                             <span>login account</span>
                         </a>
 
@@ -183,10 +183,8 @@ Please take note of your reference code after registration
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-12 col-md-12">
-                    <h3 style="color: blue"><strong> Register Now! </strong></h3>
-                   <button type="button" class="btn btn-primary btn-block" >ClicK Me!</button>
-                    <br />
-                    <br />
+                    <h3 style="color: blue"><strong> Police Commisions Relation in Naga City Police Office  Online Registration System  </strong></h3>
+                   
                 </div>
             </div>
             <div class="row pad-top-botm">
