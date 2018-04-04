@@ -4,39 +4,39 @@
 * Remove Login for user `90%`
 * Database `100%`
 * Remove fname, lname, purpose on Request/Renew `100%`
-* Application Form
+* Application Form `50%`
     * Design `100%`
     * Functionlity `0%`
-* Request/Renew
+* Request/Renew `50%`
     * Design `100%`
     * Functionality `0%`
-* Tracking
+* Tracking `50%`
     * Design `100%`
     * Functionality `0%`
 * Login, Logout `0%`
-* Email Format
+* Email Format `0%`
     * Applicant w/private key or TransactionID `0%`
-* Admin Pages
-    * Notification
+* Admin Pages `16%`
+    * Notification `0%` 
         * Design `0%`
         * Functionality `0%`
-    * Search
+    * Search `0%`
         * Design `0%`
         * Functionality `0%`
-    * Request List
+    * Request List `30%`
         * Design `60%`
         * Functionality `0%`
-    * Applicant List
+    * Applicant List `30%`
         * Design `60%`
         * Functionality `0%`
-    * Local Backup
+    * Local Backup `0%`
         * Design `0%`
         * Functionality `0%`
-    * Print
+    * Print `50%`
         * Design `100%`
         * Functionlity `0%`
-    * Change Password
+    * Change Password `0%`
         * Design `0%`
         * Functionlity `0%`
-### 27 Items
-37.40%
+### 27 Items, 11 head
+59%
