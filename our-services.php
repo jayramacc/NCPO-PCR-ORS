@@ -323,7 +323,7 @@
                                 </div>
                                 <div class="col-md-6 field">
                                     <label>Age <span style="color:red">*</span></label>
-                                    <input class="form-control" name="c_applicant_age" id="c_applicant_age" placeholder="Age">
+                                    <input class="form-control" name="c_applicant_age" id="c_applicant_age" placeholder="Age" type="number" required>
                                 </div>
                             </div>
                             <div class="col-md-6 " >
@@ -365,11 +365,11 @@
                                     <select  class="form-control" name="c_applicant_eduattainment" id="c_applicant_eduattainment">
                                         <option value="">- Select -</option>
                                     <option value="NONE">NONE</option>
-                                    <option value="SOME ELEMENTARY">SOME ELEMENTARY</option>
+                                    <option value="PRE ELEMENTARY">PRELEMENTARY</option>
                                     <option value="ELEMENTARY GRADUATE">ELEMENTARY GRADUATE</option>
-                                    <option value="SOME HIGH SCHOOL">SOME HIGH SCHOOL</option>
+                                    <option value="PRE HIGH SCHOOL">PRE HIGH SCHOOL</option>
                                     <option value="HIGH SCHOOL GRADUATE">HIGH SCHOOL GRADUATE</option>
-                                    <option value="SOME COLLEGE, NO DEGREE">SOME COLLEGE, NO DEGREE</option>
+                                    <option value="PRE COLLEGE, NO DEGREE">PRE COLLEGE, NO DEGREE</option>
                                     <option value="ASSOCIATE DEGREE">ASSOCIATE DEGREE</option>
                                     <option value="BACHELORS DEGREE">BACHELORS DEGREE</option>
                                     <option value="MASTERS DEGREE">MASTERS DEGREE</option>
@@ -388,7 +388,6 @@
                                 <div class="col-md-6 field">
                                     <label>Citizenship <span style="color:red">*</span></label>
                                     <input class="form-control" name="c_applicant_nationality" id="c-applicant_nationality"placeholder="Citizenship">
-                                    <select class="form-control" name="c_applicant_nationality" id="c_applicant_nationality">
                                         
                                                                                                                                    
 </select>
@@ -408,11 +407,11 @@
                             <div class="col-md-6 " >
                                 <div class="col-md-6 field">
                                     <label>Height (cm.)<span style="color:red">*</span> &nbsp <span style="cursor: pointer" id="linkconvertheight" class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></label>
-                                    <input class="form-control" name="c_applicant_height" id="c_applicant_height" placeholder="Height example 152">
+                                    <input class="form-control" name="c_applicant_height" id="c_applicant_height" placeholder="Height example 152" type="number">
                                 </div>
                                 <div class="col-md-6 field" >
                                     <label>Weight(kg.) <span style="color:red">*</span></label>
-                                    <input class="form-control" name="c_applicant_weight" id="c_applicant_weight" placeholder="Weight example 52">
+                                    <input class="form-control" name="c_applicant_weight" id="c_applicant_weight" placeholder="Weight example 52" type="number">
                                 </div>
                             </div>
                         
