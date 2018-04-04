@@ -29,7 +29,7 @@
                 </button>
 
                 <a class="navbar-brand" href="#">
-                    <img src="assets/img/logo.jpg"" class="navbar-brand-logo " alt="" />
+                    <img src="assets/img/logo.jpg" class="navbar-brand-logo" alt="" />
                 </a>
             </div>
             <div class="navbar-collapse collapse" >
@@ -64,7 +64,7 @@
 
                    
                     <li class="dropdown">
-                        <a href="verification.php">Verification Form <i class="fa fa-clipboard"></i>
+                        <a href="verification_home.php">Verification Form <i class="fa fa-clipboard"></i>
                             <span>Check For Reference Number</span>
                         </a>
                        
@@ -77,7 +77,7 @@
                     </li>
 
                       <li class="dropdown">
-                        <a href="login.php">SIGN UP/LOGIN <i class="fa fa-globe"></i>
+                        <a href="login.php"> EMPLOYEE LOGIN <i class="fa fa-globe"></i>
                             <span>login account</span>
                         </a>
 

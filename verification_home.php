@@ -28,7 +28,7 @@
                 </button>
 
                 <a class="navbar-brand" href="#">
-                    <img src="assets/img/logo.jpg"" class="navbar-brand-logo " alt="" />
+                    <img src="assets/img/logo.jpg" class="navbar-brand-logo " alt="" />
                 </a>
             </div>
             <div class="navbar-collapse collapse" >
@@ -76,7 +76,7 @@
                     </li>
 
                       <li class="dropdown">
-                        <a href="login.php">SIGN UP/LOGIN <i class="fa fa-globe"></i>
+                        <a href="login.php"> Employee Login <i class="fa fa-globe"></i>
                             <span>login account</span>
                         </a>
 
@@ -125,7 +125,7 @@
                             </div>
                             <div class="col-md-12" >
                                 <center>
-                                    <span style="color:black;font-weight: 600;"">*** To search just type the last 6 digits of your Reference Code ***</span><br/><br/>
+                                    <span style="color:black;font-weight: 600";>*** To search just type the last 6 digits of your Reference Code ***</span><br/><br/>
                                     <span style="color:green;font-weight: 600;display: none" id="searchloader">Searching...</span>
                                     <span style="color:red;font-weight: 600;display: none" id="searcherror"></span>
                                 </center>
@@ -147,22 +147,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 field" >
-                                <div class="col-md-4 lbl">
-                                    <label>Last Name <span style="color:red">*</span></label>
-                                </div>
-                                <div class="col-md-8" >
-                                    <input class="form-control" name="c_applicant_lname" id="c_applicant_lname" placeholder="Last Name">
-                                </div>
-                            </div>
-                            <div class="col-md-6 field" >
-                                <div class="col-md-4 lbl">
-                                    <label>First Name <span style="color:red">*</span></label>
-                                </div>
-                                <div class="col-md-8" >
-                                    <input class="form-control" name="c_applicant_fname" id="c_applicant_fname" placeholder="First Name">
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
