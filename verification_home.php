@@ -28,7 +28,7 @@
                 </button>
 
                 <a class="navbar-brand" href="#">
-                    <img src="assets/img/logo.jpg"" class="navbar-brand-logo " alt="" />
+                    <img src="assets/img/logo.jpg" class="navbar-brand-logo " alt="" />
                 </a>
             </div>
             <div class="navbar-collapse collapse" >
@@ -63,8 +63,8 @@
 
                    
                     <li class="dropdown">
-                        <a href="verification_home.php">Verification Form <i class="fa fa-clipboard"></i>
-                            <span>Check For Reference Number</span>
+                        <a href="verification_home.php"> Tracking <i class="fa fa-clipboard"></i>
+                            <span>track document status</span>
                         </a>
                        
                     </li>
@@ -76,7 +76,7 @@
                     </li>
 
                       <li class="dropdown">
-                        <a href="login.php">SIGN UP/LOGIN <i class="fa fa-globe"></i>
+                        <a href="login.php"> Employee Login <i class="fa fa-globe"></i>
                             <span>login account</span>
                         </a>
 
@@ -99,9 +99,9 @@
                     <img align="left" height="90" src="assets/img/logo.jpg">
                 </div>
                 <center style="color:blue;">
-                <h1 style="font-weight:50;line-height:50px;font-size:32px"><strong>APPLICANT VERIFICATION FORM</strong> </h1>
+                <h1 style="font-weight:50;line-height:50px;font-size:32px"><strong>TRACKING</strong> </h1>
                 <div class="description">
-                    <p>Please provide the details below.</p>
+                    <p>Please enter your transaction ID to track document request status</p>
                 </div>
              </center>
             </div>
@@ -120,12 +120,12 @@
                             </div>
                             <div class="col-md-12" >
                                 <center><h4 class ="infoheader">
-                                    APPLICANT INFORMATION
+                                    TRANSACTION ID
                                 </h4></center>
                             </div>
                             <div class="col-md-12" >
                                 <center>
-                                    <span style="color:black;font-weight: 600;"">*** To search just type the last 6 digits of your Reference Code ***</span><br/><br/>
+                                    <span style="color:black;font-weight: 600";>*** To search just type your transaction ID  ***</span><br/><br/>
                                     <span style="color:green;font-weight: 600;display: none" id="searchloader">Searching...</span>
                                     <span style="color:red;font-weight: 600;display: none" id="searcherror"></span>
                                 </center>
@@ -133,12 +133,12 @@
                             
                             <div class="col-md-6 field" >
                                 <div class="col-md-4 lbl">
-                                    <label>Reference Code <span style="color:red">*</span></label>
+                                    <label> Transaction ID <span style="color:red">*</span></label>
                                 </div>
                                 <div class="col-md-8" >
                                     <input type="hidden" name="_token" value="xit4z0Q6YIv0i37LIzj3JCfvD84oF9R14DPQ2ptP">
                                     <div class="input-group">
-                                      <input class="form-control" name="c_applicant_refcode" id="c_applicant_refcode" placeholder="Reference Code" autocomplete="false">
+                                      <input class="form-control" name="c_applicant_refcode" id="c_applicant_refcode" placeholder="Transaction ID" autocomplete="false">
                                       <span class="input-group-addon" id="searchToVerify" style="cursor:pointer"><span  class="glyphicon glyphicon-search" ></span></span>
                                     </div>
                                     <div  style="position: absolute;;z-index:1000;width: 100%;padding-right: 70px">
@@ -147,22 +147,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 field" >
-                                <div class="col-md-4 lbl">
-                                    <label>Last Name <span style="color:red">*</span></label>
-                                </div>
-                                <div class="col-md-8" >
-                                    <input class="form-control" name="c_applicant_lname" id="c_applicant_lname" placeholder="Last Name">
-                                </div>
-                            </div>
-                            <div class="col-md-6 field" >
-                                <div class="col-md-4 lbl">
-                                    <label>First Name <span style="color:red">*</span></label>
-                                </div>
-                                <div class="col-md-8" >
-                                    <input class="form-control" name="c_applicant_fname" id="c_applicant_fname" placeholder="First Name">
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>

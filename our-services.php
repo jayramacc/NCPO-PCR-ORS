@@ -20,91 +20,79 @@
 </head>
 <body>
 
-  <div class="navbar navbar-default navbar-fixed-top menu-back">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    <div class="navbar navbar-default navbar-fixed-top menu-back">
+    <div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
+        </button>
 
-                <a class="navbar-brand" href="#">
-                    <img src="assets/img/logo.jpg" class="navbar-brand-logo " alt="" />
-                </a>
-            </div>
-            <div class="navbar-collapse collapse" >
-                <ul class="nav navbar-nav navbar-right">
+        <a class="navbar-brand" href="#">
+        <img src="assets/img/logo.jpg" class="navbar-brand-logo " alt="" />
+        </a>
+    </div>
+    <div class="navbar-collapse collapse" >
+        <ul class="nav navbar-nav navbar-right">
                    
-                    <li class="dropdown">
-                        <a href="index.php">HOME PAGE<i class="fas fa-home"></i>
-                            <span>Official Website</span>
+        <li class="dropdown">
+        <a href="index.php">HOME PAGE<i class="fas fa-home"></i>
+        <span>Official Website</span></a>
+        <ul class="dropdown-menu dropdown-menu-left"></ul>
+        </li>
+        <li class="dropdown">
+            <a href="our-services.php">APPLICATION FORM<i class="fa fa-folder-open-o"></i>
+                <span> Register Now!</span>
+            </a>
+        </li>
 
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-left">
-                           
-                          
-                          
-
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="our-services.php">APPLICATION FORM<i class="fa fa-folder-open-o"></i>
-                            <span> Register Now!</span>
-
-                        </a>
+        <li class="dropdown">
+            <a href="request-renew.php">REQUEST/RENEW<i class=" fa fa-clipboard"></i>
+                <span>Renew Here!</span>
+            </a>
                        
-                    </li>
-
-                    <li class="dropdown">
-                        <a href="request-renew.php">REQUEST/RENEW<i class=" fa fa-clipboard"></i>
-                            <span>Renew Here!</span>
-                        </a>
-                       
-                    </li>
+        </li>
 
                    
-                    <li class="dropdown">
-                        <a href="verification_home.php">Verification Form <i class="fa fa-clipboard"></i>
-                            <span>Check For Reference Number</span>
-                        </a>
-                       
-                    </li>
-                     <li class="dropdown">
-                        <a href="error.php">FAQ <i class="fa fa-globe"></i>
-                            <span>Help?</span>
-                        </a>
+        <li class="dropdown">
+            <a href="verification_home.php"> Tracking <i class="fa fa-clipboard"></i>
+                <span>Edit Contact Information</span>
+            </a>
+        </li>
+        <li class="dropdown">
+            <a href="error.php">FAQ <i class="fa fa-globe"></i>
+                <span>Help?</span>
+            </a>
+        </li>
 
-                    </li>
-
-                      <li class="dropdown">
-                        <a href="login.php">SIGN UP/LOGIN <i class="fa fa-globe"></i>
-                            <span>login account</span>
-                        </a>
-
-                    </li>
-                </ul>
-            </div>
-
-        </div>
+        <li class="dropdown">
+            <a href="login.php"> EMPLOYEE LOGIN<i class="fa fa-globe"></i>
+                <span>login account</span>
+            </a>
+        </li>
+        </ul>
     </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
+    </div>
+    </div>
 
-            <div class="col-md-12"  >
-                <div style="float:left;position:absolute">
-                    <img align="left" height="90" src="assets/img/logo.jpg">
-                </div>
-                <center style="color:blue;">
-                <h1 style="font-weight:50;line-height:50px;font-size:32px"><strong>APPLICATION FORM</strong> </h1>
-                <div class="description">
-                    <p>Fill up the Police Clearance form.</p>
-                </div>
-             </center>
-            </div>
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+
+    <div class="col-md-12"  >
+    <div style="float:left;position:absolute">
+        <img align="left" height="90" src="assets/img/logo.jpg">
+    </div>
+        <center style="color:blue;">
+        <h1 style="font-weight:50;line-height:50px;font-size:32px"><strong>APPLICATION FORM</strong> </h1>
+        <div class="description">
+        <p>Fill up the Police Clearance form.</p>
         </div>
+        </center>
+        </div>
+    </div>
         
         <div class="col-md-12">
             <form method="post" id="appform">
@@ -171,52 +159,52 @@
                                                 <li  onclick = "$.fn.assignValue('LICENSE TO DEAL FIREARMS AND AMMUNITION REQUIREMENT')" >LICENSE TO DEAL FIREARMS AND AMMUNITION REQUIREMENT</li>
                                                 <li  onclick = "$.fn.assignValue('LICENSE TO PURCHASE EXPLOSIVES REQUIREMENT')" >LICENSE TO PURCHASE EXPLOSIVES REQUIREMENT</li>
                                                 <li  onclick = "$.fn.assignValue('LOAN REQUIREMENT')" >LOAN REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('LOCAL CIVIL REGISTRAR REQUIREMENT')" >LOCAL CIVIL REGISTRAR REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('LOCAL EMPLOYMENT REQUIREMENT')" >LOCAL EMPLOYMENT REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('LTFRB UBER REQUIREMENT')" >LTFRB UBER REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('LTFRB GRAB CAR REQUIREMENT')" >LTFRB GRAB CAR REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('LTO DEPUTATION REQUIREMENT')" >LTO DEPUTATION REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('MASON REQUIREMENT')" >MASON REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('MARRIAGE REQUIREMENT')" >MARRIAGE REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('M. LHUILLIER REQUIREMENT')" >M. LHUILLIER REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('MISSIONARY REQUIREMENT')" >MISSIONARY REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('NATURALIZATION REQUIREMENT')" >NATURALIZATION REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('NON-IMMIGRANT VISA')" >NON-IMMIGRANT VISA</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('ON THE JOB TRAINING REQUIREMENT')" >ON THE JOB TRAINING REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PAG-IBIG REQUIREMENT')" >PAG-IBIG REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PARTNERSHIP VISA')" >PARTNERSHIP VISA</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PASSPORT REQUIREMENT')" >PASSPORT REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PDEA REQUIREMENT')" >PDEA REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PERMANENT RESIDENCY VISA REQUIREMENT')" >PERMANENT RESIDENCY VISA REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PHILHEALTH REQUIREMENT')" >PHILHEALTH REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PHILIPPINE MILITARY ACADEMY REQUIREMENT')" >PHILIPPINE MILITARY ACADEMY REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PHILIPPINE RETIREMENT AUTHORITY REQUIREMENT')" >PHILIPPINE RETIREMENT AUTHORITY REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PHILIPPINE STATISTICS AUTHORITY REQUIREMENT')" >PHILIPPINE STATISTICS AUTHORITY REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PLDT REQUIREMENT')" >PLDT REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PNP REQUIREMENT')" >PNP REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PNPA REQUIREMENT')" >PNPA REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('POSTAL I.D. REQUIREMENT')" >POSTAL I.D. REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PRC REQUIREMENT')" >PRC REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PROBATION REQUIREMENT')" >PROBATION REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('R2 REQUIREMENT')" >R2 REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('RCBC REQUIREMENT')" >RCBC REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('SCHOOL REQUIREMENT')" >SCHOOL REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('SEAMANS VISA')" >SEAMANS VISA</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('SECURITY GUARD LICENSE REQUIREMENT')" >SECURITY GUARD LICENSE REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('SECURITY OFFICER REQUIREMENT')" >SECURITY OFFICER REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('SOCIAL SECURITY SYSTEM REQUIREMENT')" >SOCIAL SECURITY SYSTEM REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('SEAMANS BOOK REQUIREMENT')" >SEAMANS BOOK REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PANTAWID PAMILYANG PILIPINO PROGRAM REQUIREMENT')" >PANTAWID PAMILYANG PILIPINO PROGRAM REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PERMIT TO CARRY FIREARMS OUTSIDE RESIDENCE')" >PERMIT TO CARRY FIREARMS OUTSIDE RESIDENCE</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('STUDENT VISA REQUIREMENT')" >STUDENT VISA REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('TESDA REQUIREMENT')" >TESDA REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('TOURIST VISA REQUIREMENT')" >TOURIST VISA REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('TOUR GUIDE LICENSE REQUIREMENT')" >TOUR GUIDE LICENSE REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('WORKING ABROAD REQUIREMENT')" >WORKING ABROAD REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('WORKING VISA REQUIREMENT')" >WORKING VISA REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('WESTERN UNION REQUIREMENT')" >WESTERN UNION REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('ALL OTHER PURPOSE NOT HERE MENTIONED ')" >ALL OTHER PURPOSE NOT HERE MENTIONED </li>
-                                                                                            </ul>
+                                                <li  onclick = "$.fn.assignValue('LOCAL CIVIL REGISTRAR REQUIREMENT')" >LOCAL CIVIL REGISTRAR REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('LOCAL EMPLOYMENT REQUIREMENT')" >LOCAL EMPLOYMENT REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('LTFRB UBER REQUIREMENT')" >LTFRB UBER REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('LTFRB GRAB CAR REQUIREMENT')" >LTFRB GRAB CAR REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('LTO DEPUTATION REQUIREMENT')" >LTO DEPUTATION REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('MASON REQUIREMENT')" >MASON REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('MARRIAGE REQUIREMENT')" >MARRIAGE REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('M. LHUILLIER REQUIREMENT')" >M. LHUILLIER REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('MISSIONARY REQUIREMENT')" >MISSIONARY REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('NATURALIZATION REQUIREMENT')" >NATURALIZATION REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('NON-IMMIGRANT VISA')" >NON-IMMIGRANT VISA</li>
+                                                <li  onclick = "$.fn.assignValue('ON THE JOB TRAINING REQUIREMENT')" >ON THE JOB TRAINING REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PAG-IBIG REQUIREMENT')" >PAG-IBIG REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PARTNERSHIP VISA')" >PARTNERSHIP VISA</li>
+                                                <li  onclick = "$.fn.assignValue('PASSPORT REQUIREMENT')" >PASSPORT REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PDEA REQUIREMENT')" >PDEA REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PERMANENT RESIDENCY VISA REQUIREMENT')" >PERMANENT RESIDENCY VISA REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PHILHEALTH REQUIREMENT')" >PHILHEALTH REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PHILIPPINE MILITARY ACADEMY REQUIREMENT')" >PHILIPPINE MILITARY ACADEMY REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PHILIPPINE RETIREMENT AUTHORITY REQUIREMENT')" >PHILIPPINE RETIREMENT AUTHORITY REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PHILIPPINE STATISTICS AUTHORITY REQUIREMENT')" >PHILIPPINE STATISTICS AUTHORITY REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PLDT REQUIREMENT')" >PLDT REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PNP REQUIREMENT')" >PNP REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PNPA REQUIREMENT')" >PNPA REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('POSTAL I.D. REQUIREMENT')" >POSTAL I.D. REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PRC REQUIREMENT')" >PRC REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PROBATION REQUIREMENT')" >PROBATION REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('R2 REQUIREMENT')" >R2 REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('RCBC REQUIREMENT')" >RCBC REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('SCHOOL REQUIREMENT')" >SCHOOL REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('SEAMANS VISA')" >SEAMANS VISA</li>
+                                                <li  onclick = "$.fn.assignValue('SECURITY GUARD LICENSE REQUIREMENT')" >SECURITY GUARD LICENSE REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('SECURITY OFFICER REQUIREMENT')" >SECURITY OFFICER REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('SOCIAL SECURITY SYSTEM REQUIREMENT')" >SOCIAL SECURITY SYSTEM REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('SEAMANS BOOK REQUIREMENT')" >SEAMANS BOOK REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PANTAWID PAMILYANG PILIPINO PROGRAM REQUIREMENT')" >PANTAWID PAMILYANG PILIPINO PROGRAM REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PERMIT TO CARRY FIREARMS OUTSIDE RESIDENCE')" >PERMIT TO CARRY FIREARMS OUTSIDE RESIDENCE</li>
+                                                <li  onclick = "$.fn.assignValue('STUDENT VISA REQUIREMENT')" >STUDENT VISA REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('TESDA REQUIREMENT')" >TESDA REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('TOURIST VISA REQUIREMENT')" >TOURIST VISA REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('TOUR GUIDE LICENSE REQUIREMENT')" >TOUR GUIDE LICENSE REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('WORKING ABROAD REQUIREMENT')" >WORKING ABROAD REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('WORKING VISA REQUIREMENT')" >WORKING VISA REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('WESTERN UNION REQUIREMENT')" >WESTERN UNION REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('ALL OTHER PURPOSE NOT HERE MENTIONED ')" >ALL OTHER PURPOSE NOT HERE MENTIONED </li>
+                                        </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -269,58 +257,58 @@
                                     <table id="bdatedateID">
                                         <tr>
 
-                                            <td style="width:47%">
-                                                <select class="form-control"  id="bdateMonth" name="bdateMonth" style="padding:0px">
-                                                    <option value="">Month</option>
-                                                        <option value=""> January</option>
-                                                        <option value=""> February</option>
-                                                        <option value=""> March</option>
-                                                        <option value=""> April</option>
-                                                        <option value=""> May</option>
-                                                        <option value=""> June</option>
-                                                        <option value=""> July</option>
-                                                        <option value=""> August</option>
-                                                        <option value=""> September</option>
-                                                        <option value=""> October</option>
-                                                        <option value=""> November</option>
-                                                        <option value=""> December</option>
-                                                    
-                                                     </select>
-                                            </td>
-                                            <td style="width:29%">
-                                                <select class="form-control"  id="bdateDay" name="bdateDay" style="padding:0px">
-                                                    <option value="">Day</option>
-                                                    <option value="">1</option>
-                                                    <option value="">2</option>
-                                                    <option value="">3</option>
-                                                    <option value="">4</option>
-                                                    <option value="">5</option>
-                                                    <option value="">6</option>
-                                                    <option value="">7</option>
-                                                    <option value="">8</option>
-                                                    <option value="">9</option>
-                                                    <option value="">10</option>
-                                                    <option value="">11</option>
-                                                    <option value="">12</option>
-                                                    <option value="">13</option>
-                                                    <option value="">14</option>
-                                                    <option value="">15</option>
-                                                    <option value="">16</option>
-                                                    <option value="">17</option>
-                                                    <option value="">18</option>
-                                                    <option value="">19</option>
-                                                    <option value="">20</option>
-                                                    <option value="">21</option>
-                                                    <option value="">22</option>
-                                                    <option value="">23</option>
-                                                    <option value="">24</option>
-                                                    <option value="">25</option>
-                                                    <option value="">26</option>
-                                                    <option value="">27</option>
-                                                    <option value="">28</option>
-                                                    <option value="">29</option>
-                                                    <option value="">30</option>
-                                                    <option value="">31</option>
+                        <td style="width:47%">
+                            <select class="form-control"  id="bdateMonth" name="bdateMonth" style="padding:0px">
+                                <option value="">Month</option>
+                                    <option value=""> January</option>
+                                    <option value=""> February</option>
+                                    <option value=""> March</option>
+                                    <option value=""> April</option>
+                                    <option value=""> May</option>
+                                    <option value=""> June</option>
+                                    <option value=""> July</option>
+                                    <option value=""> August</option>
+                                    <option value=""> September</option>
+                                    <option value=""> October</option>
+                                    <option value=""> November</option>
+                                    <option value=""> December</option>
+                                
+                                    </select>
+                            </td>
+                            <td style="width:29%">
+                                <select class="form-control"  id="bdateDay" name="bdateDay" style="padding:0px">
+                                    <option value="">Day</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+                                    <option value="">11</option>
+                                    <option value="">12</option>
+                                    <option value="">13</option>
+                                    <option value="">14</option>
+                                    <option value="">15</option>
+                                    <option value="">16</option>
+                                    <option value="">17</option>
+                                    <option value="">18</option>
+                                    <option value="">19</option>
+                                    <option value="">20</option>
+                                    <option value="">21</option>
+                                    <option value="">22</option>
+                                    <option value="">23</option>
+                                    <option value="">24</option>
+                                    <option value="">25</option>
+                                    <option value="">26</option>
+                                    <option value="">27</option>
+                                    <option value="">28</option>
+                                    <option value="">29</option>
+                                    <option value="">30</option>
+                                    <option value="">31</option>
 
 
 
@@ -365,10 +353,7 @@
                                 </div>
                                 <div class="col-md-6 field" >
                                     <label>Religion <span style="color:red">*</span></label>
-                                    <select class="form-control" name="c_applicant_religion" id="c_applicant_religion">
-                                        <option value="">- Select -</option>
-                                                                                                                                    <option value="AGLIPAYAN">AGLIPAYAN</option>
-
+                                    <input class="form-control" name="c_applicant_religion" id="c-applicant_religion"placeholder="Religion">
                                     </select>
                                 </div>
                             </div>
@@ -379,17 +364,17 @@
                                     <label>Educational Attainment <span style="color:red">*</span></label>
                                     <select  class="form-control" name="c_applicant_eduattainment" id="c_applicant_eduattainment">
                                         <option value="">- Select -</option>
-                                                                                    <option value="NONE">NONE</option>
-                                                                                    <option value="SOME ELEMENTARY">SOME ELEMENTARY</option>
-                                                                                    <option value="ELEMENTARY GRADUATE">ELEMENTARY GRADUATE</option>
-                                                                                    <option value="SOME HIGH SCHOOL">SOME HIGH SCHOOL</option>
-                                                                                    <option value="HIGH SCHOOL GRADUATE">HIGH SCHOOL GRADUATE</option>
-                                                                                    <option value="SOME COLLEGE, NO DEGREE">SOME COLLEGE, NO DEGREE</option>
-                                                                                    <option value="ASSOCIATE DEGREE">ASSOCIATE DEGREE</option>
-                                                                                    <option value="BACHELORS DEGREE">BACHELORS DEGREE</option>
-                                                                                    <option value="MASTERS DEGREE">MASTERS DEGREE</option>
-                                                                                    <option value="PROFESSIONAL DEGREE">PROFESSIONAL DEGREE</option>
-                                                                                    <option value="DOCTORATE">DOCTORATE</option>
+                                    <option value="NONE">NONE</option>
+                                    <option value="SOME ELEMENTARY">SOME ELEMENTARY</option>
+                                    <option value="ELEMENTARY GRADUATE">ELEMENTARY GRADUATE</option>
+                                    <option value="SOME HIGH SCHOOL">SOME HIGH SCHOOL</option>
+                                    <option value="HIGH SCHOOL GRADUATE">HIGH SCHOOL GRADUATE</option>
+                                    <option value="SOME COLLEGE, NO DEGREE">SOME COLLEGE, NO DEGREE</option>
+                                    <option value="ASSOCIATE DEGREE">ASSOCIATE DEGREE</option>
+                                    <option value="BACHELORS DEGREE">BACHELORS DEGREE</option>
+                                    <option value="MASTERS DEGREE">MASTERS DEGREE</option>
+                                    <option value="PROFESSIONAL DEGREE">PROFESSIONAL DEGREE</option>
+                                    <option value="DOCTORATE">DOCTORATE</option>
                                          
                                     </select>
                                 </div>
@@ -402,18 +387,19 @@
                             <div class="col-md-6 " >
                                 <div class="col-md-6 field">
                                     <label>Citizenship <span style="color:red">*</span></label>
+                                    <input class="form-control" name="c_applicant_nationality" id="c-applicant_nationality"placeholder="Citizenship">
                                     <select class="form-control" name="c_applicant_nationality" id="c_applicant_nationality">
-                                        <option value="">- Select -</option>
-                                                                                                                                    <option value="AFGHAN">AFGHAN</option>
+                                        
+                                                                                                                                   
 </select>
                                 </div>
                                 <div class="col-md-6 field" >
                                     <label>Complexion <span style="color:red">*</span></label>
                                     <select class="form-control" name="c_applicant_complexion" id="c_applicant_complexion">
                                         <option value="">- Select -</option>
-                                                                                    <option value="FAIR">FAIR</option>
-                                                                                    <option value="LIGHT">LIGHT</option>
-                                                                                    <option value="DARK">DARK</option>
+                                <option value="FAIR">FAIR</option>
+                                <option value="LIGHT">LIGHT</option>
+                                <option value="DARK">DARK</option>
                                          
                                     </select>
                                 </div>
@@ -568,19 +554,19 @@
                                             <td style="width:47%">
                                                 <select class="form-control" id="cedMonth" name="cedMonth" style="padding:0px">
                                                     <option value="">Month</option>
-                                                                                                            <option value="1">January</option>
-                                                                                                            <option value="2">February</option>
-                                                                                                            <option value="3">March</option>
-                                                                                                            <option value="4">April</option>
-                                                                                                            <option value="5">May</option>
-                                                                                                            <option value="6">June</option>
-                                                                                                            <option value="7">July</option>
-                                                                                                            <option value="8">August</option>
-                                                                                                            <option value="9">September</option>
-                                                                                                            <option value="10">October</option>
-                                                                                                            <option value="11">November</option>
-                                                                                                            <option value="12">December</option>
-                                                                                                    </select>
+                                                    <option value="1">January</option>
+                                                    <option value="2">February</option>
+                                                    <option value="3">March</option>
+                                                    <option value="4">April</option>
+                                                    <option value="5">May</option>
+                                                    <option value="6">June</option>
+                                                    <option value="7">July</option>
+                                                    <option value="8">August</option>
+                                                    <option value="9">September</option>
+                                                    <option value="10">October</option>
+                                                    <option value="11">November</option>
+                                                    <option value="12">December</option>
+                                                </select>
                                             </td>
                                             <td style="width:29%">
                                                 <select class="form-control" id="cedDay" name="cedDay" style="padding:0px">
@@ -614,19 +600,19 @@
                                             <td style="width:47%">
                                                 <select class="form-control" id="passMonth" name="passMonth" style="padding:0px">
                                                     <option value="">Month</option>
-                                                                                                            <option value="1">January</option>
-                                                                                                            <option value="2">February</option>
-                                                                                                            <option value="3">March</option>
-                                                                                                            <option value="4">April</option>
-                                                                                                            <option value="5">May</option>
-                                                                                                            <option value="6">June</option>
-                                                                                                            <option value="7">July</option>
-                                                                                                            <option value="8">August</option>
-                                                                                                            <option value="9">September</option>
-                                                                                                            <option value="10">October</option>
-                                                                                                            <option value="11">November</option>
-                                                                                                            <option value="12">December</option>
-                                                                                                    </select>
+                                                    <option value="1">January</option>
+                                                    <option value="2">February</option>
+                                                    <option value="3">March</option>
+                                                    <option value="4">April</option>
+                                                    <option value="5">May</option>
+                                                    <option value="6">June</option>
+                                                    <option value="7">July</option>
+                                                    <option value="8">August</option>
+                                                    <option value="9">September</option>
+                                                    <option value="10">October</option>
+                                                    <option value="11">November</option>
+                                                    <option value="12">December</option>
+                                                </select>
                                             </td>
                                             <td style="width:29%">
                                                 <select class="form-control" id="passDay" name="passDay" style="padding:0px">

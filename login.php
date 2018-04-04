@@ -29,7 +29,7 @@
                 </button>
 
                 <a class="navbar-brand" href="#">
-                    <img src="assets/img/logo.jpg"" class="navbar-brand-logo " alt="" />
+                    <img src="assets/img/logo.jpg" class="navbar-brand-logo" alt="" />
                 </a>
             </div>
             <div class="navbar-collapse collapse" >
@@ -64,8 +64,8 @@
 
                    
                     <li class="dropdown">
-                        <a href="verification.php">Verification Form <i class="fa fa-clipboard"></i>
-                            <span>Check For Reference Number</span>
+                        <a href="verification_home.php">Tracking <i class="fa fa-clipboard"></i>
+                            <span>Edit Contact Information</span>
                         </a>
                        
                     </li>
@@ -77,7 +77,7 @@
                     </li>
 
                       <li class="dropdown">
-                        <a href="login.php">SIGN UP/LOGIN <i class="fa fa-globe"></i>
+                        <a href="login.php"> EMPLOYEE LOGIN <i class="fa fa-globe"></i>
                             <span>login account</span>
                         </a>
 
@@ -99,7 +99,7 @@
                     <img align="left" height="90" src="assets/img/logo.jpg">
                 </div>
                 <center style="color:blue;">
-                <h1 style="font-weight:50;line-height:50px;font-size:32px"><strong>APPLICANT VERIFICATION FORM</strong> </h1>
+                <h1 style="font-weight:50;line-height:50px;font-size:32px"><strong>EMPLOYEE LOGIN</strong> </h1>
                 <div class="description">
                     <p>Please provide the details below.</p>
                 </div>
@@ -121,29 +121,18 @@
 </center>
  
     <div class="card card-login mx-auto mt-5">
-      <div class="card-header">Login</div>
       <div class="card-body">
         <form>
           <div class="form-group">
-            <label for="exampleInputUser">Username</label>
-            <input class="form-control" id="user" type="email" tyep="username" placeholder="Username" >
+            <label for="exampleInputUser">ID</label>
+            <input class="form-control" id="user" type="email" tyep="username" placeholder="ID" >
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
             <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password">
           </div>
-          <div class="form-group">
-            <div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox"> Remember Password</label>
-            </div>
-          </div>
-          <a class="btn btn-primary btn-block" href="index.php">Login</a>
+          <a class="btn btn-primary btn-block" href="admin.php">Login</a>
         </form>
-        <div class="text-center">
-          <a class="d-block small mt-3" href="register.php">Register an Account</a>
-          <a class="d-block small" href="forgot-password.php">Forgot Password?</a>
-        </div>
       </div>
     </div>
   
