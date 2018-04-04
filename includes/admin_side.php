@@ -20,7 +20,7 @@
     </ul>
     <h3>Admin</h3>
     <ul class="toggle">
-        <li class="icn_security"><a href="forgot-password.php">Change Password</a></li>
+        <li class="icn_security"><a href="changepass.php">Change Password</a></li>
         <li class="icn_jump_back"><a href="login.php">Logout</a></li>
     </ul>
 </aside><!-- end of sidebar -->
