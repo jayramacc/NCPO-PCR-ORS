@@ -69,8 +69,6 @@
 		<h3>ADMIN</h3>
 		<ul class="toggle">
 			<li class="icn_new_article"><a href="onlineform.php">Notification</a></li>
-			
-			<li class="icn_categories"><a href="verification.php">Search</a></li>
 			<!--<li class="icn_tags"><a href="#">Tags</a></li>-->
 		</ul>
 		<h3>APPLICANT</h3>
