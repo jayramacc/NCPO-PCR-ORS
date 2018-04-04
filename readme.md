@@ -36,4 +36,4 @@
         * Design `100%`
         * Functionlity `0%`
 ### 27 Items, 10 head
-59%
+82%
