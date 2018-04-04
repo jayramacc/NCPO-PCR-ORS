@@ -47,17 +47,17 @@
 	<header id="header">
 		<hgroup>
 			<h1 class="site_title"><a href="admin.php">PCR Admin</a></h1>
-			<h2 class="section_title">Dashboard</h2><div class="btn_view_site"><a href="login.php">Log out </a></div>
+			<h2 class="section_title">NOTIFICATION</h2><div class="btn_view_site"><a href="login.php">Log out </a></div>
 		</hgroup>
 	</header> <!-- end of header bar -->
 	
 	<section id="secondary_bar">
 		<div class="user">
-			<p>ADMIN </p>
+			<p>ADMIN (<a href="admin.php"> HOME </a>)</p>
 			<!-- <a class="logout_user" href="#" title="Logout">Logout</a> -->
 		</div>
 		<div class="breadcrumbs_container">
-			<article class="breadcrumbs"><a href="admin.php">Notification</a> <div class="breadcrumb_divider"></div> <a class="current">Dashboard</a></article>
+			<article class="breadcrumbs"><a href="admin.php">Website Admin</a> <div class="breadcrumb_divider"></div> <a class="current">Dashboard</a></article>
 		</div>
 	</section><!-- end of secondary bar -->
 	
@@ -102,7 +102,7 @@
 	
 	<section id="main" class="column">
 		
-		<h4 class="alert_info">Welcome ADMIN.</h4>
+		<h4 class="alert_info">Notification</h4>
 	
 		<div class="clear"></div>
 		

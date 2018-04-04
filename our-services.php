@@ -86,13 +86,13 @@
         <img align="left" height="90" src="assets/img/logo.jpg">
     </div>
         <center style="color:blue;">
-            <h1 style="font-weight:50;line-height:50px;font-size:32px"><strong>APPLICATION FORM</strong> </h1>
-                <div class="description">
-                    <p>Fill up the Police Clearance form.</p>
-                </div>
-             </center>
-            </div>
+        <h1 style="font-weight:50;line-height:50px;font-size:32px"><strong>APPLICATION FORM</strong> </h1>
+        <div class="description">
+        <p>Fill up the Police Clearance form.</p>
         </div>
+        </center>
+        </div>
+    </div>
         
         <div class="col-md-12">
             <form method="post" id="appform">
@@ -257,58 +257,58 @@
                                     <table id="bdatedateID">
                                         <tr>
 
-                                            <td style="width:47%">
-                                                <select class="form-control"  id="bdateMonth" name="bdateMonth" style="padding:0px">
-                                                    <option value="">Month</option>
-                                                        <option value=""> January</option>
-                                                        <option value=""> February</option>
-                                                        <option value=""> March</option>
-                                                        <option value=""> April</option>
-                                                        <option value=""> May</option>
-                                                        <option value=""> June</option>
-                                                        <option value=""> July</option>
-                                                        <option value=""> August</option>
-                                                        <option value=""> September</option>
-                                                        <option value=""> October</option>
-                                                        <option value=""> November</option>
-                                                        <option value=""> December</option>
-                                                    
-                                                     </select>
-                                            </td>
-                                            <td style="width:29%">
-                                                <select class="form-control"  id="bdateDay" name="bdateDay" style="padding:0px">
-                                                    <option value="">Day</option>
-                                                    <option value="">1</option>
-                                                    <option value="">2</option>
-                                                    <option value="">3</option>
-                                                    <option value="">4</option>
-                                                    <option value="">5</option>
-                                                    <option value="">6</option>
-                                                    <option value="">7</option>
-                                                    <option value="">8</option>
-                                                    <option value="">9</option>
-                                                    <option value="">10</option>
-                                                    <option value="">11</option>
-                                                    <option value="">12</option>
-                                                    <option value="">13</option>
-                                                    <option value="">14</option>
-                                                    <option value="">15</option>
-                                                    <option value="">16</option>
-                                                    <option value="">17</option>
-                                                    <option value="">18</option>
-                                                    <option value="">19</option>
-                                                    <option value="">20</option>
-                                                    <option value="">21</option>
-                                                    <option value="">22</option>
-                                                    <option value="">23</option>
-                                                    <option value="">24</option>
-                                                    <option value="">25</option>
-                                                    <option value="">26</option>
-                                                    <option value="">27</option>
-                                                    <option value="">28</option>
-                                                    <option value="">29</option>
-                                                    <option value="">30</option>
-                                                    <option value="">31</option>
+                        <td style="width:47%">
+                            <select class="form-control"  id="bdateMonth" name="bdateMonth" style="padding:0px">
+                                <option value="">Month</option>
+                                    <option value=""> January</option>
+                                    <option value=""> February</option>
+                                    <option value=""> March</option>
+                                    <option value=""> April</option>
+                                    <option value=""> May</option>
+                                    <option value=""> June</option>
+                                    <option value=""> July</option>
+                                    <option value=""> August</option>
+                                    <option value=""> September</option>
+                                    <option value=""> October</option>
+                                    <option value=""> November</option>
+                                    <option value=""> December</option>
+                                
+                                    </select>
+                            </td>
+                            <td style="width:29%">
+                                <select class="form-control"  id="bdateDay" name="bdateDay" style="padding:0px">
+                                    <option value="">Day</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+                                    <option value="">11</option>
+                                    <option value="">12</option>
+                                    <option value="">13</option>
+                                    <option value="">14</option>
+                                    <option value="">15</option>
+                                    <option value="">16</option>
+                                    <option value="">17</option>
+                                    <option value="">18</option>
+                                    <option value="">19</option>
+                                    <option value="">20</option>
+                                    <option value="">21</option>
+                                    <option value="">22</option>
+                                    <option value="">23</option>
+                                    <option value="">24</option>
+                                    <option value="">25</option>
+                                    <option value="">26</option>
+                                    <option value="">27</option>
+                                    <option value="">28</option>
+                                    <option value="">29</option>
+                                    <option value="">30</option>
+                                    <option value="">31</option>
 
 
 
@@ -364,17 +364,17 @@
                                     <label>Educational Attainment <span style="color:red">*</span></label>
                                     <select  class="form-control" name="c_applicant_eduattainment" id="c_applicant_eduattainment">
                                         <option value="">- Select -</option>
-                                                                                    <option value="NONE">NONE</option>
-                                                                                    <option value="SOME ELEMENTARY">SOME ELEMENTARY</option>
-                                                                                    <option value="ELEMENTARY GRADUATE">ELEMENTARY GRADUATE</option>
-                                                                                    <option value="SOME HIGH SCHOOL">SOME HIGH SCHOOL</option>
-                                                                                    <option value="HIGH SCHOOL GRADUATE">HIGH SCHOOL GRADUATE</option>
-                                                                                    <option value="SOME COLLEGE, NO DEGREE">SOME COLLEGE, NO DEGREE</option>
-                                                                                    <option value="ASSOCIATE DEGREE">ASSOCIATE DEGREE</option>
-                                                                                    <option value="BACHELORS DEGREE">BACHELORS DEGREE</option>
-                                                                                    <option value="MASTERS DEGREE">MASTERS DEGREE</option>
-                                                                                    <option value="PROFESSIONAL DEGREE">PROFESSIONAL DEGREE</option>
-                                                                                    <option value="DOCTORATE">DOCTORATE</option>
+                                    <option value="NONE">NONE</option>
+                                    <option value="SOME ELEMENTARY">SOME ELEMENTARY</option>
+                                    <option value="ELEMENTARY GRADUATE">ELEMENTARY GRADUATE</option>
+                                    <option value="SOME HIGH SCHOOL">SOME HIGH SCHOOL</option>
+                                    <option value="HIGH SCHOOL GRADUATE">HIGH SCHOOL GRADUATE</option>
+                                    <option value="SOME COLLEGE, NO DEGREE">SOME COLLEGE, NO DEGREE</option>
+                                    <option value="ASSOCIATE DEGREE">ASSOCIATE DEGREE</option>
+                                    <option value="BACHELORS DEGREE">BACHELORS DEGREE</option>
+                                    <option value="MASTERS DEGREE">MASTERS DEGREE</option>
+                                    <option value="PROFESSIONAL DEGREE">PROFESSIONAL DEGREE</option>
+                                    <option value="DOCTORATE">DOCTORATE</option>
                                          
                                     </select>
                                 </div>
@@ -397,9 +397,9 @@
                                     <label>Complexion <span style="color:red">*</span></label>
                                     <select class="form-control" name="c_applicant_complexion" id="c_applicant_complexion">
                                         <option value="">- Select -</option>
-                                                                                    <option value="FAIR">FAIR</option>
-                                                                                    <option value="LIGHT">LIGHT</option>
-                                                                                    <option value="DARK">DARK</option>
+                                <option value="FAIR">FAIR</option>
+                                <option value="LIGHT">LIGHT</option>
+                                <option value="DARK">DARK</option>
                                          
                                     </select>
                                 </div>
@@ -554,19 +554,19 @@
                                             <td style="width:47%">
                                                 <select class="form-control" id="cedMonth" name="cedMonth" style="padding:0px">
                                                     <option value="">Month</option>
-                                                                                                            <option value="1">January</option>
-                                                                                                            <option value="2">February</option>
-                                                                                                            <option value="3">March</option>
-                                                                                                            <option value="4">April</option>
-                                                                                                            <option value="5">May</option>
-                                                                                                            <option value="6">June</option>
-                                                                                                            <option value="7">July</option>
-                                                                                                            <option value="8">August</option>
-                                                                                                            <option value="9">September</option>
-                                                                                                            <option value="10">October</option>
-                                                                                                            <option value="11">November</option>
-                                                                                                            <option value="12">December</option>
-                                                                                                    </select>
+                                                    <option value="1">January</option>
+                                                    <option value="2">February</option>
+                                                    <option value="3">March</option>
+                                                    <option value="4">April</option>
+                                                    <option value="5">May</option>
+                                                    <option value="6">June</option>
+                                                    <option value="7">July</option>
+                                                    <option value="8">August</option>
+                                                    <option value="9">September</option>
+                                                    <option value="10">October</option>
+                                                    <option value="11">November</option>
+                                                    <option value="12">December</option>
+                                                </select>
                                             </td>
                                             <td style="width:29%">
                                                 <select class="form-control" id="cedDay" name="cedDay" style="padding:0px">
@@ -600,19 +600,19 @@
                                             <td style="width:47%">
                                                 <select class="form-control" id="passMonth" name="passMonth" style="padding:0px">
                                                     <option value="">Month</option>
-                                                                                                            <option value="1">January</option>
-                                                                                                            <option value="2">February</option>
-                                                                                                            <option value="3">March</option>
-                                                                                                            <option value="4">April</option>
-                                                                                                            <option value="5">May</option>
-                                                                                                            <option value="6">June</option>
-                                                                                                            <option value="7">July</option>
-                                                                                                            <option value="8">August</option>
-                                                                                                            <option value="9">September</option>
-                                                                                                            <option value="10">October</option>
-                                                                                                            <option value="11">November</option>
-                                                                                                            <option value="12">December</option>
-                                                                                                    </select>
+                                                    <option value="1">January</option>
+                                                    <option value="2">February</option>
+                                                    <option value="3">March</option>
+                                                    <option value="4">April</option>
+                                                    <option value="5">May</option>
+                                                    <option value="6">June</option>
+                                                    <option value="7">July</option>
+                                                    <option value="8">August</option>
+                                                    <option value="9">September</option>
+                                                    <option value="10">October</option>
+                                                    <option value="11">November</option>
+                                                    <option value="12">December</option>
+                                                </select>
                                             </td>
                                             <td style="width:29%">
                                                 <select class="form-control" id="passDay" name="passDay" style="padding:0px">

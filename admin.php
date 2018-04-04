@@ -53,7 +53,7 @@
 	
 	<section id="secondary_bar">
 		<div class="user">
-			<p>ADMIN </p>
+			<p>ADMIN (<a href="admin.php"> HOME </a>)</p>
 			<!-- <a class="logout_user" href="#" title="Logout">Logout</a> -->
 		</div>
 		<div class="breadcrumbs_container">
@@ -88,7 +88,6 @@
 		</ul>
 		<h3>Admin</h3>
 		<ul class="toggle">
-			<li class="icn_settings"><a href="register.php">Create New Account</a></li>
 			<li class="icn_security"><a href="forgot-password.php">Change Password</a></li>
 			<li class="icn_jump_back"><a href="login.php">Logout</a></li>
 		</ul>
