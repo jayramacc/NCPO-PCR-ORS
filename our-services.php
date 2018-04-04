@@ -56,8 +56,8 @@
 
                    
         <li class="dropdown">
-            <a href="verification_home.php">Verification Form <i class="fa fa-clipboard"></i>
-                <span>Check For Reference Number</span>
+            <a href="verification_home.php"> Tracking <i class="fa fa-clipboard"></i>
+                <span>Edit Contact Information</span>
             </a>
         </li>
         <li class="dropdown">
@@ -159,52 +159,52 @@
                                                 <li  onclick = "$.fn.assignValue('LICENSE TO DEAL FIREARMS AND AMMUNITION REQUIREMENT')" >LICENSE TO DEAL FIREARMS AND AMMUNITION REQUIREMENT</li>
                                                 <li  onclick = "$.fn.assignValue('LICENSE TO PURCHASE EXPLOSIVES REQUIREMENT')" >LICENSE TO PURCHASE EXPLOSIVES REQUIREMENT</li>
                                                 <li  onclick = "$.fn.assignValue('LOAN REQUIREMENT')" >LOAN REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('LOCAL CIVIL REGISTRAR REQUIREMENT')" >LOCAL CIVIL REGISTRAR REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('LOCAL EMPLOYMENT REQUIREMENT')" >LOCAL EMPLOYMENT REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('LTFRB UBER REQUIREMENT')" >LTFRB UBER REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('LTFRB GRAB CAR REQUIREMENT')" >LTFRB GRAB CAR REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('LTO DEPUTATION REQUIREMENT')" >LTO DEPUTATION REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('MASON REQUIREMENT')" >MASON REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('MARRIAGE REQUIREMENT')" >MARRIAGE REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('M. LHUILLIER REQUIREMENT')" >M. LHUILLIER REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('MISSIONARY REQUIREMENT')" >MISSIONARY REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('NATURALIZATION REQUIREMENT')" >NATURALIZATION REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('NON-IMMIGRANT VISA')" >NON-IMMIGRANT VISA</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('ON THE JOB TRAINING REQUIREMENT')" >ON THE JOB TRAINING REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PAG-IBIG REQUIREMENT')" >PAG-IBIG REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PARTNERSHIP VISA')" >PARTNERSHIP VISA</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PASSPORT REQUIREMENT')" >PASSPORT REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PDEA REQUIREMENT')" >PDEA REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PERMANENT RESIDENCY VISA REQUIREMENT')" >PERMANENT RESIDENCY VISA REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PHILHEALTH REQUIREMENT')" >PHILHEALTH REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PHILIPPINE MILITARY ACADEMY REQUIREMENT')" >PHILIPPINE MILITARY ACADEMY REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PHILIPPINE RETIREMENT AUTHORITY REQUIREMENT')" >PHILIPPINE RETIREMENT AUTHORITY REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PHILIPPINE STATISTICS AUTHORITY REQUIREMENT')" >PHILIPPINE STATISTICS AUTHORITY REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PLDT REQUIREMENT')" >PLDT REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PNP REQUIREMENT')" >PNP REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PNPA REQUIREMENT')" >PNPA REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('POSTAL I.D. REQUIREMENT')" >POSTAL I.D. REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PRC REQUIREMENT')" >PRC REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PROBATION REQUIREMENT')" >PROBATION REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('R2 REQUIREMENT')" >R2 REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('RCBC REQUIREMENT')" >RCBC REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('SCHOOL REQUIREMENT')" >SCHOOL REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('SEAMANS VISA')" >SEAMANS VISA</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('SECURITY GUARD LICENSE REQUIREMENT')" >SECURITY GUARD LICENSE REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('SECURITY OFFICER REQUIREMENT')" >SECURITY OFFICER REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('SOCIAL SECURITY SYSTEM REQUIREMENT')" >SOCIAL SECURITY SYSTEM REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('SEAMANS BOOK REQUIREMENT')" >SEAMANS BOOK REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PANTAWID PAMILYANG PILIPINO PROGRAM REQUIREMENT')" >PANTAWID PAMILYANG PILIPINO PROGRAM REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('PERMIT TO CARRY FIREARMS OUTSIDE RESIDENCE')" >PERMIT TO CARRY FIREARMS OUTSIDE RESIDENCE</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('STUDENT VISA REQUIREMENT')" >STUDENT VISA REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('TESDA REQUIREMENT')" >TESDA REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('TOURIST VISA REQUIREMENT')" >TOURIST VISA REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('TOUR GUIDE LICENSE REQUIREMENT')" >TOUR GUIDE LICENSE REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('WORKING ABROAD REQUIREMENT')" >WORKING ABROAD REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('WORKING VISA REQUIREMENT')" >WORKING VISA REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('WESTERN UNION REQUIREMENT')" >WESTERN UNION REQUIREMENT</li>
-                                                                                                    <li  onclick = "$.fn.assignValue('ALL OTHER PURPOSE NOT HERE MENTIONED ')" >ALL OTHER PURPOSE NOT HERE MENTIONED </li>
-                                                                                            </ul>
+                                                <li  onclick = "$.fn.assignValue('LOCAL CIVIL REGISTRAR REQUIREMENT')" >LOCAL CIVIL REGISTRAR REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('LOCAL EMPLOYMENT REQUIREMENT')" >LOCAL EMPLOYMENT REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('LTFRB UBER REQUIREMENT')" >LTFRB UBER REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('LTFRB GRAB CAR REQUIREMENT')" >LTFRB GRAB CAR REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('LTO DEPUTATION REQUIREMENT')" >LTO DEPUTATION REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('MASON REQUIREMENT')" >MASON REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('MARRIAGE REQUIREMENT')" >MARRIAGE REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('M. LHUILLIER REQUIREMENT')" >M. LHUILLIER REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('MISSIONARY REQUIREMENT')" >MISSIONARY REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('NATURALIZATION REQUIREMENT')" >NATURALIZATION REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('NON-IMMIGRANT VISA')" >NON-IMMIGRANT VISA</li>
+                                                <li  onclick = "$.fn.assignValue('ON THE JOB TRAINING REQUIREMENT')" >ON THE JOB TRAINING REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PAG-IBIG REQUIREMENT')" >PAG-IBIG REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PARTNERSHIP VISA')" >PARTNERSHIP VISA</li>
+                                                <li  onclick = "$.fn.assignValue('PASSPORT REQUIREMENT')" >PASSPORT REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PDEA REQUIREMENT')" >PDEA REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PERMANENT RESIDENCY VISA REQUIREMENT')" >PERMANENT RESIDENCY VISA REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PHILHEALTH REQUIREMENT')" >PHILHEALTH REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PHILIPPINE MILITARY ACADEMY REQUIREMENT')" >PHILIPPINE MILITARY ACADEMY REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PHILIPPINE RETIREMENT AUTHORITY REQUIREMENT')" >PHILIPPINE RETIREMENT AUTHORITY REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PHILIPPINE STATISTICS AUTHORITY REQUIREMENT')" >PHILIPPINE STATISTICS AUTHORITY REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PLDT REQUIREMENT')" >PLDT REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PNP REQUIREMENT')" >PNP REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PNPA REQUIREMENT')" >PNPA REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('POSTAL I.D. REQUIREMENT')" >POSTAL I.D. REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PRC REQUIREMENT')" >PRC REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PROBATION REQUIREMENT')" >PROBATION REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('R2 REQUIREMENT')" >R2 REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('RCBC REQUIREMENT')" >RCBC REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('SCHOOL REQUIREMENT')" >SCHOOL REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('SEAMANS VISA')" >SEAMANS VISA</li>
+                                                <li  onclick = "$.fn.assignValue('SECURITY GUARD LICENSE REQUIREMENT')" >SECURITY GUARD LICENSE REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('SECURITY OFFICER REQUIREMENT')" >SECURITY OFFICER REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('SOCIAL SECURITY SYSTEM REQUIREMENT')" >SOCIAL SECURITY SYSTEM REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('SEAMANS BOOK REQUIREMENT')" >SEAMANS BOOK REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PANTAWID PAMILYANG PILIPINO PROGRAM REQUIREMENT')" >PANTAWID PAMILYANG PILIPINO PROGRAM REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('PERMIT TO CARRY FIREARMS OUTSIDE RESIDENCE')" >PERMIT TO CARRY FIREARMS OUTSIDE RESIDENCE</li>
+                                                <li  onclick = "$.fn.assignValue('STUDENT VISA REQUIREMENT')" >STUDENT VISA REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('TESDA REQUIREMENT')" >TESDA REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('TOURIST VISA REQUIREMENT')" >TOURIST VISA REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('TOUR GUIDE LICENSE REQUIREMENT')" >TOUR GUIDE LICENSE REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('WORKING ABROAD REQUIREMENT')" >WORKING ABROAD REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('WORKING VISA REQUIREMENT')" >WORKING VISA REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('WESTERN UNION REQUIREMENT')" >WESTERN UNION REQUIREMENT</li>
+                                                <li  onclick = "$.fn.assignValue('ALL OTHER PURPOSE NOT HERE MENTIONED ')" >ALL OTHER PURPOSE NOT HERE MENTIONED </li>
+                                        </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -353,10 +353,7 @@
                                 </div>
                                 <div class="col-md-6 field" >
                                     <label>Religion <span style="color:red">*</span></label>
-                                    <select class="form-control" name="c_applicant_religion" id="c_applicant_religion">
-                                        <option value="">- Select -</option>
-                                                                                                                                    <option value="AGLIPAYAN">AGLIPAYAN</option>
-
+                                    <input class="form-control" name="c_applicant_religion" id="c-applicant_religion"placeholder="Religion">
                                     </select>
                                 </div>
                             </div>
@@ -390,9 +387,10 @@
                             <div class="col-md-6 " >
                                 <div class="col-md-6 field">
                                     <label>Citizenship <span style="color:red">*</span></label>
+                                    <input class="form-control" name="c_applicant_nationality" id="c-applicant_nationality"placeholder="Citizenship">
                                     <select class="form-control" name="c_applicant_nationality" id="c_applicant_nationality">
-                                        <option value="">- Select -</option>
-                                                                                                                                    <option value="AFGHAN">AFGHAN</option>
+                                        
+                                                                                                                                   
 </select>
                                 </div>
                                 <div class="col-md-6 field" >
