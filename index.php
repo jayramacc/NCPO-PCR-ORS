@@ -34,58 +34,8 @@
 </head>
 <body>
 
-  <div class="navbar navbar-default navbar-fixed-top menu-back">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                    <img src="assets/img/logo.jpg" class="navbar-brand-logo " alt="" />
-                </a>
-            </div>
-            <div class="navbar-collapse collapse" >
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="index.php">
-                            HOME PAGE<i class="fas fa-home"></i>
-                            <span>Official Website</span>
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="our-services.php">
-                            APPLICATION FORM<i class="fa fa-folder-open-o"></i>
-                            <span> Register Now!</span>
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="request-renew.php">
-                            REQUEST/RENEW<i class=" fa fa-clipboard"></i>
-                            <span>Renew Here!</span>
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="verification_home.php"> Tracking<i class="fa fa-clipboard"></i>
-                            <span>Edit Contact Information</span>
-                        </a>
-                    </li>
-                     <li class="dropdown">
-                        <a href="error.php">FAQ <i class="fa fa-globe"></i>
-                            <span>Help?</span>
-                        </a>
-                    </li>
-                     <li class="dropdown">
-                        <a href="login.php"> EMPLOYEE LOGIN <i class="fa fa-globe"></i>
-                            <span>login account</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+    <?php include 'includes/nav.php'; ?>
 
-        </div>
-    </div>
     <!--./ Top Menu End -->
     <div class="div-social-top">
         <i class="fa fa-globe "></i>FB Page: NCPO Naga  | <i class="fa fa-mobile "></i>Call: :  (054) 473.3537 / (054) 478.8918.  |  <i class="fa fa-map-marker "></i>Country : PH &nbsp;
@@ -93,6 +43,7 @@
         <a href="#"> <i class="fa fa-linkedin-square "></i> </a>
         <a href="#"> <i class="fa fa-pinterest-square "> </i> </a>
     </div>
+    
     <div class="middle-section">
         <div class="container">
             <div class="row ">
