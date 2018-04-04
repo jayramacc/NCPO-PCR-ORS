@@ -10,10 +10,7 @@
 * Request/Renew `50%`
     * Design `100%`
     * Functionality `0%`
-* Tracking `50%`
-    * Design `100%`
-    * Functionality `0%`
-* Login, Logout `0%`
+* Login, Logout `100%`
 * Email Format `100%`
     * Applicant w/private key or TransactionID `100%`
 * Admin Pages `20%`
@@ -38,5 +35,5 @@
     * Change Password `50%`
         * Design `100%`
         * Functionlity `0%`
-### 27 Items, 11 head
+### 27 Items, 10 head
 59%
