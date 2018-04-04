@@ -123,7 +123,7 @@
                                             </tr>
                                         </table>
                                         <div id="purposeSearch" style="display:none;position: absolute;float: left;z-index: 1000;border: 1px solid #ccc;padding-top:10px;width: 94%;background:#fff;max-height: 300px;overflow-y: scroll;">
-                                            <input type="text"  id="searchfieldPurpose" style="margin-left:40px;margin-bottom: 10px;width: 85%" class="form-control" placeholder="Search" > 
+                                            <input type="text"  id="searchfieldPurpose" style="margin-left:40px;margin-bottom: 10px;width: 85%" class="form-control" placeholder="Search" required> 
                                             <ul style="list-style: none;" id="purposelist">
                                                 <li  onclick = "$.fn.assignValue('ADOPTION REQUIREMENT')" >ADOPTION REQUIREMENT</li>
                                                 <li  onclick = "$.fn.assignValue('AIRPORT REQUIREMENT')" >AIRPORT REQUIREMENT</li>
@@ -212,17 +212,17 @@
                             <div class="col-md-6 field" >
                                 <div class="col-md-12" >
                                     <label>Govt Issued ID Presented: (Indicate ID Number)<span style="color:red">*</span></label>
-                                    <input class="form-control" name="c_applicant_govtid" id="c_applicant_govtid" placeholder="Govt Issued ID eq. SSS ID, POSTAL ID, GSIS ID, DRIVER'S ID, etc.">
+                                    <input class="form-control" name="c_applicant_govtid" id="c_applicant_govtid" placeholder="Govt Issued ID eq. SSS ID, POSTAL ID, GSIS ID, DRIVER'S ID, etc." required>
                                 </div>
                             </div> 
                             <div class="col-md-6 " >
                                 <div class="col-md-6 field">
                                     <label>Last Name <span style="color:red">*</span></label>
-                                    <input class="form-control" name="c_applicant_lname" id="c_applicant_lname" placeholder="Last Name" value="">
+                                    <input class="form-control" name="c_applicant_lname" id="c_applicant_lname" placeholder="Last Name" value="" required>
                                 </div>
                                 <div class="col-md-6 field" >
                                     <label>First Name <span style="color:red">*</span></label>
-                                    <input class="form-control" name="c_applicant_fname" id="c_applicant_fname" placeholder="First Name" value="">
+                                    <input class="form-control" name="c_applicant_fname" id="c_applicant_fname" placeholder="First Name" value="" required>
                                 </div>
                             </div>
                             <div class="col-md-6" >
@@ -238,16 +238,16 @@
                             <div class="col-md-6 " >
                                 <div class="col-md-6 field">
                                     <label>Gender <span style="color:red">*</span></label>
-                                    <select class="form-control" name="c_applicant_gender" id="c_applicant_gender">
+                                    <select class="form-control" name="c_applicant_gender" id="c_applicant_gender" required>
                                                                                     <option value="">- Select -</option>
-                                                                                    <option value="Male">Male</option>
-                                            <option value="Female">Female</option>
+                                                                                    <option value="male">Male</option>
+                                                                                    <option value="female">Female</option>
                                     </select>
                                 </div>
                                 <div class="col-md-6 field" >
                                     
                                     <label>Nickname / Alias<span style="color:red">*</span></label>
-                                    <input class="form-control" name="c_applicant_nickname" id="c_applicant_nickname" placeholder="Nickname / Alias">
+                                    <input class="form-control" name="c_applicant_nickname" id="c_applicant_nickname" placeholder="Nickname / Alias" required>
                                 </div>
                             </div>
                             
@@ -258,7 +258,7 @@
                                         <tr>
 
                         <td style="width:47%">
-                            <select class="form-control"  id="bdateMonth" name="bdateMonth" style="padding:0px">
+                            <select class="form-control"  id="bdateMonth" name="bdateMonth" style="padding:0px" required>
                                 <option value="">Month</option>
                                     <option value=""> January</option>
                                     <option value=""> February</option>
@@ -329,11 +329,11 @@
                             <div class="col-md-6 " >
                                 <div class="col-md-6 field">
                                         <label>Birth Place <span style="color:red">*</span></label>
-                                        <input class="form-control" name="c_applicant_birthplace" id="c_applicant_birthplace" placeholder="Indicate Town, Province">
+                                        <input class="form-control" name="c_applicant_birthplace" id="c_applicant_birthplace" placeholder="Indicate Town, Province" required>
                                 </div>
                                 <div class="col-md-6 field">
                                     <label>Civil Status <span style="color:red">*</span></label>
-                                    <select class="form-control" id="c_applicant_civilstatus" name="c_applicant_civilstatus">
+                                    <select class="form-control" id="c_applicant_civilstatus" name="c_applicant_civilstatus" required>
                                         <option value="">- Select -</option>
                                                                                                                                     <option value="SINGLE">SINGLE</option>
                                 </select>
@@ -342,18 +342,18 @@
                             <div class="col-md-6" >
                                 <div class="col-md-12 field" >
                                     <label>Complete Address <span style="color:red">*</span></label>
-                                    <input class="form-control" placeholder="Unit Number, Street, Barangay, Town/City, Province" name="c_applicant_completeaddress" id="c_applicant_completeaddress">
+                                    <input class="form-control" placeholder="Unit Number, Street, Barangay, Town/City, Province" name="c_applicant_completeaddress" id="c_applicant_completeaddress" required>
                                     
                                 </div>
                             </div>
                             <div class="col-md-6" >
                                 <div class="col-md-6 field">
                                         <label>Provincial Address <span style="color:red">*</span></label>
-                                        <input class="form-control" name="c_applicant_provaddress" id="c_applicant_provaddress" placeholder="Province Address">
+                                        <input class="form-control" name="c_applicant_provaddress" id="c_applicant_provaddress" placeholder="Province Address" required>
                                 </div>
                                 <div class="col-md-6 field" >
                                     <label>Religion <span style="color:red">*</span></label>
-                                    <input class="form-control" name="c_applicant_religion" id="c-applicant_religion"placeholder="Religion">
+                                    <input class="form-control" name="c_applicant_religion" id="c-applicant_religion"placeholder="Religion" required>
                                     </select>
                                 </div>
                             </div>
@@ -362,7 +362,7 @@
                             <div class="col-md-6" >
                                 <div class="col-md-6 field">
                                     <label>Educational Attainment <span style="color:red">*</span></label>
-                                    <select  class="form-control" name="c_applicant_eduattainment" id="c_applicant_eduattainment">
+                                    <select  class="form-control" name="c_applicant_eduattainment" id="c_applicant_eduattainment" required>
                                         <option value="">- Select -</option>
                                     <option value="NONE">NONE</option>
                                     <option value="PRE ELEMENTARY">PRELEMENTARY</option>
@@ -380,21 +380,21 @@
                                 </div>
                                 <div class="col-md-6 field" >
                                     <label>Occupation <span style="color:red">*</span></label>
-                                    <input class="form-control" placeholder="Occupation" name="c_applicant_occupation" id="c_applicant_occupation">
+                                    <input class="form-control" placeholder="Occupation" name="c_applicant_occupation" id="c_applicant_occupation" required>
                                 </div>
                             </div>
                             
                             <div class="col-md-6 " >
                                 <div class="col-md-6 field">
                                     <label>Citizenship <span style="color:red">*</span></label>
-                                    <input class="form-control" name="c_applicant_nationality" id="c-applicant_nationality"placeholder="Citizenship">
+                                    <input class="form-control" name="c_applicant_nationality" id="c-applicant_nationality"placeholder="Citizenship" required>
                                         
                                                                                                                                    
 </select>
                                 </div>
                                 <div class="col-md-6 field" >
                                     <label>Complexion <span style="color:red">*</span></label>
-                                    <select class="form-control" name="c_applicant_complexion" id="c_applicant_complexion">
+                                    <select class="form-control" name="c_applicant_complexion" id="c_applicant_complexion" required>
                                         <option value="">- Select -</option>
                                 <option value="FAIR">FAIR</option>
                                 <option value="LIGHT">LIGHT</option>
@@ -407,18 +407,18 @@
                             <div class="col-md-6 " >
                                 <div class="col-md-6 field">
                                     <label>Height (cm.)<span style="color:red">*</span> &nbsp <span style="cursor: pointer" id="linkconvertheight" class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></label>
-                                    <input class="form-control" name="c_applicant_height" id="c_applicant_height" placeholder="Height example 152" type="number">
+                                    <input class="form-control" name="c_applicant_height" id="c_applicant_height" placeholder="Height example 152" type="number" required>
                                 </div>
                                 <div class="col-md-6 field" >
                                     <label>Weight(kg.) <span style="color:red">*</span></label>
-                                    <input class="form-control" name="c_applicant_weight" id="c_applicant_weight" placeholder="Weight example 52" type="number">
+                                    <input class="form-control" name="c_applicant_weight" id="c_applicant_weight" placeholder="Weight example 52" type="number" required>
                                 </div>
                             </div>
                         
                             <div class="col-md-6 " >
                                 <div class="col-md-6 field">
                                     <label>Hair Color <span style="color:red">*</span></label>
-                                    <select class="form-control" name="c_applicant_haircolor" id="c_applicant_haircolor">
+                                    <select class="form-control" name="c_applicant_haircolor" id="c_applicant_haircolor" required>
                                         <option value="">- Select -</option>
                                                                                     <option value="BLACK">BLACK</option>
                                                                                     <option value="BALD">BALD</option>
@@ -436,7 +436,7 @@
                                 </div>
                                 <div class="col-md-6 field" >
                                     <label>Eye Color <span style="color:red">*</span></label>
-                                    <select class="form-control" name="c_applicant_eyecolor" id="c_applicant_eyecolor">
+                                    <select class="form-control" name="c_applicant_eyecolor" id="c_applicant_eyecolor" required>
                                         <option value="">- Select -</option>
                                                                                     <option value="BLACK">BLACK</option>
                                                                                     <option value="BROWN">BROWN</option>
@@ -450,7 +450,7 @@
                             <div class="col-md-6 " >
                                 <div class="col-md-6 field">
                                     <label>Build/Body Size <span style="color:red">*</span></label>
-                                        <select class="form-control" name="c_applicant_build" id="c_applicant_build">
+                                        <select class="form-control" name="c_applicant_build" id="c_applicant_build" required>
                                             <option value="">- Select -</option>
                                             <option value="Extra extra large">Extra extra large</option>
                                             <option value="Extra large">Extra large</option>
@@ -462,17 +462,17 @@
                                 </div>
                                 <div class="col-md-6 field">
                                     <label>Distinguishing Marks<span style="color:red">*</span></label>
-                                    <input class="form-control" placeholder="Distinguishing Marks" name="c_applicant_identityremarks" id="c_applicant_identityremarks">
+                                    <input class="form-control" placeholder="Distinguishing Marks" name="c_applicant_identityremarks" id="c_applicant_identityremarks" required>
                                 </div>
                             </div>
                             <div class="col-md-6 " >
                                 <div class="col-md-6 field">
                                     <label>No. of years in the community <span style="color:red">*</span></label>
-                                    <input class="form-control" placeholder="No. of years in the community" name="c_applicant_noofyears" id="c_applicant_noofyears">
+                                    <input class="form-control" placeholder="No. of years in the community" name="c_applicant_noofyears" id="c_applicant_noofyears" type="number" required>
                                 </div>
                                 <div class="col-md-6 field">
                                     <label>Cellphone No. <span style="color:red">*</span></label>
-                                    <input class="form-control" placeholder="Cellphone No." name="c_applicant_cellphoneno" id="c_applicant_cellphoneno" value="">
+                                    <input class="form-control" placeholder="Cellphone No." name="c_applicant_cellphoneno" id="c_applicant_cellphoneno" value="" required>
                                 </div>
                             </div>
                             <div class="col-md-6" >
@@ -481,8 +481,8 @@
                                     <input class="form-control" placeholder="Telephone No." name="c_applicant_telephoneno" id="c_applicant_telephoneno">
                                 </div>
                                 <div class="col-md-6 field" >
-                                    <label>Email Address</label>
-                                    <input class="form-control" type="email" placeholder="Email Address" name="c_applicant_email" id="c_applicant_email" value="">
+                                <label>Email Address <span style="color:red">*</span></label>
+                                    <input class="form-control" type="email" placeholder="Email Address" name="c_applicant_email" id="c_applicant_email" value="" required>
                                 </div>
                             </div>
                             
@@ -507,25 +507,25 @@
                             <div class="col-md-6 " >
                                 <div class="col-md-12 field">
                                     <label>Father's Name <span style="color:red">*</span></label>
-                                    <input class="form-control" placeholder="Father's Name" name="c_applicant_fathersname" id="c_applicant_fathersname" >
+                                    <input class="form-control" placeholder="Father's Name" name="c_applicant_fathersname" id="c_applicant_fathersname"  required>
                                 </div>
                             </div>
                             <div class="col-md-6 " >
                                 <div class="col-md-12 field" >
                                     <label>(Father's) Place of Birth <span style="color:red">*</span></label>
-                                    <input class="form-control" placeholder="Indicate Town, Province" name="c_applicant_fathersaddress" id="c_applicant_fathersaddress">
+                                    <input class="form-control" placeholder="Indicate Town, Province" name="c_applicant_fathersaddress" id="c_applicant_fathersaddress" required>
                                 </div>
                             </div>
                             <div class="col-md-6 " >
                                 <div class="col-md-12 field">
                                     <label>Mother's Maiden Name <span style="color:red">*</span></label>
-                                    <input class="form-control" placeholder="Mother's Maiden Name" name="c_applicant_mothersname" id="c_applicant_mothersname">
+                                    <input class="form-control" placeholder="Mother's Maiden Name" name="c_applicant_mothersname" id="c_applicant_mothersname" required>
                                 </div>
                             </div>
                             <div class="col-md-6 " >
                                 <div class="col-md-12 field" >
                                     <label>(Mother's) Place of Birth <span style="color:red">*</span></label>
-                                    <input class="form-control" placeholder="Indicate Town, Province" name="c_applicant_mothersaddress" id="c_applicant_mothersaddress">
+                                    <input class="form-control" placeholder="Indicate Town, Province" name="c_applicant_mothersaddress" id="c_applicant_mothersaddress" required>
                                 </div>
                             </div>
                             
@@ -539,7 +539,7 @@
                                     <label>Cedula No. <span style="color:red">*</span></label>
                                 </div>
                                 <div class="col-md-8" >
-                                    <input class="form-control" placeholder="Cedula No." name="c_applicant_cedulano" id="c_applicant_cedulano">
+                                    <input class="form-control" placeholder="Cedula No." name="c_applicant_cedulano" id="c_applicant_cedulano" required>
                                 </div>
 
                             </div>
