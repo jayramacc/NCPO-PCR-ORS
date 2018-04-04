@@ -1,7 +1,7 @@
 # Target Features
 * Remove Verification `100%`
 * Remove Signup `100%`
-* Remove Login for user `90%`
+* Remove Login for user `100%`
 * Database `100%`
 * Remove fname, lname, purpose on Request/Renew `100%`
 * Application Form `50%`
@@ -14,9 +14,9 @@
     * Design `100%`
     * Functionality `0%`
 * Login, Logout `0%`
-* Email Format `0%`
-    * Applicant w/private key or TransactionID `0%`
-* Admin Pages `16%`
+* Email Format `100%`
+    * Applicant w/private key or TransactionID `100%`
+* Admin Pages `20%`
     * Notification `0%` 
         * Design `0%`
         * Functionality `0%`
@@ -35,8 +35,8 @@
     * Print `50%`
         * Design `100%`
         * Functionlity `0%`
-    * Change Password `0%`
-        * Design `0%`
+    * Change Password `50%`
+        * Design `100%`
         * Functionlity `0%`
 ### 27 Items, 11 head
 59%
