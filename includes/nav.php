@@ -31,12 +31,8 @@
                         <span>Renew Here!</span>
                     </a>
                 </li>
+               
                 <li class="dropdown">
-                    <a href="verification_home.php"> Tracking<i class="fa fa-clipboard"></i>
-                        <span>Edit Contact Information</span>
-                    </a>
-                </li>
-                    <li class="dropdown">
                     <a href="error.php">FAQ <i class="fa fa-globe"></i>
                         <span>Help?</span>
                     </a>
