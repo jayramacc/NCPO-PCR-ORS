@@ -68,8 +68,8 @@
                         </a>
                     </li>
                     <li class="dropdown">
-                        <a href="verification_home.php">Verification Form <i class="fa fa-clipboard"></i>
-                            <span>Check For Reference Number</span>
+                        <a href="verification_home.php"> Tracking<i class="fa fa-clipboard"></i>
+                            <span>Edit Contact Information</span>
                         </a>
                     </li>
                      <li class="dropdown">
