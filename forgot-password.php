@@ -1,47 +1,146 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>SB Admin - Start Bootstrap Template</title>
-  <!-- Bootstrap core CSS-->
-  <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom fonts for this template-->
-  <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <!-- Custom styles for this template-->
-  <link href="css/sb-admin.css" rel="stylesheet">
-</head>
+	<meta charset="utf-8"/>
+	<title>Dashboard I Admin Panel</title>
+	
+	<link rel="stylesheet" href="css/layout.css" type="text/css" media="screen" />
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" />
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="js/jquery-1.5.2.min.js" type="text/javascript"></script>
+	<script src="js/hideshow.js" type="text/javascript"></script>
+	<script src="js/jquery.tablesorter.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.equalHeight.js"></script>
+	<script type="text/javascript">
 
-<body background="images/pnpbak.jpg " >
-  <div class="container">
-    <div class="card card-login mx-auto mt-5">
-      <div class="card-header">Reset Password</div>
+	$(document).ready(function() { 
+      	$(".tablesorter").tablesorter(); 
+
+		//When page loads...
+		$(".tab_content").hide(); // Hide all content
+		$("ul.tabs li:first").addClass("active").show(); // Activate first tab
+		$(".tab_content:first").show(); // Show first tab content
+
+		//On Click Event
+		$("ul.tabs li").click(function() {
+
+			$("ul.tabs li").removeClass("active"); // Remove any "active" class
+			$(this).addClass("active"); // Add "active" class to selected tab
+			$(".tab_content").hide(); // Hide all tab content
+
+			var activeTab = $(this).find("a").attr("href"); // Find the href attribute value to identify the active tab + content
+			$(activeTab).fadeIn(); // Fade in the active ID content
+			return false;
+		});
+
+		// Change the Column Height
+		 $('.column').equalHeight();
+	});
+
+    </script>
+</head>
+<body>
+
+
+	<header id="header">
+		<hgroup>
+			<h1 class="site_title"><a href="admin.php">PCR Admin</a></h1>
+			<h2 class="section_title">Dashboard</h2><div class="btn_view_site"><a href="login.php">Log out </a></div>
+		</hgroup>
+	</header> <!-- end of header bar -->
+	
+	<section id="secondary_bar">
+		<div class="user">
+			<p>ADMIN (<a href="admin.php"> HOME </a>)</p>
+			<!-- <a class="logout_user" href="#" title="Logout">Logout</a> -->
+		</div>
+		<div class="breadcrumbs_container">
+			<article class="breadcrumbs"><a href="admin.php">Website Admin</a> <div class="breadcrumb_divider"></div> <a class="current">Dashboard</a></article>
+		</div>
+	</section><!-- end of secondary bar -->
+	
+	<aside id="sidebar" class="column">
+		<form class="quick_search">
+			<input type="text" value="Reference # / Full Name" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;">
+		</form>
+		<hr/>
+		<h3>ADMIN</h3>
+		<ul class="toggle">
+			<li class="icn_new_article"><a href="onlineform.php">Notification</a></li>
+			<!--<li class="icn_tags"><a href="#">Tags</a></li>-->
+		</ul>
+		<h3>APPLICANT</h3>
+		<ul class="toggle">
+			<li class="icn_add_user"><a href="add_new_user.php">Print Applicant Form</a></li>
+			<li class="icn_view_users"><a href="renew.php">Request List</a></li>
+			<li class="icn_folder"><a href="database.php">Applicant List</a></li>
+		
+		</ul>
+		<h3>FEATURES</h3>
+		<ul class="toggle">
+			
+			<li class="icn_photo"><a href="cloud.php">Online Backup</a></li>
+		
+		</ul>
+		<h3>Admin</h3>
+		<ul class="toggle">
+			<li class="icn_security"><a href="forgot-password.php">Change Password</a></li>
+			<li class="icn_jump_back"><a href="login.php">Logout</a></li>
+		</ul>
+		
+		<footer>
+			<hr />
+			<p><strong>Copyright &copy; 2011 Website Admin</strong></p>
+			<p>Theme by <a href="https://medialoot.com">MediaLoot</a></p>
+		</footer>
+	</aside><!-- end of sidebar -->
+	
+	<section id="main" class="column">
+		
+    <h4 class="alert_info">Change Password</h4>
+    
+    <div class="card card-register mx-auto mt-5">
+      <div class="card-header">Change Password</div>
       <div class="card-body">
-        <div class="text-center mt-4 mb-5">
-          <h4>Forgot your password?</h4>
-          <p>Enter your email address and we will send you instructions on how to reset your password.</p>
-        </div>
         <form>
+
           <div class="form-group">
-            <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email address">
+            <div class="form-row">
+              <div class="col-md-12">
+                <label for="exampleInputPassword1">Current Password</label>
+                <input class="form-control" id="currentPassword" type="password" placeholder="Current Password" required>
+              </div>
+            </div>
           </div>
-          <a class="btn btn-primary btn-block" href="login.php">Reset Password</a>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="exampleInputPassword1">New Password</label>
+                <input class="form-control" id="newPassword" type="password" placeholder="Password">
+              </div>
+              <div class="col-md-6">
+                <label for="exampleConfirmPassword">Confirm New password</label>
+                <input class="form-control" id="confnewPassword" type="password" placeholder="Confirm New password">
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-primary btn-block" href="login.html">Change password</a>
         </form>
         <div class="text-center">
-          <a class="d-block small" href="login.php">Login Page</a>
+          <a class="d-block small mt-3" href="login.html">Login Account</a>
+          <a class="d-block small" href="forgot-password.html"></a>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Bootstrap core JavaScript-->
-  <script src="js/jquery/jquery.min.js"></script>
-  <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- Core plugin JavaScript-->
-  <script src="js/jquery-easing/jquery.easing.min.js"></script>
-</body>
+	
+		<div class="clear"></div>
+		
+	
+		<div class="spacer"></div>
+	</section>
 
+</body>
 </html>
