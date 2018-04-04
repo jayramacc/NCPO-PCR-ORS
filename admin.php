@@ -47,7 +47,7 @@
 	<header id="header">
 		<hgroup>
 			<h1 class="site_title"><a href="admin.php">PCR Admin</a></h1>
-			<h2 class="section_title">Dashboard</h2><div class="btn_view_site"><a href="login.php">Log out </a></div>
+			<h2 class="section_title">Dashboard</h2><div class="btn_view_site"><a href="logout.php">Log out </a></div>
 		</hgroup>
 	</header> <!-- end of header bar -->
 	
@@ -87,7 +87,7 @@
 		<h3>Admin</h3>
 		<ul class="toggle">
 			<li class="icn_security"><a href="forgot-password.php">Change Password</a></li>
-			<li class="icn_jump_back"><a href="login.php">Logout</a></li>
+			<li class="icn_jump_back"><a href="logout.php">Logout</a></li>
 		</ul>
 		
 		<footer>
