@@ -36,7 +36,7 @@
                 <ul class="nav navbar-nav navbar-right">
                    
                     <li class="dropdown">
-                        <a href="homepage.html">HOME PAGE<i class="fas fa-home"></i>
+                        <a href="index.php">HOME PAGE<i class="fas fa-home"></i>
                             <span>Official Website</span>
 
                         </a>
@@ -48,7 +48,7 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="our-services.html">APPLICATION FORM<i class="fa fa-folder-open-o"></i>
+                        <a href="our-services.php">APPLICATION FORM<i class="fa fa-folder-open-o"></i>
                             <span> Register Now!</span>
 
                         </a>
@@ -56,7 +56,7 @@
                     </li>
 
                     <li class="dropdown">
-                        <a href="request-renew.html">REQUEST/RENEW<i class=" fa fa-clipboard"></i>
+                        <a href="request-renew.php">REQUEST/RENEW<i class=" fa fa-clipboard"></i>
                             <span>Renew Here!</span>
                         </a>
                        
@@ -64,20 +64,20 @@
 
                    
                     <li class="dropdown">
-                        <a href="verification.html">Verification Form <i class="fa fa-clipboard"></i>
+                        <a href="verification.php">Verification Form <i class="fa fa-clipboard"></i>
                             <span>Check For Reference Number</span>
                         </a>
                        
                     </li>
                      <li class="dropdown">
-                        <a href="error.html">FAQ <i class="fa fa-globe"></i>
+                        <a href="error.php">FAQ <i class="fa fa-globe"></i>
                             <span>Help?</span>
                         </a>
 
                     </li>
 
                       <li class="dropdown">
-                        <a href="login.html">SIGN UP/LOGIN <i class="fa fa-globe"></i>
+                        <a href="login.php">SIGN UP/LOGIN <i class="fa fa-globe"></i>
                             <span>login account</span>
                         </a>
 
@@ -138,11 +138,11 @@
                 <input class="form-check-input" type="checkbox"> Remember Password</label>
             </div>
           </div>
-          <a class="btn btn-primary btn-block" href="index.html">Login</a>
+          <a class="btn btn-primary btn-block" href="index.php">Login</a>
         </form>
         <div class="text-center">
-          <a class="d-block small mt-3" href="register.html">Register an Account</a>
-          <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
+          <a class="d-block small mt-3" href="register.php">Register an Account</a>
+          <a class="d-block small" href="forgot-password.php">Forgot Password?</a>
         </div>
       </div>
     </div>

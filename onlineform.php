@@ -55,8 +55,8 @@
 
     <header id="header">
         <hgroup>
-            <h1 class="site_title"><a href="index.html">PCR Admin</a></h1>
-            <h2 class="section_title">Online Backup</h2><div class="btn_view_site"><a href="login.html">Log out </a></div>
+            <h1 class="site_title"><a href="admin.php">PCR Admin</a></h1>
+            <h2 class="section_title">Online Backup</h2><div class="btn_view_site"><a href="login.php">Log out </a></div>
         </hgroup>
     </header> <!-- end of header bar -->
     
@@ -66,7 +66,7 @@
             <!-- <a class="logout_user" href="#" title="Logout">Logout</a> -->
         </div>
         <div class="breadcrumbs_container">
-            <article class="breadcrumbs"><a href="index.html">Website Admin</a> <div class="breadcrumb_divider"></div> <a class="current">Online Backup</a></article>
+            <article class="breadcrumbs"><a href="index.php">Website Admin</a> <div class="breadcrumb_divider"></div> <a class="current">Online Backup</a></article>
         </div>
     </section><!-- end of secondary bar -->
     
@@ -78,28 +78,28 @@
         <hr/>
         <h3>FORM</h3>
         <ul class="toggle">
-            <li class="icn_new_article"><a href="onlineform.html">Online Application Form</a></li>
+            <li class="icn_new_article"><a href="onlineform.php">Online Application Form</a></li>
             
-            <li class="icn_categories"><a href="verification.html">Verification Form</a></li>
+            <li class="icn_categories"><a href="verification.php">Verification Form</a></li>
             <!--<li class="icn_tags"><a href="#">Tags</a></li>-->
         </ul>
         <h3>APPLICANT</h3>
         <ul class="toggle">
-            <li class="icn_add_user"><a href="add_new_user.html">Add New Applicant</a></li>
-            <li class="icn_view_users"><a href="renew.html">Request / Renew Application</a></li>
+            <li class="icn_add_user"><a href="add_new_user.php">Add New Applicant</a></li>
+            <li class="icn_view_users"><a href="renew.php">Request / Renew Application</a></li>
         
         </ul>
         <h3>FEATURES</h3>
         <ul class="toggle">
-            <li class="icn_folder"><a href="database.html">Database</a></li>
-            <li class="icn_photo"><a href="cloud.html">Online Backup</a></li>
+            <li class="icn_folder"><a href="database.php">Database</a></li>
+            <li class="icn_photo"><a href="cloud.php">Online Backup</a></li>
         
         </ul>
         <h3>Admin</h3>
         <ul class="toggle">
-            <li class="icn_settings"><a href="register.html">Create New Account</a></li>
-            <li class="icn_security"><a href="forgot-password.html">Change Password</a></li>
-            <li class="icn_jump_back"><a href="login.html">Logout</a></li>
+            <li class="icn_settings"><a href="register.php">Create New Account</a></li>
+            <li class="icn_security"><a href="forgot-password.php">Change Password</a></li>
+            <li class="icn_jump_back"><a href="login.php">Logout</a></li>
         </ul>
         
         <footer>
