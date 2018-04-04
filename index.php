@@ -53,7 +53,6 @@
                             HOME PAGE<i class="fas fa-home"></i>
                             <span>Official Website</span>
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-left"></ul>
                     </li>
                     <li class="dropdown">
                         <a href="our-services.php">
