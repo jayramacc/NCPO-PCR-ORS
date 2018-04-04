@@ -23,8 +23,4 @@
         <li class="icn_security"><a href="forgot-password.php">Change Password</a></li>
         <li class="icn_jump_back"><a href="login.php">Logout</a></li>
     </ul>
-    
-    <footer>
-
-    </footer>
 </aside><!-- end of sidebar -->
