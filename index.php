@@ -101,12 +101,12 @@
                     <h1>Steps to Apply Naga City Police Clearance</h1>
                     <div id="testimonials" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
-                            <li data-target="#testimonials" data-slide-to="0" class=""></li>
+                            <li data-target="#testimonials" data-slide-to="0" class="active"></li>
                             <li data-target="#testimonials" data-slide-to="1" class=""></li>
-                            <li data-target="#testimonials" data-slide-to="2" class="active"></li>
+                            <li data-target="#testimonials" data-slide-to="2" class=""></li>
                         </ol>
                         <div class="carousel-inner">
-                            <div class="item">
+                            <div class="item active ">
                                 <div class="container center">
                                     <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 slide-custom">
                                         <h4>
@@ -121,22 +121,24 @@
                             <div class="item">
                                 <div class="container center">
                                     <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 slide-custom">
-                                        <h4><i class="fa fa-quote-left"></i>Go to Verification Panel to send us the reservation for the application <i class="fa fa-quote-right"></i></h4>
-                                        <div class="user-img pull-right">
-                                            <img  alt="" class="img-u image-responsive" />
-                                        </div>
-                                        <h5 class="pull-right"><b>Verification Process</strong></h5>
+                                        <h4>
+                                            <i class="fa fa-quote-left"></i>
+                                            Go to Verification Panel to send us the reservation for the application 
+                                            <i class="fa fa-quote-right"></i>
+                                        </h4>
+                                        <h5 class="pull-right"> <b>Verification Process</b> </h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="item active">
+                            <div class="item ">
                                 <div class="container center">
                                     <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 slide-custom">
-                                        <h4><i class="fa fa-quote-left"></i> Present the following requirements in the NCPO naga along with your reference number and payment.<i class="fa fa-quote-right"></i></h4>
-                                        <div class="user-img pull-right">
-                                            <img  alt="" class="img-u image-responsive" />
-                                        </div>
-                                        <h5 class="pull-right"><b>Claiming Cleance in NCPO</strong></h5>
+                                        <h4>
+                                            <i class="fa fa-quote-left"></i>
+                                            Present the following requirements in the NCPO naga along with your reference number and payment.
+                                            <i class="fa fa-quote-right"></i>
+                                         </h4>
+                                        <h5 class="pull-right"> <b>Claiming Cleance in NCPO</b> </h5>
                                     </div>
                                 </div>
                             </div>
