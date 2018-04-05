@@ -176,9 +176,9 @@ print_r($_POST);
         <div class="col-md-6 field">
             <label>Gender <span style="color:red">*</span></label>
             <select class="form-control" name="c_applicant_gender" id="c_applicant_gender" required>
-                                                            <option value="" disabled>- Select Gender-</option>
-                                                            <option value="male">Male</option>
-                                                            <option value="female">Female</option>
+            <option value="" disabled>- Select Gender-</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
             </select>
         </div>
         <div class="col-md-6 field" >
@@ -463,7 +463,6 @@ print_r($_POST);
             <div class="modal-header" style="color:#fff;background:#D85C5C">
                 
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                    ×
                 </button>
                 <h4 class="modal-title" id="myModalLabel">
                     Error!
