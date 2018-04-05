@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8"/>
-    <title>Dashboard I Admin Panel</title>
+    <title>Local Backup</title>
     
     <link rel="stylesheet" href="css/layout.css" type="text/css" media="screen" />
     <!--[if lt IE 9]>
@@ -66,31 +66,22 @@
 			<!-- <a class="logout_user" href="#" title="Logout">Logout</a> -->
 		</div>
 		<div class="breadcrumbs_container">
-			<article class="breadcrumbs"><a href="admin.php">Website Admin</a> <div class="breadcrumb_divider"></div> <a class="current">Dashboard</a></article>
+			<article class="breadcrumbs">
+				<a href="admin.php">Website Admin</a>
+				 	<div class="breadcrumb_divider"></div>
+				  	<a class="current">Dashboard</a>
+				</article>
 		</div>
 	</section><!-- end of secondary bar -->
 	
 	<?php include 'includes/admin_side.php'; ?>
     <section id="main" class="column">
-        
-    
-        
-        
-        
-                
-        
-    <h4 class="alert_info">Online Storage Backup</h4> <br>
-
-<center>  <meta http-equiv="X-Frame-Options" content="allow">
- <iframe src="https://owncloud.org/" height="455" width="940"></iframe>
-        </center>
-          <div class="clear"></div>
-        
-    
-        <div class="spacer"></div>
-    </section>
-
-
+		<h4 class="alert_info">Online Storage Backup on Local</h4>
+		<p style="margin-left: 40px">Backup the Latest data by clicking the button below.</p>
+		<button style="float:right; margin-right: 20px; font-weight: bold; padding: 9px; border-radius: 15px; background: #d4d4d4; border: 1px solid #847b7b; text-decoration: none; ">
+			<a href="class/Backup.php" >Backup Data</a>
+		</button>
+	</section>
 </body>
 
 </html>
