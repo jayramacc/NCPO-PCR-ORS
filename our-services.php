@@ -1,5 +1,9 @@
-﻿<!DOCTYPE html>
+﻿<?php 
 
+print_r($_POST);
+
+?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -34,22 +38,23 @@
     </div>
 </div>
         
-<div class="col-md-12">
-    <form method="post" id="appform">
-    <input type="hidden" name="_token" value="xit4z0Q6YIv0i37LIzj3JCfvD84oF9R14DPQ2ptP">
-<div class="panel panel-default custpanel">
-<div class="panel-body mainpanel">
-<div class="col-md-12" >
-<div class="col-md-12" >
-<div class="col-md-12" >
-    <span style="color:red">Note : All fields with asterisk( <b>*</b> ) are required.</span>
-</div>
-</div>
-<div class="col-md-12" >
-    <center><h4 class ="infoheader">
-        APPLICANT INFORMATION
-    </h4></center>
-</div>
+        <div class="col-md-12">
+            <form method="post" action="out-services.php" id="appform">
+                <input type="hidden" name="_token" value="xit4z0Q6YIv0i37LIzj3JCfvD84oF9R14DPQ2ptP">
+                <div class="panel panel-default custpanel">
+                    <div class="panel-body mainpanel">
+                        <div class="col-md-12" >
+                            <div class="col-md-12" >
+                                <div class="col-md-12" >
+                                    <span style="color:red">Note : All fields with asterisk( <b>*</b> ) are required.</span>
+                                </div>
+                            </div>
+                            <div class="col-md-12" >
+                                <center><h4 class ="infoheader">
+                                    APPLICANT INFORMATION
+                                </h4></center>
+                            </div>
+                            
 
 <div class="col-md-6" >
 
