@@ -13,7 +13,7 @@
 * Login, Logout `100%`
 * Email Format `100%`
     * Applicant w/private key or TransactionID `100%`
-* Admin Pages `22%`
+* Admin Pages `47%`
     * Notification `0%` 
         * Design `0%`
         * Functionality `0%`
@@ -23,14 +23,14 @@
     * Applicant List `30%`
         * Design `60%`
         * Functionality `0%`
-    * Local Backup `0%`
-        * Design `0%`
-        * Functionality `0%`
+    * Local Backup `100%`
+        * Design `100%`
+        * Functionality `100%`
     * Print `50%`
         * Design `100%`
         * Functionlity `0%`
-    * Change Password `50%`
+    * Change Password `100%`
         * Design `100%`
-        * Functionlity `0%`
+        * Functionlity `100%`
 ### 27 Items, 10 head
-82%
+85%

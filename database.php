@@ -63,7 +63,7 @@
 	<header id="header">
 		<hgroup>
 			<h1 class="site_title"><a href="admin.php">PCR Admin</a></h1>
-			<h2 class="section_title">Dashboard</h2><div class="btn_view_site"><a href="login.php">Log out </a></div>
+			<h2 class="section_title">Dashboard</h2><div class="btn_view_site"><a href="logout.php">Log out </a></div>
 		</hgroup>
 	</header> <!-- end of header bar -->
 	
@@ -78,7 +78,7 @@
 	</section><!-- end of secondary bar -->
 	
 	<?php include 'includes/admin_side.php'; ?>
-	
+
 	<section id="main" class="column">
 		
 		<h4 class="alert_info">Applicants Information.</h4>
