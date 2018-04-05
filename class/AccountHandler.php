@@ -10,19 +10,19 @@ class AccountHandler {
 	protected static $logAccountType;
 	protected static $logAccountId;
 
-	public static function getUsername(): string {
+	public static function getUsername(){
 		return self::$logUser;
 	}
 
-	public static function getAccountId(): string {
+	public static function getAccountId(){
 		return self::$logAccountId;
 	}
 
-	public static function getAccountType(): string {
+	public static function getAccountType(){
 		return self::$logAccountType;
 	}
 
-	public static function isLogin(): bool {
+	public static function isLogin(){
 
 		if (isset($_SESSION["username"]) && isset($_SESSION["type"]) && isset($_SESSION["id"])) {
 			self::$logUser = $_SESSION['username'];
