@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
 	<meta charset="utf-8"/>
 	<title>Dashboard I Admin Panel</title>
 	
@@ -15,6 +17,7 @@
 	<script src="js/jquery.tablesorter.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/jquery.equalHeight.js"></script>
 	<script type="text/javascript">
+	
 
 	$(document).ready(function() { 
       	$(".tablesorter").tablesorter(); 
@@ -40,7 +43,13 @@
 		 $('.column').equalHeight();
 	});
 
-    </script>
+		</script>
+		
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -66,41 +75,41 @@
 	
 	<section id="main" class="column">
 		
-    <h4 class="alert_info">Change Password</h4>
-    
-    <div class="card card-register mx-auto mt-5">
-      <div class="card-header">Change Password</div>
-      <div class="card-body">
-        <form>
+   
+		
+		
+<div class="container">
+  <h2>FILLOUT FORM</h2> <BR>
+  <form class="form-horizontal" action="/action_page.php" >
 
-          <div class="form-group">
-            <div class="form-row">
-              <div class="col-md-12">
-                <label for="exampleInputPassword1">Current Password</label>
-                <input class="form-control" id="currentPassword" type="password" placeholder="Current Password" required>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="form-row">
-              <div class="col-md-6">
-                <label for="exampleInputPassword1">New Password</label>
-                <input class="form-control" id="newPassword" type="password" placeholder="Password">
-              </div>
-              <div class="col-md-6">
-                <label for="exampleConfirmPassword">Confirm New password</label>
-                <input class="form-control" id="confnewPassword" type="password" placeholder="Confirm New password">
-              </div>
-            </div>
-          </div>
-          <a class="btn btn-primary btn-block" href="login.html">Change password</a>
-        </form>
-        <div class="text-center">
-          <a class="d-block small mt-3" href="login.html">Login Account</a>
-          <a class="d-block small" href="forgot-password.html"></a>
-        </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Current Password:</label>
+      <div class="col-sm-4">          
+        <input type="password" class="form-control" id="pwd" placeholder="Current Password" name="pwd" required>
+      </div>
+    </div> <br>
+		
+		<div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">New Password:</label>
+      <div class="col-sm-4">          
+        <input type="password" class="form-control" id="new_pwd" placeholder="New Password" name="new_pwd" required>
+      </div>
+		</div>
+		<div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Repeat New Password:</label>
+      <div class="col-sm-4">          
+        <input type="password" class="form-control" id="conf_newpwd" placeholder="Repeat New Password" name="conf_new_pwd" required>
       </div>
     </div>
+		
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+    
 	
 		<div class="clear"></div>
 		
