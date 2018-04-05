@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 05, 2018 at 01:28 AM
+-- Generation Time: Apr 05, 2018 at 03:37 AM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.2
 
@@ -64,6 +64,7 @@ CREATE TABLE `applicants` (
   `cedula_no` varchar(255) NOT NULL,
   `purpose` enum('adoption requirement','airport requirement','apprenticeship requirement','armed forces of the philippines requirement','bank requirement','blaster requirement','bjmp requirement','burial requirement','business requirement','change of birthdate','change of gender from male to female','citom requirement','change of middle name','change of gender from female to male','change of name','civil service commission requirement','dmdp requirement','doh requirement','drivers license requirement','dswd requirement','employee abroad requirement','fiancee visa requirement','firearm license requirement','franchise requirement','globe requirement','gsis requirement','hospital requirement','jpic housing requirement','immigrant visa requirement','license to operate security agency requirement','license to deal firearms and community requirements','license to own and possess firearm requirement','license to purchase explosives requirements','loan requirement','local civil registrar requirement','local employment requirement','ltfrb uber requirement','lto deputation requirement','missionary requirement','mason requirement','ltrb grabcar requirement','m.lhuiller requirement','naturalization requirement','none-immigrant visa','on the job training','pag-ibig requirement','partnership visa','passport requirement','pdea requirement','permanent residency visa requirement','philhealth requirement','philippine military academy requirement','philippine retirement authory requirement','pldt requirement','pnp requirement','pnpa requirement','philippine statistics authority requirement','postal id requirement','prc requirement','prc requirement','probation requirement','r2 requirement','rcbc requirement','school requirement','seamans visa','security guard license requirement','social security system requirement','seamans book requirement','pantawid pamilyang pilipino program requirement','permit to carry firearms outside residense','student visa requirement','tesda requirement','tourist visa requirement','tour visa requirement','tour guide license requirement','working abroad requirement','working visa requirement','western union requirement','all other purpose not here mentioned') DEFAULT 'all other purpose not here mentioned',
   `private_key` varchar(255) NOT NULL,
+  `photo` varchar(255) NOT NULL,
   `activated` enum('true','false') DEFAULT 'false'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -114,6 +115,16 @@ ALTER TABLE `applicants`
 --
 ALTER TABLE `notification`
   MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `notification`
+--
+ALTER TABLE `notification`
+  ADD CONSTRAINT `notification_ibfk_1` FOREIGN KEY (`private_key`) REFERENCES `applicants` (`private_key`) ON DELETE CASCADE ON UPDATE NO ACTION;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
