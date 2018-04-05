@@ -52,6 +52,64 @@
                             </div>
                             
                            <div class="col-md-6" >
+
+                           <div class="col-md-12 field">
+                                    <label>Purpose <span style="color:red">*</span></label>
+                                    <select class="form-control" name="purpose" id="purpose" required>
+                                                                                    <option value="">- Select -</option>
+                                                                                    <option value=""> ADOPTION REQUIREMENT </option>
+                                                                                    <option value=""> AIRPORT REQUIREMENT </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+                                                                                    <option value=""> </option>
+
+                                    </select>
+                            </div>
                                 <div class="col-md-12 field">
                                     <label>Purpose <span style="color:red">*</span></label>
                                     <div style="border:1px solid #ccc;height: 34px;cursor: pointer">
