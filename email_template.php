@@ -3,7 +3,6 @@
   <head>
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Simple Transactional Email</title>
     <style>
     /* -------------------------------------
         INLINED WITH htmlemail.io/inline
@@ -83,9 +82,20 @@
         border-color: #34495e !important;
       }
     }
+
+    body{
+      background-color: #f6f6f6; 
+      font-family: sans-serif;
+      -webkit-font-smoothing: antialiased;
+      font-size: 14px;
+      line-height: 1.4;
+      margin: 0; padding: 0;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
     </style>
   </head>
-  <body class="" style="background-color: #f6f6f6; font-family: sans-serif; -webkit-font-smoothing: antialiased; font-size: 14px; line-height: 1.4; margin: 0; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+  <body>
     <table border="0" cellpadding="0" cellspacing="0" class="body" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background-color: #f6f6f6;">
       <tr>
         <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">&nbsp;</td>
@@ -111,7 +121,13 @@
                                 <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: auto;">
                                   <tbody>
                                     <tr>
-                                      <td style="font-family: sans-serif; font-size: 14px; vertical-align: top; background-color: #3498db; border-radius: 5px; text-align: center;"> <a href="http://htmlemail.io" target="_blank" style="display: inline-block; color: #ffffff; background-color: #3498db; border: solid 1px #3498db; border-radius: 5px; box-sizing: border-box; cursor: pointer; text-decoration: none; font-size: 14px; font-weight: bold; margin: 0; padding: 12px 25px; text-transform: capitalize; border-color: #3498db;">ACTIVATE PRIVATE KEY!</a> </td>
+                                      <td style="font-family: sans-serif; font-size: 14px; vertical-align: top; background-color: #3498db; border-radius: 5px; text-align: center;"> 
+                                        <a href="<?php echo 'http://' .$_SERVER['SERVER_NAME']. '/verify?pk=' . @$_GET['pk']; ?>" target="_blank" style="display: inline-block; color:
+                                         #ffffff; background-color: #3498db; border: solid 1px #3498db; border-radius: 5px;
+                                          box-sizing: border-box; cursor: pointer; text-decoration: none; font-size: 14px;
+                                           font-weight: bold; margin: 0; padding: 12px 25px; text-transform: capitalize;
+                                            border-color: #3498db;">ACTIVATE PRIVATE KEY!</a> 
+                                      </td>
                                     </tr>
                                   </tbody>
                                 </table>
@@ -129,24 +145,6 @@
 
             <!-- END MAIN CONTENT AREA -->
             </table>
-
-            <!-- START FOOTER -->
-            <div class="footer" style="clear: both; Margin-top: 10px; text-align: center; width: 100%;">
-              <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
-                <tr>
-                  <td class="content-block" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; font-size: 12px; color: #999999; text-align: center;">
-                    <span class="apple-link" style="color: #999999; font-size: 12px; text-align: center;">Naga City Police Office, Barlin St. Sta. Cruz, Naga City, Phil. 4400</span>
-                    <br> Tel.No. 473-3537 and 811-4634 <br>or with Cp# 09087374228 <br> please let us know.<a href="https://www.facebook.com/nagacpo/" style="text-decoration: underline; color: #999999; font-size: 12px; text-align: center;">Facebook page</a>.
-                  </td>
-                </tr>
-                <tr>
-                  <td class="content-block powered-by" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; font-size: 12px; color: #999999; text-align: center;">
-                    Powered by <a href="http://htmlemail.io" style="color: #999999; font-size: 12px; text-align: center; text-decoration: none;">HTMLemail</a>.
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <!-- END FOOTER -->
 
           <!-- END CENTERED WHITE CONTAINER -->
           </div>
