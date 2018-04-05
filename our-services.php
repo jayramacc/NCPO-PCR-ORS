@@ -1,5 +1,9 @@
-﻿<!DOCTYPE html>
+﻿<?php 
 
+print_r($_POST);
+
+?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -35,7 +39,7 @@
             </div>
         
         <div class="col-md-12">
-            <form method="post" id="appform">
+            <form method="post" action="out-services.php" id="appform">
                 <input type="hidden" name="_token" value="xit4z0Q6YIv0i37LIzj3JCfvD84oF9R14DPQ2ptP">
                 <div class="panel panel-default custpanel">
                     <div class="panel-body mainpanel">
