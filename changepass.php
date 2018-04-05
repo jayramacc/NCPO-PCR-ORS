@@ -98,6 +98,7 @@ if (isset($pwd) && isset($pwd2) && isset($pwd1)){
 	
 	<?php include 'includes/admin_side.php'; ?>
 	
+
 	<section id="main" class="column container">
 		
 		<h2>FILLOUT FORM</h2>
@@ -130,6 +131,7 @@ if (isset($pwd) && isset($pwd2) && isset($pwd1)){
 			</div>
 		</form>
     
+
 	
 		<div class="clear"></div>
 		

@@ -59,82 +59,82 @@
     <option value="">- Select -</option>
     <option value="adoption requirement"> ADOPTION REQUIREMENT </option>
     <option value="airport requirement"> AIRPORT REQUIREMENT </option>
-    <option value=""> APPRENTICESHIP REQUIREMENT </option>
-    <option value=""> ARMED FORCES OF THE PHILIPPINES REQUIREMENT</option>
-    <option value=""> BANK REQUIREMENT </option>
-    <option value=""> BLASTER REQUIREMENT</option>
-    <option value=""> BJMP REQUIREMENT</option>
-    <option value="">BURIAL REQUIREMENT </option>
-    <option value=""> BUSINESS REQUIREMENT</option>
-    <option value="">CHANGE OF BIRTHDATE </option>
-    <option value="">CHANGE OF GENDER FROM MALE TO FEMALE </option>
-    <option value=""> CITOM REQUIREMENT </option>
-    <option value=""> CHANGE OF MIDDLE NAME </option>
-    <option value=""> CHANGE OF GENDER FROM FEMALE TO MALE </option>
-    <option value=""> CHANGE OF NAME</option>
-    <option value="">CITON REQUIREMENT </option>
+    <option value="apprenticeship requirement"> APPRENTICESHIP REQUIREMENT </option>
+    <option value="armed forces of the philippines requirement"> ARMED FORCES OF THE PHILIPPINES REQUIREMENT</option>
+    <option value="bank requirement"> BANK REQUIREMENT </option>
+    <option value="blaster requirement"> BLASTER REQUIREMENT</option>
+    <option value="bjmp requirement"> BJMP REQUIREMENT</option>
+    <option value="burial requirement">BURIAL REQUIREMENT </option>
+    <option value="business requirement"> BUSINESS REQUIREMENT</option>
+    <option value="change of birthdate">CHANGE OF BIRTHDATE </option>
+    <option value="change of gender from male to female">CHANGE OF GENDER FROM MALE TO FEMALE </option>
+    <option value="citom requirement"> CITOM REQUIREMENT </option>
+    <option value="change of middle name"> CHANGE OF MIDDLE NAME </option>
+    <option value="change of gender from female to male"> CHANGE OF GENDER FROM FEMALE TO MALE </option>
+    <option value="change of name"> CHANGE OF NAME</option>
+    <option value="civil service commission requirement">CITON REQUIREMENT </option>
     <option value=""> CIVIL SERVICE COMMISSION REQUIREMENT</option>
-    <option value=""> DMDP REQUIREMENT </option>
-    <option value=""> DOH REQUIREMENT</option>
-    <option value=""> DRIVERS LICENCE REQUIREMENT </option>
-    <option value=""> DSWD REQUIREMENT</option>
-    <option value=""> EMPLOYEE ABROAD REQUIREMENT</option>
-    <option value="">FIANCEE VISA REQUIREMENT </option>
-    <option value=""> FIREARM LICENCE REQUIREMENT</option>
-    <option value=""> FRANCHISE REQUIREMENT</option>
-    <option value=""> GLOBE REQUIREMENT </option>
-    <option value=""> GSIS REQUIREMENT </option>
-    <option value=""> HOSPITAL REQUIREMENT</option>
-    <option value=""> JPIC HOUSING REQUIREMENT </option>
-    <option value=""> IMMIGRANT VISA REQUIREMENT</option>
-    <option value=""> LICENCE TO OPERATE SECURITY AGENCY REQUIREMENT</option>
-    <option value=""> LICENCE TO DEAL FIREARMS AND AMMUNITION REQUIREMENTS</option>
-    <option value=""> LICENCE TO ARM AND POSSESS FIREARM REQUIREMENT</option>
-    <option value=""> LICENCE TO PURCHASE EXPLOSIVES REQUIREMENT</option>
-    <option value=""> LOAN REQUIREMENT </option>
-    <option value=""> LOCAL CIVIL REGISTRAR REQUIREMENT </option>
-    <option value=""> LOCAL EMPLOYMENT REQUIREMENT </option>
-    <option value=""> LTFRB UBER REQUIREMENT</option>
-    <option value=""> LTO DEPUTATION REQUIREMENT</option>
-    <option value=""> MISSIONARY REQUIREMENT</option>
-    <option value=""> MASON REQUIREMENT</option>
-    <option value=""> LTFRB GRABCAR REQUIREMENT</option>
-    <option value=""> M.LHUILLER REQUIREMENT</option>
-    <option value=""> NATURALIZATION REQUIREMENT</option>
-    <option value=""> NON-IMMIGRANT VISA</option>
-    <option value=""> ON THE JOB TRAINING REQUIREMENT</option>
-    <option value=""> PAGIBIG REQUIREMENT</option>
-    <option value=""> PARTNESHIP VISA</option>
-    <option value=""> PASSPORT REQUIREMENT</option>
-    <option value=""> PDEA REQUIREMENT</option>
-    <option value=""> PERMANENT RESIDENCY VISA REQUIREMENT</option>
-    <option value=""> PHILHEALTH REQUIREMENT</option>
-    <option value=""> PHILIPPINE MILITARY ACADEMY REQUIREMENT </option>
-    <option value=""> PHILIPPINE RETIREMENT AUTHORITY REQUIREMENT</option>
-    <option value=""> PLDT REQUIREMENT </option>
-    <option value=""> PNP REQUIREMENT</option>
-    <option value=""> PNPA REQUIREMENT</option>
-    <option value=""> PHILIPPINE STATISTICS AUTHORITY REQUIREMENT</option>
-    <option value=""> POSTAL ID REQUIREMENT</option>
-    <option value=""> PRC REQUIREMENT</option>
-    <option value=""> PROBATION REQUIREMENT</option>
-    <option value=""> R2 REQUIREMENT</option>
-    <option value=""> RCBC REQUIREMENT</option>
-    <option value=""> SCHOOL REQUIREMENT </option>
-    <option value=""> SEAMANS VISA </option>
-    <option value=""> SECURITY GUARD LICENCE REQUIREMENT</option>
-    <option value=""> SOCIAL SECURITY SYSTEM REQUIREMENT</option>
-    <option value=""> SEAMAN'S BOOK REQUIREMENT</option>
-    <option value=""> PANTAWID PAMILYANG PILIPINO PROGRAM REQUIREMENT</option>
-    <option value=""> PERMIT TO CARRY FIREARMS OUTSIDE RESIDENCE</option>
-    <option value=""> STUDENT VISA REQUIREMENT</option>
-    <option value=""> TESDA REQUIREMENT</option>
-    <option value=""> TOURIST VISA REQUIREMENT</option>
-    <option value=""> TOUR GUIDE LICENCE REQUIREMENT</option>
-    <option value=""> WORKING ABROAD REQUIREMENT</option>
-    <option value=""> WORKING VISA REQUIREMENT</option>
-    <option value=""> WESTERN UNION REQUIREMENT</option>
-    <option value=""> ALL OTHER NOT HERE MENTIONED</option>
+    <option value="dmdp requirement"> DMDP REQUIREMENT </option>
+    <option value="doh requirement"> DOH REQUIREMENT</option>
+    <option value="drivers license requirement"> DRIVERS LICENCE REQUIREMENT </option>
+    <option value="dswd requirement"> DSWD REQUIREMENT</option>
+    <option value="employee abroad requirement"> EMPLOYEE ABROAD REQUIREMENT</option>
+    <option value="fiancee visa requirement">FIANCEE VISA REQUIREMENT </option>
+    <option value="firearm license requirement"> FIREARM LICENCE REQUIREMENT</option>
+    <option value="franchise requirement"> FRANCHISE REQUIREMENT</option>
+    <option value="globe requirement"> GLOBE REQUIREMENT </option>
+    <option value="gsis requirement"> GSIS REQUIREMENT </option>
+    <option value="hospital requirement"> HOSPITAL REQUIREMENT</option>
+    <option value="jpic housing requirement"> JPIC HOUSING REQUIREMENT </option>
+    <option value="immigrant visa requirement"> IMMIGRANT VISA REQUIREMENT</option>
+    <option value="license to operate security agency requirement"> LICENCE TO OPERATE SECURITY AGENCY REQUIREMENT</option>
+    <option value="license to deal firearms and community requirements"> LICENCE TO DEAL FIREARMS AND AMMUNITION REQUIREMENTS</option>
+    <option value="license to own and possess firearm requirement"> LICENCE TO ARM AND POSSESS FIREARM REQUIREMENT</option>
+    <option value="license to purchase explosives requirements"> LICENCE TO PURCHASE EXPLOSIVES REQUIREMENT</option>
+    <option value="loan requirement"> LOAN REQUIREMENT </option>
+    <option value="local civil registrar requirement"> LOCAL CIVIL REGISTRAR REQUIREMENT </option>
+    <option value="local employment requirement"> LOCAL EMPLOYMENT REQUIREMENT </option>
+    <option value="ltfrb uber requirement"> LTFRB UBER REQUIREMENT</option>
+    <option value="lto deputation requirement"> LTO DEPUTATION REQUIREMENT</option>
+    <option value="missionary requirement"> MISSIONARY REQUIREMENT</option>
+    <option value="mason requirement"> MASON REQUIREMENT</option>
+    <option value="ltrb grabcar requirement"> LTFRB GRABCAR REQUIREMENT</option>
+    <option value="m.lhuiller requirement"> M.LHUILLER REQUIREMENT</option>
+    <option value="naturalization requirement"> NATURALIZATION REQUIREMENT</option>
+    <option value="none-immigrant visa"> NON-IMMIGRANT VISA</option>
+    <option value="on the job training"> ON THE JOB TRAINING REQUIREMENT</option>
+    <option value="pag-ibig requirement"> PAGIBIG REQUIREMENT</option>
+    <option value="partnership visa"> PARTNESHIP VISA</option>
+    <option value="passport requirement"> PASSPORT REQUIREMENT</option>
+    <option value="pdea requirement"> PDEA REQUIREMENT</option>
+    <option value="permanent residency visa requirement"> PERMANENT RESIDENCY VISA REQUIREMENT</option>
+    <option value="philhealth requirement"> PHILHEALTH REQUIREMENT</option>
+    <option value="philippine military academy requirement"> PHILIPPINE MILITARY ACADEMY REQUIREMENT </option>
+    <option value="philippine retirement authory requirement"> PHILIPPINE RETIREMENT AUTHORITY REQUIREMENT</option>
+    <option value="pldt requirement"> PLDT REQUIREMENT </option>
+    <option value="pnp requirement"> PNP REQUIREMENT</option>
+    <option value="pnpa requirement"> PNPA REQUIREMENT</option>
+    <option value="philippine statistics authority requirement"> PHILIPPINE STATISTICS AUTHORITY REQUIREMENT</option>
+    <option value="postal id requirement"> POSTAL ID REQUIREMENT</option>
+    <option value="prc requirement"> PRC REQUIREMENT</option>
+    <option value="probation requirement"> PROBATION REQUIREMENT</option>
+    <option value="r2 requirement"> R2 REQUIREMENT</option>
+    <option value="rcbc requirement"> RCBC REQUIREMENT</option>
+    <option value="school requirement"> SCHOOL REQUIREMENT </option>
+    <option value="seamans visa"> SEAMANS VISA </option>
+    <option value="security guard license requirement"> SECURITY GUARD LICENCE REQUIREMENT</option>
+    <option value="social security system requirement"> SOCIAL SECURITY SYSTEM REQUIREMENT</option>
+    <option value="seamans book requirement"> SEAMAN'S BOOK REQUIREMENT</option>
+    <option value="pantawid pamilyang pilipino program requirement"> PANTAWID PAMILYANG PILIPINO PROGRAM REQUIREMENT</option>
+    <option value="permit to carry firearms outside residense"> PERMIT TO CARRY FIREARMS OUTSIDE RESIDENCE</option>
+    <option value="student visa requirement"> STUDENT VISA REQUIREMENT</option>
+    <option value="tesda requirement"> TESDA REQUIREMENT</option>
+    <option value="tourist visa requirement"> TOURIST VISA REQUIREMENT</option>
+    <option value="tour guide license requirement"> TOUR GUIDE LICENCE REQUIREMENT</option>
+    <option value="working abroad requirement"> WORKING ABROAD REQUIREMENT</option>
+    <option value="working visa requirement"> WORKING VISA REQUIREMENT</option>
+    <option value="western union requirement"> WESTERN UNION REQUIREMENT</option>
+    <option value="all other purpose not here mentioned"> ALL OTHER NOT HERE MENTIONED</option>
                                                         
 
         </select>
@@ -171,7 +171,7 @@
                                 <div class="col-md-6 field">
                                     <label>Gender <span style="color:red">*</span></label>
                                     <select class="form-control" name="c_applicant_gender" id="c_applicant_gender" required>
-                                                                                    <option value="">- Select -</option>
+                                                                                    <option value="" disabled>- Select Gender-</option>
                                                                                     <option value="male">Male</option>
                                                                                     <option value="female">Female</option>
                                     </select>
@@ -266,8 +266,10 @@
                                 <div class="col-md-6 field">
                                     <label>Civil Status <span style="color:red">*</span></label>
                                     <select class="form-control" id="c_applicant_civilstatus" name="c_applicant_civilstatus" required>
-                                        <option value="">- Select -</option>
-                                                                                                                                    <option value="SINGLE">SINGLE</option>
+                                        <option value="" disabled>- Select status -</option>
+                                        <option value="single">SINGLE</option>
+                                        <option value="married">MARRIED</option>
+                                        <option value="widowed">WIDOWED</option>
                                 </select>
                                 </div>
                             </div>
@@ -296,17 +298,18 @@
                                     <label>Educational Attainment <span style="color:red">*</span></label>
                                     <select  class="form-control" name="c_applicant_eduattainment" id="c_applicant_eduattainment" required>
                                         <option value="">- Select -</option>
-                                    <option value="NONE">NONE</option>
-                                    <option value="PRE ELEMENTARY">PRELEMENTARY</option>
-                                    <option value="ELEMENTARY GRADUATE">ELEMENTARY GRADUATE</option>
-                                    <option value="PRE HIGH SCHOOL">PRE HIGH SCHOOL</option>
-                                    <option value="HIGH SCHOOL GRADUATE">HIGH SCHOOL GRADUATE</option>
-                                    <option value="PRE COLLEGE, NO DEGREE">PRE COLLEGE, NO DEGREE</option>
-                                    <option value="ASSOCIATE DEGREE">ASSOCIATE DEGREE</option>
-                                    <option value="BACHELORS DEGREE">BACHELORS DEGREE</option>
-                                    <option value="MASTERS DEGREE">MASTERS DEGREE</option>
-                                    <option value="PROFESSIONAL DEGREE">PROFESSIONAL DEGREE</option>
-                                    <option value="DOCTORATE">DOCTORATE</option>
+                                    <option value="none">NONE</option>
+                                    <option value="pre-elementary">PRELEMENTARY</option>
+                                    <option value="elementary graduate">ELEMENTARY GRADUATE</option>
+                                    <option value="pre-highschool">PRE HIGH SCHOOL</option>
+                                    <option value="highschool graduate">HIGH SCHOOL GRADUATE</option>
+                                    <option value="pre-college">PRE COLLEGE</option>
+                                    <option value="no degree">NO DEGREE</option>
+                                    <option value="associate degree">ASSOCIATE DEGREE</option>
+                                    <option value="bachelors degree">BACHELORS DEGREE</option>
+                                    <option value="masters degree">MASTERS DEGREE</option>
+                                    <option value="professional degree">PROFESSIONAL DEGREE</option>
+                                    <option value="doctorate">DOCTORATE</option>
                                          
                                     </select>
                                 </div>
@@ -328,9 +331,9 @@
                                     <label>Complexion <span style="color:red">*</span></label>
                                     <select class="form-control" name="c_applicant_complexion" id="c_applicant_complexion" required>
                                         <option value="">- Select -</option>
-                                <option value="FAIR">FAIR</option>
-                                <option value="LIGHT">LIGHT</option>
-                                <option value="DARK">DARK</option>
+                                <option value="fair">FAIR</option>
+                                <option value="light">LIGHT</option>
+                                <option value="dark">DARK</option>
                                          
                                     </select>
                                 </div>
@@ -352,17 +355,17 @@
                                     <label>Hair Color <span style="color:red">*</span></label>
                                     <select class="form-control" name="c_applicant_haircolor" id="c_applicant_haircolor" required>
                                         <option value="">- Select -</option>
-                                                                                    <option value="BLACK">BLACK</option>
-                                                                                    <option value="BALD">BALD</option>
-                                                                                    <option value="BROWN">BROWN</option>
-                                                                                    <option value="BLONDE">BLONDE</option>
-                                                                                    <option value="BLUE">BLUE</option>
-                                                                                    <option value="BRONZE">BRONZE</option>
-                                                                                    <option value="DARK BROWN">DARK BROWN</option>
-                                                                                    <option value="GREEN">GREEN</option>
-                                                                                    <option value="GRAY">GRAY</option>
-                                                                                    <option value="RED">RED</option>
-                                                                                    <option value="WHITE">WHITE</option>
+                                                                                    <option value="black">BLACK</option>
+                                                                                    <option value="bald">BALD</option>
+                                                                                    <option value="brown">BROWN</option>
+                                                                                    <option value="blonde">BLONDE</option>
+                                                                                    <option value="blue">BLUE</option>
+                                                                                    <option value="bronze">BRONZE</option>
+                                                                                    <option value="darkbrown">DARK BROWN</option>
+                                                                                    <option value="green">GREEN</option>
+                                                                                    <option value="gray">GRAY</option>
+                                                                                    <option value="red">RED</option>
+                                                                                    <option value="white">WHITE</option>
                                          
                                     </select>
                                 </div>
@@ -370,11 +373,11 @@
                                     <label>Eye Color <span style="color:red">*</span></label>
                                     <select class="form-control" name="c_applicant_eyecolor" id="c_applicant_eyecolor" required>
                                         <option value="">- Select -</option>
-                                                                                    <option value="BLACK">BLACK</option>
-                                                                                    <option value="BROWN">BROWN</option>
-                                                                                    <option value="BLUE">BLUE</option>
-                                                                                    <option value="GRAY">GRAY</option>
-                                                                                    <option value="GREEN">GREEN</option>
+                                                                                    <option value="black">BLACK</option>
+                                                                                    <option value="brown">BROWN</option>
+                                                                                    <option value="blue">BLUE</option>
+                                                                                    <option value="gray">GRAY</option>
+                                                                                    <option value="green">GREEN</option>
                                          
                                     </select>
                                 </div>
@@ -384,12 +387,12 @@
                                     <label>Build/Body Size <span style="color:red">*</span></label>
                                         <select class="form-control" name="c_applicant_build" id="c_applicant_build" required>
                                             <option value="">- Select -</option>
-                                            <option value="Extra extra large">Extra extra large</option>
-                                            <option value="Extra large">Extra large</option>
-                                            <option value="Extra Small">Extra Small</option>
-                                            <option value="Large">Large</option>
-                                            <option value="Medium">Medium</option>
-                                            <option value="Small">Small</option>
+                                            <option value="XXL">Extra extra large</option>
+                                            <option value="XL">Extra large</option>
+                                            <option value="XS">Extra Small</option>
+                                            <option value="L">Large</option>
+                                            <option value="M">Medium</option>
+                                            <option value="S">Small</option>
                                         </select>
                                 </div>
                                 <div class="col-md-6 field">
