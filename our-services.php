@@ -82,8 +82,6 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
     '$height', '$weight ', '$hairColor', '$eyeColor', '$bodySize', '$identityMarks', '$communityYears','$cellNo',
     '$telNo', '$email', '$spouseName','$faName','$moName','$bplace', '$cedMonth', '$cedulaNo', '$purpose','$privateKey','$photoUrl');";
      
-     echo $photoUrl;
-     exit;
      $query = mysqli_query(MySqlLeaf::getCon(), $sql);
 
      if ($query === true){
