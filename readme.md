@@ -13,15 +13,12 @@
 * Login, Logout `100%`
 * Email Format `100%`
     * Applicant w/private key or TransactionID `100%`
-* Admin Pages `20%`
+* Admin Pages `22%`
     * Notification `0%` 
         * Design `0%`
         * Functionality `0%`
     * Search `0%`
         * Design `0%`
-        * Functionality `0%`
-    * Request List `30%`
-        * Design `60%`
         * Functionality `0%`
     * Applicant List `30%`
         * Design `60%`
