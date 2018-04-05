@@ -1,9 +1,34 @@
+<?php
+
+@ $pwd = $_POST["pwd"];
+@ $pwd1 = $_POST["new_pwd"];
+@ $pwd2 = $_POST["conf_new_pwd"];
+
+if (isset($pwd) && isset($pwd2) && isset($pwd1)){
+	$adminPW = json_decode( file_get_contents('pass.json'), true)["pass"];
+
+	if (md5($pwd) == $adminPW) {
+		if ($pwd1 == $pwd2){
+			$data["pass"] = md5($pwd1);
+			$newJsonString = json_encode($data);
+			file_put_contents('pass.json', $newJsonString);
+
+			header("location: changepass.php");
+			exit;
+		}else{
+			echo "Password not matched.";
+			exit;
+		}
+	}else{
+		echo "Wrong Password";
+		exit;
+	}
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
 	<meta charset="utf-8"/>
 	<title>Dashboard I Admin Panel</title>
 	
@@ -57,7 +82,7 @@
 	<header id="header">
 		<hgroup>
 			<h1 class="site_title"><a href="admin.php">PCR Admin</a></h1>
-			<h2 class="section_title">Dashboard</h2><div class="btn_view_site"><a href="login.php">Log out </a></div>
+			<h2 class="section_title">Dashboard</h2><div class="btn_view_site"><a href="logout.php">Log out </a></div>
 		</hgroup>
 	</header> <!-- end of header bar -->
 	
@@ -73,9 +98,40 @@
 	
 	<?php include 'includes/admin_side.php'; ?>
 	
-	<section id="main" class="column">
-   
+
+	<section id="main" class="column container">
 		
+		<h2>FILLOUT FORM</h2>
+		<form class="form-horizontal" action="/changepass.php" method="post">
+
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="pwd">Current Password:</label>
+				<div class="col-sm-4">          
+					<input type="password" class="form-control" id="pwd" placeholder="Current Password" name="pwd" required>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="pwd">New Password:</label>
+				<div class="col-sm-4">          
+					<input type="password" class="form-control" id="new_pwd" placeholder="New Password" name="new_pwd" required>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="pwd">Repeat New Password:</label>
+				<div class="col-sm-4">          
+					<input type="password" class="form-control" id="conf_newpwd" placeholder="Repeat New Password" name="conf_new_pwd" required>
+				</div>
+			</div>
+			
+			<div class="form-group">        
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-default">Submit</button>
+				</div>
+			</div>
+		</form>
+    
+
 	
 		<div class="clear"></div>
 		
