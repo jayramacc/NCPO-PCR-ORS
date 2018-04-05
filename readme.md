@@ -23,9 +23,9 @@
     * Applicant List `30%`
         * Design `60%`
         * Functionality `0%`
-    * Local Backup `0%`
-        * Design `0%`
-        * Functionality `0%`
+    * Local Backup `100%`
+        * Design `100%`
+        * Functionality `100%`
     * Print `50%`
         * Design `100%`
         * Functionlity `0%`

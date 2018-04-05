@@ -7,12 +7,12 @@ if (!isset($_SESSION)){
 class FlashCard{
 	protected static $flashMessage = null;
 
-	public static function setFlashCard(string $message){
+	public static function setFlashCard($message){
 		$_SESSION["flashcard"] = $message;
 		self::$flashMessage = $message;
 	}
 
-	public static function hasFlashCard(): bool {
+	public static function hasFlashCard(){
 		if (isset($_SESSION["flashcard"])) {
 			self::$flashMessage = $_SESSION['flashcard'];
 			return true;
@@ -21,7 +21,7 @@ class FlashCard{
 		}
 	}
 
-	public static function getFlashCard(): string {
+	public static function getFlashCard(){
 		$flashCardValue = self::$flashMessage;
 		$_SESSION["flashcard"] = null;
 		self::$flashMessage = null;
