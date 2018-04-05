@@ -74,42 +74,8 @@
 	<?php include 'includes/admin_side.php'; ?>
 	
 	<section id="main" class="column">
-		
    
 		
-		
-<div class="container">
-  <h2>FILLOUT FORM</h2> <BR>
-  <form class="form-horizontal" action="/action_page.php" >
-
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="pwd">Current Password:</label>
-      <div class="col-sm-4">          
-        <input type="password" class="form-control" id="pwd" placeholder="Current Password" name="pwd" required>
-      </div>
-    </div> <br>
-		
-		<div class="form-group">
-      <label class="control-label col-sm-2" for="pwd">New Password:</label>
-      <div class="col-sm-4">          
-        <input type="password" class="form-control" id="new_pwd" placeholder="New Password" name="new_pwd" required>
-      </div>
-		</div>
-		<div class="form-group">
-      <label class="control-label col-sm-2" for="pwd">Repeat New Password:</label>
-      <div class="col-sm-4">          
-        <input type="password" class="form-control" id="conf_newpwd" placeholder="Repeat New Password" name="conf_new_pwd" required>
-      </div>
-    </div>
-		
-    <div class="form-group">        
-      <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default">Submit</button>
-      </div>
-    </div>
-  </form>
-</div>
-    
 	
 		<div class="clear"></div>
 		
