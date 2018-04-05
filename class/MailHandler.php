@@ -17,5 +17,5 @@ $mail->setFrom('pcrncponaga@gmail.com', 'Do not reply');
 $mail->addReplyTo('do_not_reply@gmail.com', 'Do not reply');
 $mail->addAddress($_GET["client_email"], $_GET["client_name"]);
 $mail->Subject = 'NCPO - Verify your Private key.';
-$mail->msgHTML(file_get_contents('../email_template.html'), __DIR__);
+$mail->msgHTML(file_get_contents('http://' .$_SERVER['SERVER_NAME'].'/email_template.php?pk='.$_GET["pk"]), __DIR__);
 $mail->send();
