@@ -47,7 +47,7 @@
 	<header id="header">
 		<hgroup>
 			<h1 class="site_title"><a href="admin.php">PCR Admin</a></h1>
-			<h2 class="section_title">Dashboard</h2><div class="btn_view_site"><a href="logout.php">Log out </a></div>
+			<h2 class="section_title">RESULT</h2><div class="btn_view_site"><a href="logout.php">Log out </a></div>
 		</hgroup>
 	</header> <!-- end of header bar -->
 	
@@ -57,7 +57,7 @@
 			<!-- <a class="logout_user" href="#" title="Logout">Logout</a> -->
 		</div>
 		<div class="breadcrumbs_container">
-			<article class="breadcrumbs"><a href="admin.php">Website Admin</a> <div class="breadcrumb_divider"></div> <a class="current">Dashboard</a></article>
+			<article class="breadcrumbs"><a href="admin.php">Website Admin</a> <div class="breadcrumb_divider"></div> <a class="current">SEARCH</a></article>
 		</div>
 	</section><!-- end of secondary bar -->
 	
@@ -65,8 +65,62 @@
 	
 	<section id="main" class="column">
 		
-		<h4 class="alert_info">Dashboard</h4>
-	
+		<h4 class="alert_info">RESULT</h4>
+		<h2>SEARCH result</h2>
+
+<table ><style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+  <tr>
+    <th>PRIVATE KEY</th>
+    <th>NAME</th>
+    <th>EDIT</th>
+  </tr>
+  <tr>
+    <td>1234KJG8</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>KJADG8593</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>SDFKGY48</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>SKDJFHG894</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>ALDFKHG8Rs</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>DLFTY84JI</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
 		<div class="clear"></div>
 		
 	

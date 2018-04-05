@@ -245,7 +245,6 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
                                     <div class="col-md-6 field" >
                                         <label>Birth Date <span style="color:red">*</span></label>
                                         <input class="form-control" type="date" name="birthdate" id="bdatedateID" value="date"placeholder = "Birth Date" required >
-
                                     </div>
                                     <div class="col-md-6 field">
                                         <label>Age <span style="color:red">*</span></label>
