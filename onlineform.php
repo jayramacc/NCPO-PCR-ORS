@@ -40,10 +40,16 @@
 		 $('.column').equalHeight();
 	});
 
-    </script>
+	</script>
+	<style type="text/css">
+		.notif {
+			border: 1px solid #7782ce; 
+			padding: 10px; 
+			cursor: pointer;
+		}
+	</style>
 </head>
 <body>
-
 	<header id="header">
 		<hgroup>
 			<h1 class="site_title"><a href="admin.php">PCR Admin</a></h1>
@@ -54,24 +60,31 @@
 	<section id="secondary_bar">
 		<div class="user">
 			<p>ADMIN (<a href="admin.php"> HOME </a>)</p>
-			<!-- <a class="logout_user" href="#" title="Logout">Logout</a> -->
 		</div>
 		<div class="breadcrumbs_container">
-			<article class="breadcrumbs"><a href="admin.php">Website Admin</a> <div class="breadcrumb_divider"></div> <a class="current">Notification</a></article>
+			<article class="breadcrumbs">
+				<a href="admin.php">Website Admin</a> 
+				<div class="breadcrumb_divider"></div>
+			 	<a class="current">Notification</a>
+			</article>
 		</div>
 	</section><!-- end of secondary bar -->
 	
 	<?php include 'includes/admin_side.php'; ?>
 
 	<section id="main" class="column">
-		
-		<h4 class="alert_info">Notification</h4>
-	
+		<h4 class="alert_info">Notification</h4>	
 		<div class="clear"></div>
-		
-	
 		<div class="spacer"></div>
+		<div style="margin-left:40px">
+			<div class="notif" onclick="document.location.href='database.php';">
+				<img src="#" alt="Profile" height="80" width="80" style="display: inline-block">
+				<b>Luis Edward Miranda</b> 
+				wants to apply for a "DSWD Requirement".
+			</div>
+		</div>
 	</section>
+
 
 </body>
 </html>
