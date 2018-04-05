@@ -48,6 +48,25 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
     isset($communityYears) && isset($cellNo) && isset($email) && isset($faName) && isset($faBAdd) &&
     isset($moName) && isset($moBAdd) && isset($cedulaNo) && isset($cedMonth)){
 
+    $photoUrl = "";
+    // Upload Image Algorithm..
+    if (isset($_FILES['image'])){
+        // Get image name
+        $image = $_FILES['image']['name'];
+        $newName = time().$image;
+        // Get text
+        $image_text = mysqli_real_escape_string(MySqlLeaf::getCon(), $_POST['description']);
+
+        // image file directory
+        $target = "assets/img_uploads/".basename($newName);
+        
+        // Move File
+        move_uploaded_file($_FILES['image']['tmp_name'], $target);
+        
+        $photoUrl = $newName;
+    }
+
+    // Generate Private Key
     $privateKey = md5(time());
 
     $sql = "INSERT INTO `applicants`
@@ -60,7 +79,7 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
     ('$lname', '$fname', '$mname', '$suffix', '$gender', '$nickname', '$birthdate', '$age', '$bPlace', '$cStatus', 
     '$cAddress', '$pAddress','$religion','$edAttainment', '$occupation', '$complexion', 
     '$height', '$weight ', '$hairColor', '$eyeColor', '$bodySize', '$identityMarks', '$communityYears','$cellNo',
-    '$telNo', '$email', '$spouseName','$faName','$moName','$bplace', '$cedMonth', '$cedulaNo', '$purpose','$privateKey','kim');";
+    '$telNo', '$email', '$spouseName','$faName','$moName','$bplace', '$cedMonth', '$cedulaNo', '$purpose','$privateKey','$photoUrl');";
      
      $query = mysqli_query(MySqlLeaf::getCon(), $sql);
 
@@ -90,6 +109,29 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
     <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     <link href="assets/css/style_home.css" rel="stylesheet" />
+    <script type="text/javascript" src="assets/js/jquery-1.10.2_home.js"></script>
+    <style type="text/css">
+    .btn-file {
+        position: relative;
+        overflow: hidden;
+    }
+    .btn-file input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+    </style>
 </head>
 <body>
     <?php include 'includes/nav.php' ?>
@@ -121,6 +163,23 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
                                 <div class="col-md-12">
                                     <center><h4 class ="infoheader">APPLICANT INFORMATION</h4></center>
                                 </div>
+                                <div class="col-md-12">
+                                    <div style="float: left; width: 20%">
+                                        <img onerror="this.src='assets/img/profile_image_dummy.svg';" id="imgPreview" src="#" alt="Your Image preview" height="150" width="150" style="display: inline-block;"/>
+                                    </div>
+                                    <div style="float: left; width: 80%">
+                                        <label>Upload Image</label>
+                                        <div class="input-group">
+                                            <span class="input-group-btn">
+                                                <span class="btn btn-default btn-file">
+                                                    Browse… <input type="file" id="imgInp" accept="image/*" name="image">
+                                                </span>
+                                            </span>
+                                            <input type="text" class="form-control" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row"></div>
                                 <div class="col-md-6" >
                                     <div class="col-md-12 field">
                                         <label>Purpose <span style="color:red">*</span></label>
@@ -488,4 +547,41 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
         </div>          
     </div>
 </body>
+<script type="text/javascript">
+    $(document).ready( function() {
+        // Event Listener
+    	$(document).on('change', '.btn-file :file', function() {
+            var input = $(this),
+                label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+            input.trigger('fileselect', [label]);
+		});
+
+		$('.btn-file :file').on('fileselect', function(event, label) {
+		    var input = $(this).parents('.input-group').find(':text'),
+		        log = label;
+		    
+		    if( input.length ) {
+		        input.val(log);
+		    } else {
+		        if( log ) alert(log);
+		    }
+	    
+		});
+
+		function readURL(input) {
+		    if (input.files && input.files[0]) {
+		        var reader = new FileReader();
+                
+		        reader.onload = function (e) {
+		            $('#imgPreview').attr('src', e.target.result);
+		        }        
+		        reader.readAsDataURL(input.files[0]);
+		    }
+		}
+
+		$("#imgInp").change(function(){ 
+            readURL(this);
+        }); 	
+	});
+</script>
 </html>
