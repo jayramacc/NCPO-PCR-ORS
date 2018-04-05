@@ -48,7 +48,6 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
     isset($communityYears) && isset($cellNo) && isset($email) && isset($faName) && isset($faBAdd) &&
     isset($moName) && isset($moBAdd) && isset($cedulaNo) && isset($cedMonth)){
 
-    $photoUrl = "";
     // Upload Image Algorithm..
     if (isset($_FILES['image'])){
         // Get image name
@@ -64,6 +63,8 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
         move_uploaded_file($_FILES['image']['tmp_name'], $target);
         
         $photoUrl = $newName;
+    }else{
+        $photoUrl = "";
     }
 
     // Generate Private Key
@@ -81,6 +82,8 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
     '$height', '$weight ', '$hairColor', '$eyeColor', '$bodySize', '$identityMarks', '$communityYears','$cellNo',
     '$telNo', '$email', '$spouseName','$faName','$moName','$bplace', '$cedMonth', '$cedulaNo', '$purpose','$privateKey','$photoUrl');";
      
+     echo $photoUrl;
+     exit;
      $query = mysqli_query(MySqlLeaf::getCon(), $sql);
 
      if ($query === true){
@@ -151,7 +154,7 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
                 </div>
             </div>
             <div class="col-md-12">
-                <form method="post" action="our-services.php" id="appform">
+                <form enctype="multipart/form-data" method="post" action="our-services.php" id="appform">
                     <div class="panel panel-default custpanel">
                         <div class="panel-body mainpanel">
                             <div class="col-md-12" >
