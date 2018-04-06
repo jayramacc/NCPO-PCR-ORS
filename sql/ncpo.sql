@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 05, 2018 at 03:37 AM
+-- Generation Time: Apr 06, 2018 at 05:24 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.2
 
@@ -68,6 +68,15 @@ CREATE TABLE `applicants` (
   `activated` enum('true','false') DEFAULT 'false'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `applicants`
+--
+
+INSERT INTO `applicants` (`id`, `lname`, `fname`, `mname`, `suffix`, `gender`, `nickname`, `bdate`, `age`, `birth_place`, `civil_status`, `complete_address`, `provincial_address`, `religion`, `educational_attainment`, `occuputation`, `complexion`, `height`, `weight`, `hair_color`, `eye_color`, `body_size`, `distinguishing_marks`, `community_years`, `cellphone_no`, `tel_no`, `email_address`, `spouse_name`, `father_name`, `mother_name`, `spouse_birth_place`, `cedula_date_issued`, `cedula_no`, `purpose`, `private_key`, `photo`, `activated`) VALUES
+(1, 'HHG', 'RQR', 'QEQEQ', 'ddadad', 'female', 'RR', '2018-04-26', 11, 'RRAWRA', 'married', '1212', 'AWRR', 'RARAR', 'elementary graduate', '121', 'light', 212121, 1212, 'green', 'brown', 'XL', '1212', 121, '1212121', ' 12121212', '2121@gmail.com', 'GDGSG', 'fawfaf', 'awfafafa', 'AFDADADAD', '2018-04-30', 'aafaf', 'airport requirement', 'jay', 'kim', 'false'),
+(4, 'HHG', 'RQR', 'QEQEQ', 'ddadad', 'female', 'RR', '2018-04-26', 11, 'RRAWRA', 'married', '1212', 'AWRR', 'RARAR', 'elementary graduate', '121', '', 212121, 1212, 'green', 'brown', 'XL', '1212', 122, '1212121', ' 12121212', 'kijjfj@gmail.com', 'GDGSG', 'fawfaf', 'awfafafa', 'AFDADADAD', '2018-04-30', 'gffg', 'airport requirement', 'hg', 'kim', 'false'),
+(12, 'Miranda', 'Edward', 'asd asdas', 'asdasdasdas', 'male', 'Ed', '2018-04-06', 15, 'dasdasdasdasdasda', 'single', 'asdasdasdas', 'asdasd', 'sdasdasd', 'associate degree', 'dasdada', 'fair', 124124, 1241, 'black', 'black', 'XXL', 'asdasdasd', 1212, '12412asda', '125', 'luisedward.miranda@gmail.com', 'asdasdasd', 'dasdasd', 'asdasdasd', 'sadasdas', '2018-04-24', 'asdasdasd', 'bjmp requirement', '5ffdcdda7dfc18af17ea4e18c9906c83', '1522962304Penguins.jpg', 'false');
+
 -- --------------------------------------------------------
 
 --
@@ -77,8 +86,16 @@ CREATE TABLE `applicants` (
 CREATE TABLE `notification` (
   `id` int(255) NOT NULL,
   `private_key` varchar(255) NOT NULL,
+  `type` enum('apply','renew') NOT NULL DEFAULT 'apply',
   `status` enum('seen','not_seen') DEFAULT 'not_seen'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `notification`
+--
+
+INSERT INTO `notification` (`id`, `private_key`, `type`, `status`) VALUES
+(7, '5ffdcdda7dfc18af17ea4e18c9906c83', 'apply', 'not_seen');
 
 --
 -- Indexes for dumped tables
@@ -108,13 +125,13 @@ ALTER TABLE `notification`
 -- AUTO_INCREMENT for table `applicants`
 --
 ALTER TABLE `applicants`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `notification`
 --
 ALTER TABLE `notification`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Constraints for dumped tables

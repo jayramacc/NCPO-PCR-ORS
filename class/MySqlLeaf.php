@@ -3,7 +3,7 @@
 class MySqlLeaf {
 	private static $dbCon = NULL;
 
-	public static function getCon(){
+	public static function getCon() {
 		if (self::$dbCon === NULL){
 
 			try {
