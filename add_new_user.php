@@ -59,7 +59,7 @@
 	<?php include 'includes/admin_side.php'; ?>
 
 	<section id="main" class="column">
-
+    <iframe src="printing.php"  width="1100" height="2000"></iframe>
 	</section>
 </body>
 </html>
