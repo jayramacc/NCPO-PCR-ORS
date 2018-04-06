@@ -76,7 +76,7 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
     `height`, `weight`, `hair_color`, `eye_color`, `body_size`, `distinguishing_marks`, `community_years`, `cellphone_no`,
     `tel_no`, `email_address`, `spouse_name`, `father_name`, `mother_name`, `spouse_birth_place`, `cedula_date_issued`,
         `cedula_no`, `purpose`, `private_key`, `photo`) 
-    VALUES 
+    VALUES  
     ('$lname', '$fname', '$mname', '$suffix', '$gender', '$nickname', '$birthdate', '$age', '$bPlace', '$cStatus', 
     '$cAddress', '$pAddress','$religion','$edAttainment', '$occupation', '$complexion', 
     '$height', '$weight ', '$hairColor', '$eyeColor', '$bodySize', '$identityMarks', '$communityYears','$cellNo',
