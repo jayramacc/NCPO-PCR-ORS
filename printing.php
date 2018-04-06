@@ -1,18 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-</head>	
-<body>
-
-
-<!-- ini ang puon kng sa iframe -->	
-<section id="main" class="column">
-
-
-<div>
-<body>
-
+</head>	 
 <script>
 var tD = new Date();
 var datestr = tD.getDate() + "/" + (tD.getMonth()+ 1) + "/" + tD.getFullYear();
@@ -21,96 +10,98 @@ document.forms[0].elements[eN].value = datestr;
 }
 </script>
 
-
-<img src="images\pnp.png" style="width:100px;height:120px;border:3;left:310px;top:15px;position: absolute;">
-
-<img src="images\NCPO.png" style="width:150px;height:138px;border:3;left:929px;top:13px;position: absolute;">
-
-<b style="width:100px;height:110px;border:3;left:54px;top:39px;position: absolute;"> FILE NO:</b>
-
-<form style="width:100px;height:110px;border:3;left:390px;top:205px;position: absolute; ">
-<input type="number" id="file_num_admin" style="position: absolute; top:-141px; right:263px;">
-</form>
+<body>
 
 
- <center> 
- <p>Republic of the Philippines <BR> National Police Commission <br>
- PHILIPPINE NATIONAL POLICE <br>
- </p>
- 
- <h4> NAGA CITY POLICE OFFICE <br> Naga City</h4> <br>
+<!-- ini ang puon kng sa iframe -->	
+<section id="main" class="column">
 
-<!-- The title of the page-->
- <h1 > <U>POLICE CLEARANCE </U> </h1>
- </center>
-                                
-<div class="boxed" style = "border:1px solid black; height:150px; width:150px;position:absolute;left:56px;">
-<center>
-Right Thumbmark
-</center>
-</div>
+
+
+
+
+        <img src="images\pnp.png" style="width:100px;height:120px;border:3;left:310px;top:15px;position: absolute;">
+
+        <img src="images\NCPO.png" style="width:150px;height:138px;border:3;left:929px;top:13px;position: absolute;">
+
+        <b style="width:100px;height:110px;border:3;left:54px;top:39px;position: absolute;"> FILE NO:</b>
+        <form style="width:100px;height:110px;border:3;left:390px;top:205px;position: absolute; ">
+        <input type="number" id="file_num_admin" style="border: none; border-bottom: 1px solid black; position: absolute; top:-141px; right:263px;">
+        </form>
+
+
+        <center> 
+        <div>    
+        <p style="margin-left:288px;">Republic of the Philippines <BR> National Police Commission <br>
+        PHILIPPINE NATIONAL POLICE <h4 style="margin-left:288px;"> NAGA CITY POLICE OFFICE <br> Naga City</h4> <br>
+        
+        </p>
+        </div>
+        
+
+        <!-- The title of the page-->
+        <h1 style="margin-left:288px;"> <U>POLICE CLEARANCE </U> </h1>
+        </center>
+                                        
+        <div class="boxed" style = "border:1px solid black; height:200px; width:200px;position:absolute;left:56px;">
+        <center>
+        Right Thumbmark
+        </center>
+        </div>
 
 <!-- start of the context -->   
-<div>
- <center>
+<div class="container" style="margin-left:320px;">
 
- <p  >This is to certify that
-     <form>
-     <input type="text" value="" id="certify"  style="text-align:center;"  type="text" required/>
-         age 
- 
-     <form>
-         <input min="18" max="100" Ftype="number" value="" id="age"  style="text-align:center;"/>  
-     </form>
-         born on <input type="text" id="born" style="text-align:center;">, presently residing at <br> 
-         <input type="text" id="residing" style="text-align:center;" > <br>and whose picture, right thumb mark, and signature appear hereon has  undergone <br> POLICE&ensp; RECORD&ensp;CHECK &ensp;from this office and the result is/are indicated below:
- </form> 
- </p>
- </center>
+    <p> 
+        <font size= "3"> TO WHOM IT MAY CONCERN
+    </p> 
+    <p style="text-indent:50px;"> This is to certify that 
+        <input type="text" style="border: none; border-bottom: 1px solid black; width: 410px; "/>
+        age 
+        <input type="number" style="border: none; border-bottom: 1px solid black; width: 80px;"/>
+    </p>
+
+    <p>
+        ______________,  born on 
+        <input type="text" style="border: none; border-bottom: 1px solid black; width: 395px; "/> 
+        , presently residing at 
+    </p>     
+        <input type="text" style="border: none; border-bottom: 1px solid black; width: 710px; "/>
+    <p>and &ensp;&ensp;whose &ensp;&ensp;picture, &ensp;&ensp;right thumb mark, &ensp;&ensp;and &ensp;&ensp;signature appear &ensp;&ensp;hereon&ensp;&ensp; has&ensp;&ensp;  undergone 
+    </p>
+    <p>
+        POLICE&ensp; RECORD&ensp;CHECK &ensp;from this office and the result is/are indicated below:
+    </p>
+    <p style="margin-left:50px;">
+        FINDINGS:<input type="text" style="border: none; border-bottom: 1px solid black; width: 577px; "  /><br>
+        PURPOSE:<input type="text" style="border: none; border-bottom: 1px solid black; width: 580px; " />
+    </p>
+
+        <b style="position: absolute; top: 570px; left: 400px;"> RECORD CHECKED BY</b>
+        <b style="position: absolute; top: 570px; right: 290px;"> NOTED BY</b>
+        <b style="position: absolute; top: 620px; left: 365px;"> SPO2 JOSE LUIS A. CAPARROSO</b>
+        <b style="position: absolute; top: 640px; left: 400px;"> INVESTIGATION PNCO</b>
+        <b style="position: absolute; top: 620px; right: 220px;"> JONATHAN O. PANGANIBAN</b>
+        <b style="position: absolute; top: 640px; right: 190px;"> POLICE SENIOR SUPERINTENDENT</b>
+
 </div>
-
-<center>
- <p style="text-justify">
- FINDINGS: <input type="text" value="" id="FINDINGS"  style="text-align:center;" /><br>
- PURPOSE:  <input type="text" value="" id="PURPOSE"  style="text-align:center;" />
-</center>
 <br>
-<right >
- <input type="text" value="" id="signature" style="margin-left: 45px;"><br>
+
+<right>
+    <p style="text-indent:43px"> CTC NO.<input type="text" value="" id="ctc_no" style="margin-left: 25px;">  </p>
+    <p style="text-indent:43px"> ISSUED AT.&ensp;
+    <input type="text" id="ctc_no" style="margin-left: 4px; " disabled="disabled"/><br>
+    </p>
+
+</right>
+<right>
+    <p style="text-indent:43px"> ISSUED ON.<input type="text" value="" id="ctc_no" style="margin-left: 5px;"></p>
 </right>
 
 <right>
- <p style="margin-left: 95px;">Signature<br> </p>
-</right><br>
+    <p style="text-indent:43px"> OR NO.<input type="text" value="" id="ctc_no" style="margin-left: 32px;"><Br>
+</div>
 
-
- <b style="position: absolute; top: 570px; left: 400px;"> RECORD CHECKED BY</b>
- <b style="position: absolute; top: 570px; right: 290px;"> NOTED BY</b>
- <b style="position: absolute; top: 620px; left: 365px;"> SPO2 JOSE LUIS A. CAPARROSO</b>
- <b style="position: absolute; top: 640px; left: 400px;"> INVESTIGATION PNCO</b>
- <b style="position: absolute; top: 620px; right: 220px;"> JONATHAN O. PANGANIBAN</b>
- <b style="position: absolute; top: 640px; right: 190px;"> POLICE SENIOR SUPERINTENDENT</b>
-
-
- 
-
- <br>
-
-
-     <p style="text-indent:43px"> CTC NO.<input type="text" value="" id="ctc_no" style="margin-left: 25px;">  </p>
-     <p style="text-indent:43px"> ISSUED AT.&ensp;
-     <input type="text" id="ctc_no" style="margin-left: 4px; " disabled="disabled"/><br>
-     </p>
-
- </right>
- <right>
-     <p style="text-indent:43px"> ISSUED ON.<input type="text" value="" id="ctc_no" style="margin-left: 5px;"></p>
- </right>
-
- <right>
-     <p style="text-indent:43px"> OR NO.<input type="text" value="" id="ctc_no" style="margin-left: 32px;"><Br>
- </div>
-     
 
  <BR>
  <center style=text-indent:43px><B > NOTE: VALID FOR SIX(6) MONTHS FROM DATE OF ISSUE. FALSIFICATION IS PUNISHABLE UNDER ARTICLE 12 RPC</B></center> <br><br><br>
@@ -200,7 +191,6 @@ Right Thumbmark
  <label style="margin-left:  714px;  margin-top:  5PX">SIGNATURE OF Applicant</label>
 </div>
 
- </section>
-
+</section>
 </body>
 </html>
