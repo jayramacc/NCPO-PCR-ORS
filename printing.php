@@ -24,13 +24,15 @@ document.forms[0].elements[eN].value = datestr;
 
 <img src="images\pnp.png" style="width:100px;height:120px;border:3;left:310px;top:15px;position: absolute;">
 
-<img src="images\NCPO.png" style="width:150px;height:138px;border:3;left:698px;top:13px;position: absolute;">
+<img src="images\NCPO.png" style="width:150px;height:138px;border:3;left:929px;top:13px;position: absolute;">
 
 <b style="width:100px;height:110px;border:3;left:54px;top:39px;position: absolute;"> FILE NO:</b>
 
 <form style="width:100px;height:110px;border:3;left:390px;top:205px;position: absolute; ">
 <input type="number" id="file_num_admin" style="position: absolute; top:-141px; right:263px;">
 </form>
+
+
  <center> 
  <p>Republic of the Philippines <BR> National Police Commission <br>
  PHILIPPINE NATIONAL POLICE <br>
@@ -42,7 +44,7 @@ document.forms[0].elements[eN].value = datestr;
  <h1 > <U>POLICE CLEARANCE </U> </h1>
  </center>
                                 
-<div class="boxed" style = "border:1px solid black; height:150px; width:150px;position:absolute;left:84px;">
+<div class="boxed" style = "border:1px solid black; height:150px; width:150px;position:absolute;left:56px;">
 <center>
 Right Thumbmark
 </center>
@@ -74,20 +76,20 @@ Right Thumbmark
 </center>
 <br>
 <right >
- <input type="text" value="" id="signature" style="margin-left: 90px;"><br>
+ <input type="text" value="" id="signature" style="margin-left: 45px;"><br>
 </right>
 
 <right>
- <p style="text-indent:165px">Signature<br> </p>
+ <p style="margin-left: 95px;">Signature<br> </p>
 </right><br>
 
 
- <b style="position: absolute; top: 570px; left: 700px;"> RECORD CHECKED BY</b>
- <b style="position: absolute; top: 570px; right: 200px;"> NOTED BY</b>
- <b style="position: absolute; top: 620px; right: 400px;"> SPO2 JOSE LUIS A. CAPARROSO</b>
- <b style="position: absolute; top: 640px; right: 415px;"> INVESTIGATION PNCO   </b>
- <b style="position: absolute; top: 620px; right: 155px;"> JONATHAN O. PANGANIBAN</b>
- <b style="position: absolute; top: 640px; right: 130px;"> POLICE SENIOR SUPERINTENDENT</b>
+ <b style="position: absolute; top: 570px; left: 400px;"> RECORD CHECKED BY</b>
+ <b style="position: absolute; top: 570px; right: 290px;"> NOTED BY</b>
+ <b style="position: absolute; top: 620px; left: 365px;"> SPO2 JOSE LUIS A. CAPARROSO</b>
+ <b style="position: absolute; top: 640px; left: 400px;"> INVESTIGATION PNCO</b>
+ <b style="position: absolute; top: 620px; right: 220px;"> JONATHAN O. PANGANIBAN</b>
+ <b style="position: absolute; top: 640px; right: 190px;"> POLICE SENIOR SUPERINTENDENT</b>
 
 
  
@@ -95,36 +97,23 @@ Right Thumbmark
  <br>
 
 
-     <p style="text-indent:120px"> CTC NO.<input type="text" value="" id="ctc_no" style="margin-left: 25px;">  </p>
-
-
- 
- 
-
-     <p style="text-indent:120px"> ISSUED AT.&ensp;
-     
-
-     <input type="text" id="ctc_no" style="margin-left: 4px; " disabled="disabled"/>
-
-     
-
-     
-
-     <br>
+     <p style="text-indent:43px"> CTC NO.<input type="text" value="" id="ctc_no" style="margin-left: 25px;">  </p>
+     <p style="text-indent:43px"> ISSUED AT.&ensp;
+     <input type="text" id="ctc_no" style="margin-left: 4px; " disabled="disabled"/><br>
      </p>
 
  </right>
  <right>
-     <p style="text-indent:120px"> ISSUED ON.<input type="text" value="" id="ctc_no" style="margin-left: 5px;"></p>
+     <p style="text-indent:43px"> ISSUED ON.<input type="text" value="" id="ctc_no" style="margin-left: 5px;"></p>
  </right>
 
  <right>
-     <p style="text-indent:120px"> OR NO.<input type="text" value="" id="ctc_no" style="margin-left: 32px;"><Br>
+     <p style="text-indent:43px"> OR NO.<input type="text" value="" id="ctc_no" style="margin-left: 32px;"><Br>
  </div>
      
 
  <BR>
- <center style=text-indent:100px><B > NOTE: VALID FOR SIX(6) MONTHS FROM DATE OF ISSUE. FALSIFICATION IS PUNISHABLE UNDER ARTICLE 12 RPC</B></center> <br><br><br>
+ <center style=text-indent:43px><B > NOTE: VALID FOR SIX(6) MONTHS FROM DATE OF ISSUE. FALSIFICATION IS PUNISHABLE UNDER ARTICLE 12 RPC</B></center> <br><br><br>
  
  <div>
  
@@ -153,6 +142,8 @@ Right Thumbmark
  </div>
  <div style="text-indent: 120px; margin-top: 30px;">NAME:
      <input type="text" value="" id="name" style="margin-left:15px;">
+     <input type="text" value="" id="middlename" style="margin-left:45px;">
+     <input type="text" value="" id="lastname" style="margin-left:60px;">
  </div>
          <div style="text-indent: 120px">
              <p style="margin-left: 120px;">(LAST NAME)</p>
@@ -176,8 +167,8 @@ Right Thumbmark
  <label>DATE OF BIRTH:(MM/DD/YY):</label>
  <input type="text" id="b_date" >/
  <input type="text" id="b_date" >/
- <input type="text" id="b_date" >
- <label style="margin-left: 20px">PLACE OF BIRTH:</label>
+ <input type="text" id="b_date" ><br>
+ <label style="margin-left: 120px">PLACE OF BIRTH:</label>
  <input type="text" id="b_place" style="margin-left: 5px" >
  <label style="margin-left: 20px">RELIGION:</label>
  <input type="text" id="b_place" style="margin-left: 5px" >
