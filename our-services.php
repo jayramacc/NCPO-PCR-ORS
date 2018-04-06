@@ -1,6 +1,30 @@
 ﻿<?php 
 include 'class/MySqlLeaf.php';
 
+// Get data - our-services.php?pk=[PRIVATE_KEY_OF_THE_USER]
+@ $privateKey = $_GET["pk"];
+
+if (isset($privateKey)){    
+
+    // SQL Query: Get the data in the private key
+    $sql = "SELECT * FROM `applicants` WHERE `private_key`='$privateKey' LIMIT 1";
+    
+    // Prepare Query
+    $query = mysqli_query(MySqlLeaf::getCon(), $sql);
+
+    // Count Rows
+    $numRow = mysqli_num_rows($query);
+
+    // Put the MYSQL Result in the user Info
+    if ($numRow > 0){
+        $userInfo = mysqli_fetch_array($query);
+    }
+    
+}else{
+    $userInfo = array();
+}
+
+// Set each _POST data into a variable
 @ $purpose = $_POST["purpose"];
 @ $lname = $_POST["c_applicant_lname"];
 @ $fname = $_POST["c_applicant_fname"];
@@ -40,6 +64,7 @@ include 'class/MySqlLeaf.php';
 @ $passportNo = $_POST["c_applicant_passportno"];
 @ $passMonth = $_POST["assMonth"];
 
+// Constraints: Check if the required _POST data is acquired.
 if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset($nickname) &&
     isset($birthdate) && isset($age) && isset($bPlace) && isset($cStatus) && isset($cAddress) &&
     isset($pAddress) && isset($religion) && isset($edAttainment) && isset($occupation) &&
@@ -70,6 +95,7 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
     // Generate Private Key
     $privateKey = md5(time());
 
+    // SQL Query
     $sql = "INSERT INTO `applicants`
     (`lname`, `fname`, `mname`, `suffix`, `gender`, `nickname`, `bdate`, `age`, `birth_place`, `civil_status`,
     `complete_address`, `provincial_address`, `religion`, `educational_attainment`, `occuputation`, `complexion`,
@@ -82,14 +108,17 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
     '$height', '$weight ', '$hairColor', '$eyeColor', '$bodySize', '$identityMarks', '$communityYears','$cellNo',
     '$telNo', '$email', '$spouseName','$faName','$moName','$bplace', '$cedMonth', '$cedulaNo', '$purpose','$privateKey','$photoUrl');";
      
+     // Prepare Query
      $query = mysqli_query(MySqlLeaf::getCon(), $sql);
 
+     // Execute Before Comparing.
      if ($query === true){
-         $sql = "INSERT INTO `notification`(`private_key`) VALUES ('$privateKey');";
-         mysqli_query(MySqlLeaf::getCon(), $sql);
-
-         header("location: class/MailHandler.php?client_name=$fname%20$lname&client_email=$email&pk=$privateKey");
+        $sql = "INSERT INTO `notification`(`private_key`) VALUES ('$privateKey');";
+        mysqli_query(MySqlLeaf::getCon(), $sql);
+        // Redirect
+        header("location: class/MailHandler.php?client_name=$fname%20$lname&client_email=$email&pk=$privateKey");
      }else{
+        // Show Message Error
          echo "Duplication Error";
      }
     exit;
@@ -166,7 +195,7 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
                                 </div>
                                 <div class="col-md-12">
                                     <div style="float: left; width: 20%">
-                                        <img onerror="this.src='assets/img/profile_image_dummy.svg';" id="imgPreview" src="#" alt="Your Image preview" height="150" width="150" style="display: inline-block;"/>
+                                        <img id="imgPreview" src="assets/img_uploads/<?php echo @$userInfo['photo']; ?>" alt="Your Image preview" height="150" width="150" style="display: inline-block;" onerror="this.src='assets/img/profile_image_dummy.svg';"/>
                                     </div>
                                     <div style="float: left; width: 80%">
                                         <label>Upload Image</label>
@@ -185,7 +214,7 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
                                     <div class="col-md-12 field">
                                         <label>Purpose <span style="color:red">*</span></label>
                                         <select class="form-control" name="purpose" id="purpose" required>
-                                            <option value="">- Select -</option>
+                                            <option disabled selected value="">- Select Application Purpose -</option>
                                             <option value="adoption requirement"> ADOPTION REQUIREMENT </option>
                                             <option value="airport requirement"> AIRPORT REQUIREMENT </option>
                                             <option value="apprenticeship requirement"> APPRENTICESHIP REQUIREMENT </option>
@@ -201,8 +230,8 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
                                             <option value="change of middle name"> CHANGE OF MIDDLE NAME </option>
                                             <option value="change of gender from female to male"> CHANGE OF GENDER FROM FEMALE TO MALE </option>
                                             <option value="change of name"> CHANGE OF NAME</option>
-                                            <option value="civil service commission requirement">CITON REQUIREMENT </option>
-                                            <option value=""> CIVIL SERVICE COMMISSION REQUIREMENT</option>
+                                            <option value="citon requirement">CITON REQUIREMENT </option>
+                                            <option value="civil service commission requirement"> CIVIL SERVICE COMMISSION REQUIREMENT</option>
                                             <option value="dmdp requirement"> DMDP REQUIREMENT </option>
                                             <option value="doh requirement"> DOH REQUIREMENT</option>
                                             <option value="drivers license requirement"> DRIVERS LICENCE REQUIREMENT </option>
@@ -270,125 +299,125 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
                                 <div class="col-md-6 " >
                                     <div class="col-md-6 field">
                                         <label>Last Name <span style="color:red">*</span></label>
-                                        <input class="form-control" name="c_applicant_lname" id="c_applicant_lname" placeholder="Last Name" value="" required>
+                                        <input value="<?php echo @$userInfo['lname']; ?>" class="form-control" name="c_applicant_lname" id="c_applicant_lname" placeholder="Last Name" value="" required>
                                     </div>
                                     <div class="col-md-6 field" >
                                         <label>First Name <span style="color:red">*</span></label>
-                                        <input class="form-control" name="c_applicant_fname" id="c_applicant_fname" placeholder="First Name" value="" required>
+                                        <input value="<?php echo @$userInfo['fname']; ?>" class="form-control" name="c_applicant_fname" id="c_applicant_fname" placeholder="First Name" value="" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6" >
                                     <div class="col-md-6 field">
                                         <label>Middle Name</label>
-                                        <input class="form-control" name="c_applicant_mname" id="c_applicant_mname" placeholder="Middle Name" value="">
+                                        <input value="<?php echo @$userInfo['mname']; ?>" class="form-control" name="c_applicant_mname" id="c_applicant_mname" placeholder="Middle Name" value="">
                                     </div>
                                     <div class="col-md-6 field" >
                                         <label>Qualifier (Sr., Jr., II, III, IV , etc.)</label>
-                                        <input class="form-control" name="c_applicant_qualifier" id="c_applicant_qualifier" placeholder="Qualifier">
+                                        <input value="<?php echo @$userInfo['suffix']; ?>" class="form-control" name="c_applicant_qualifier" id="c_applicant_qualifier" placeholder="Qualifier">
                                     </div>
                                 </div>
                                 <div class="col-md-6 " >
                                     <div class="col-md-6 field">
                                         <label>Gender <span style="color:red">*</span></label>
                                         <select class="form-control" name="c_applicant_gender" id="c_applicant_gender" required>
-                                            <option value="" disabled>- Select Gender-</option>
-                                            <option value="male">Male</option>
-                                            <option value="female">Female</option>
+                                            <option value="" disabled selected>- Select Gender-</option>
+                                            <option <?php echo @$userInfo['gender'] == 'male' ? 'selected': ''; ?> value="male">Male</option>
+                                            <option <?php echo @$userInfo['gender'] == 'female' ? 'selected': ''; ?> value="female">Female</option>
                                         </select>
                                     </div>
                                     <div class="col-md-6 field" >
                                         <label>Nickname / Alias<span style="color:red">*</span></label>
-                                        <input class="form-control" name="c_applicant_nickname" id="c_applicant_nickname" placeholder="Nickname / Alias" required>
+                                        <input value="<?php echo @$userInfo['nickname']; ?>" class="form-control" name="c_applicant_nickname" id="c_applicant_nickname" placeholder="Nickname / Alias" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 " >
                                     <div class="col-md-6 field" >
                                         <label>Birth Date <span style="color:red">*</span></label>
-                                        <input class="form-control" type="date" name="birthdate" id="bdatedateID" value="date"placeholder = "Birth Date" required >
+                                        <input value="<?php echo @$userInfo['bdate']; ?>" class="form-control" type="date" name="birthdate" id="bdatedateID" value="date"placeholder = "Birth Date" required >
                                     </div>
                                     <div class="col-md-6 field">
                                         <label>Age <span style="color:red">*</span></label>
-                                        <input class="form-control" name="c_applicant_age" id="c_applicant_age" placeholder="Age" type="number" required>
+                                        <input value="<?php echo @$userInfo['age']; ?>" class="form-control" name="c_applicant_age" id="c_applicant_age" placeholder="Age" type="number" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 " >
                                     <div class="col-md-6 field">
                                         <label>Birth Place <span style="color:red">*</span></label>
-                                        <input class="form-control" name="c_applicant_birthplace" id="c_applicant_birthplace" placeholder="Indicate Town, Province" required>
+                                        <input value="<?php echo @$userInfo['birth_place']; ?>" class="form-control" name="c_applicant_birthplace" id="c_applicant_birthplace" placeholder="Indicate Town, Province" required>
                                     </div>
                                     <div class="col-md-6 field">
                                         <label>Civil Status <span style="color:red">*</span></label>
                                         <select class="form-control" id="c_applicant_civilstatus" name="c_applicant_civilstatus" required>
-                                            <option value="" disabled>- Select status -</option>
-                                            <option value="single">SINGLE</option>
-                                            <option value="married">MARRIED</option>
-                                            <option value="widowed">WIDOWED</option>
+                                            <option value="" disabled selected>- Select status -</option>
+                                            <option <?php echo @$userInfo['civil_status'] == 'single' ? 'selected' : ''; ?> value="single">SINGLE</option>
+                                            <option <?php echo @$userInfo['civil_status'] == 'married' ? 'selected' : ''; ?> value="married">MARRIED</option>
+                                            <option <?php echo @$userInfo['civil_status'] == 'widowed' ? 'selected' : ''; ?> value="widowed">WIDOWED</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-6" >
                                     <div class="col-md-12 field" >
                                         <label>Complete Address <span style="color:red">*</span></label>
-                                        <input class="form-control" placeholder="Unit Number, Street, Barangay, Town/City, Province" name="c_applicant_completeaddress" id="c_applicant_completeaddress" required>
+                                        <input value="<?php echo @$userInfo['complete_address']; ?>" class="form-control" placeholder="Unit Number, Street, Barangay, Town/City, Province" name="c_applicant_completeaddress" id="c_applicant_completeaddress" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6" >
                                     <div class="col-md-6 field">
                                         <label>Provincial Address <span style="color:red">*</span></label>
-                                        <input class="form-control" name="c_applicant_provaddress" id="c_applicant_provaddress" placeholder="Province Address" required>
+                                        <input value="provincial_address" class="form-control" name="c_applicant_provaddress" id="c_applicant_provaddress" placeholder="Province Address" required>
                                     </div>
                                     <div class="col-md-6 field" >
                                         <label>Religion <span style="color:red">*</span></label>
-                                        <input class="form-control" name="c_applicant_religion" id="c-applicant_religion"placeholder="Religion" required>
+                                        <input value="religion" class="form-control" name="c_applicant_religion" id="c-applicant_religion"placeholder="Religion" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6" >
                                     <div class="col-md-6 field">
                                         <label>Educational Attainment <span style="color:red">*</span></label>
-                                        <select  class="form-control" name="c_applicant_eduattainment" id="c_applicant_eduattainment" required>
-                                            <option value="">- Select -</option>
-                                            <option value="none">NONE</option>
-                                            <option value="pre-elementary">PRELEMENTARY</option>
-                                            <option value="elementary graduate">ELEMENTARY GRADUATE</option>
-                                            <option value="pre-highschool">PRE HIGH SCHOOL</option>
-                                            <option value="highschool graduate">HIGH SCHOOL GRADUATE</option>
-                                            <option value="pre-college">PRE COLLEGE</option>
-                                            <option value="no degree">NO DEGREE</option>
-                                            <option value="associate degree">ASSOCIATE DEGREE</option>
-                                            <option value="bachelors degree">BACHELORS DEGREE</option>
-                                            <option value="masters degree">MASTERS DEGREE</option>
-                                            <option value="professional degree">PROFESSIONAL DEGREE</option>
-                                            <option value="doctorate">DOCTORATE</option>
+                                        <select class="form-control" name="c_applicant_eduattainment" id="c_applicant_eduattainment" required>
+                                            <option value="" selected disabled>- Select Educational Attainment -</option>
+                                            <option <?php echo @$userInfo['birth_place'] == 'none' ? 'selected': ''; ?> value="none">NONE</option>
+                                            <option <?php echo @$userInfo['birth_place'] == 'pre-elementary' ? 'selected': ''; ?> value="pre-elementary">PRELEMENTARY</option>
+                                            <option <?php echo @$userInfo['birth_place'] == 'elementary graduate' ? 'selected': ''; ?> value="elementary graduate">ELEMENTARY GRADUATE</option>
+                                            <option <?php echo @$userInfo['birth_place'] == 'pre-highschool' ? 'selected': ''; ?> value="pre-highschool">PRE HIGH SCHOOL</option>
+                                            <option <?php echo @$userInfo['birth_place'] == 'highschool graduate' ? 'selected': ''; ?> value="highschool graduate">HIGH SCHOOL GRADUATE</option>
+                                            <option <?php echo @$userInfo['birth_place'] == 'pre-college' ? 'selected': ''; ?> value="pre-college">PRE COLLEGE</option>
+                                            <option <?php echo @$userInfo['birth_place'] == 'no degree' ? 'selected': ''; ?> value="no degree">NO DEGREE</option>
+                                            <option <?php echo @$userInfo['birth_place'] == 'associate degree' ? 'selected': ''; ?> value="associate degree">ASSOCIATE DEGREE</option>
+                                            <option <?php echo @$userInfo['birth_place'] == 'bachelors degree' ? 'selected': ''; ?> value="bachelors degree">BACHELORS DEGREE</option>
+                                            <option <?php echo @$userInfo['birth_place'] == 'masters degree' ? 'selected': ''; ?> value="masters degree">MASTERS DEGREE</option>
+                                            <option <?php echo @$userInfo['birth_place'] == 'professional degree' ? 'selected': ''; ?> value="professional degree">PROFESSIONAL DEGREE</option>
+                                            <option <?php echo @$userInfo['birth_place'] == 'doctorate' ? 'selected': ''; ?> value="doctorate">DOCTORATE</option>
                                         </select>
                                     </div>
                                     <div class="col-md-6 field" >
                                         <label>Occupation <span style="color:red">*</span></label>
-                                        <input class="form-control" placeholder="Occupation" name="c_applicant_occupation" id="c_applicant_occupation" required>
+                                        <input value="<?php echo @$userInfo['occuputation']; ?>" class="form-control" placeholder="Occupation" name="c_applicant_occupation" id="c_applicant_occupation" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 " >
                                     <div class="col-md-6 field">
                                         <label>Citizenship <span style="color:red">*</span></label>
-                                        <input class="form-control" name="c_applicant_nationality" id="c-applicant_nationality"placeholder="Citizenship" required>
+                                        <input value="Filipino" class="form-control" name="c_applicant_nationality" id="c-applicant_nationality"placeholder="Citizenship" required>
                                     </div>
                                     <div class="col-md-6 field" >
                                         <label>Complexion <span style="color:red">*</span></label>
                                         <select class="form-control" name="c_applicant_complexion" id="c_applicant_complexion" required>
-                                            <option value="" disabled>- Select Complexion -</option>
-                                            <option value="fair">FAIR</option>
-                                            <option value="light">LIGHT</option>
-                                            <option value="dark">DARK</option>
+                                            <option value="" disabled selected>- Select Complexion -</option>
+                                            <option <?php echo @$userInfo['complexion'] == 'fair' ? 'selected': ''; ?> value="fair">FAIR</option>
+                                            <option <?php echo @$userInfo['complexion'] == 'light' ? 'selected': ''; ?> value="light">LIGHT</option>
+                                            <option <?php echo @$userInfo['complexion'] == 'dark' ? 'selected': ''; ?> value="dark">DARK</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-6 " >
                                     <div class="col-md-6 field">
                                         <label>Height (cm.)<span style="color:red">*</span> &nbsp; <span style="cursor: pointer" id="linkconvertheight" class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></label>
-                                        <input class="form-control" name="c_applicant_height" id="c_applicant_height" placeholder="Height example 152" type="number" required>
+                                        <input value="<?php echo @$userInfo['height']; ?>" class="form-control" name="c_applicant_height" id="c_applicant_height" placeholder="Height example 152" type="number" required>
                                     </div>
                                     <div class="col-md-6 field" >
                                         <label>Weight(kg.) <span style="color:red">*</span></label>
-                                        <input class="form-control" name="c_applicant_weight" id="c_applicant_weight" placeholder="Weight example 52" type="number" required>
+                                        <input value="<?php echo @$userInfo['weight ']; ?>" class="form-control" name="c_applicant_weight" id="c_applicant_weight" placeholder="Weight example 52" type="number" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 " >
@@ -396,27 +425,27 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
                                         <label>Hair Color <span style="color:red">*</span></label>
                                         <select class="form-control" name="c_applicant_haircolor" id="c_applicant_haircolor" required>
                                             <option value="" disabled>- Select Haircolor -</option>
-                                            <option value="black">BLACK</option>
-                                            <option value="bald">BALD</option>
-                                            <option value="brown">BROWN</option>
-                                            <option value="blonde">BLONDE</option>
-                                            <option value="blue">BLUE</option>
-                                            <option value="bronze">BRONZE</option>
-                                            <option value="darkbrown">DARK BROWN</option>
-                                            <option value="green">GREEN</option>
-                                            <option value="gray">GRAY</option>
-                                            <option value="red">RED</option>
-                                            <option value="white">WHITE</option>
+                                            <option <?php echo @$userInfo['hair_color'] == 'black'? 'selected': ''; ?> value="black">BLACK</option>
+                                            <option <?php echo @$userInfo['hair_color'] == 'bald'? 'selected': ''; ?> value="bald">BALD</option>
+                                            <option <?php echo @$userInfo['hair_color'] == 'brown'? 'selected': ''; ?> value="brown">BROWN</option>
+                                            <option <?php echo @$userInfo['hair_color'] == 'blonde'? 'selected': ''; ?> value="blonde">BLONDE</option>
+                                            <option <?php echo @$userInfo['hair_color'] == 'blue'? 'selected': ''; ?> value="blue">BLUE</option>
+                                            <option <?php echo @$userInfo['hair_color'] == 'bronze'? 'selected': ''; ?> value="bronze">BRONZE</option>
+                                            <option <?php echo @$userInfo['hair_color'] == 'darkbrown'? 'selected': ''; ?> value="darkbrown">DARK BROWN</option>
+                                            <option <?php echo @$userInfo['hair_color'] == 'green'? 'selected': ''; ?> value="green">GREEN</option>
+                                            <option <?php echo @$userInfo['hair_color'] == 'gray'? 'selected': ''; ?> value="gray">GRAY</option>
+                                            <option <?php echo @$userInfo['hair_color'] == 'red'? 'selected': ''; ?> value="red">RED</option>
+                                            <option <?php echo @$userInfo['hair_color'] == 'white'? 'selected': ''; ?> value="white">WHITE</option>
                                         </select>
                                     </div>
                                     <div class="col-md-6 field" >
                                         <label>Eye Color <span style="color:red">*</span></label>
                                         <select class="form-control" name="c_applicant_eyecolor" id="c_applicant_eyecolor" required>
-                                            <option value="" disabled>- Select Eye Color -</option>
-                                            <option value="black">BLACK</option>
-                                            <option value="brown">BROWN</option>
-                                            <option value="blue">BLUE</option>
-                                            <option value="gray">GRAY</option>
+                                            <option value="" disabled selected>- Select Eye Color -</option>
+                                            <option <?php echo @$userInfo['eye_color'] == 'black' ? 'selected' : ''; ?> value="black">BLACK</option>
+                                            <option <?php echo @$userInfo['eye_color'] == 'brown' ? 'selected' : ''; ?> value="brown">BROWN</option>
+                                            <option <?php echo @$userInfo['eye_color'] == 'blue' ? 'selected' : ''; ?> value="blue">BLUE</option>
+                                            <option <?php echo @$userInfo['eye_color'] == 'gray' ? 'selected' : ''; ?> value="gray">GRAY</option>
                                         </select>
                                     </div>
                                 </div>
@@ -425,37 +454,37 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
                                         <label>Build/Body Size <span style="color:red">*</span></label>
                                         <select class="form-control" name="c_applicant_build" id="c_applicant_build" required>
                                             <option value="" disabled>- Select Body Size -</option>
-                                            <option value="XXL">Extra extra large</option>
-                                            <option value="XL">Extra large</option>
-                                            <option value="XS">Extra Small</option>
-                                            <option value="L">Large</option>
-                                            <option value="M">Medium</option>
-                                            <option value="S">Small</option>
+                                            <option <?php echo @$userInfo['body_size'] == 'XXl' ? 'selected': ''; ?> value="XXL">Extra extra large</option>
+                                            <option <?php echo @$userInfo['body_size'] == 'XL' ? 'selected': ''; ?> value="XL">Extra large</option>
+                                            <option <?php echo @$userInfo['body_size'] == 'XS' ? 'selected': ''; ?> value="XS">Extra Small</option>
+                                            <option <?php echo @$userInfo['body_size'] == 'L' ? 'selected': ''; ?> value="L">Large</option>
+                                            <option <?php echo @$userInfo['body_size'] == 'M' ? 'selected': ''; ?> value="M">Medium</option>
+                                            <option <?php echo @$userInfo['body_size'] == 'S' ? 'selected': ''; ?> value="S">Small</option>
                                         </select>
                                     </div>
                                     <div class="col-md-6 field">
                                         <label>Distinguishing Marks<span style="color:red">*</span></label>
-                                        <input class="form-control" placeholder="Distinguishing Marks" name="c_applicant_identityremarks" id="c_applicant_identityremarks" required>
+                                        <input value="<?php echo @$userInfo['distinguishing_marks']; ?>" class="form-control" placeholder="Distinguishing Marks" name="c_applicant_identityremarks" id="c_applicant_identityremarks" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 " >
                                     <div class="col-md-6 field">
                                         <label>No. of years in the community <span style="color:red">*</span></label>
-                                        <input class="form-control" placeholder="No. of years in the community" name="c_applicant_noofyears" id="c_applicant_noofyears" type="number" required>
+                                        <input value="<?php echo @$userInfo['community_years']; ?>" class="form-control" placeholder="No. of years in the community" name="c_applicant_noofyears" id="c_applicant_noofyears" type="number" required>
                                     </div>
                                     <div class="col-md-6 field">
                                         <label>Cellphone No. <span style="color:red">*</span></label>
-                                        <input class="form-control" placeholder="Cellphone No." name="c_applicant_cellphoneno" id="c_applicant_cellphoneno" value="" required>
+                                        <input value="<?php echo @$userInfo['cellphone_no']; ?>" class="form-control" placeholder="Cellphone No." name="c_applicant_cellphoneno" id="c_applicant_cellphoneno" value="" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6" >
                                     <div class="col-md-6 field">
                                         <label>Telephone No. </label>
-                                        <input class="form-control" placeholder="Telephone No." name="c_applicant_telephoneno" id="c_applicant_telephoneno">
+                                        <input value="<?php echo @$userInfo['tel_no']; ?>" class="form-control" placeholder="Telephone No." name="c_applicant_telephoneno" id="c_applicant_telephoneno">
                                     </div>
                                     <div class="col-md-6 field" >
                                         <label>Email Address <span style="color:red">*</span></label>
-                                        <input class="form-control" type="email" placeholder="Email Address" name="c_applicant_email" id="c_applicant_email" value="" required>
+                                        <input value="<?php echo @$userInfo['email_address']; ?>" class="form-control" type="email" placeholder="Email Address" name="c_applicant_email" id="c_applicant_email" value="" required>
                                     </div>
                                 </div>
                                 <div class="col-md-12 headname">
@@ -464,37 +493,37 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
                                 <div class="col-md-6 " >
                                     <div class="col-md-12 field">
                                         <label>Name of Spouse <small>(If married)</small> </label>
-                                        <input class="form-control" placeholder="Name of Spouse" name="c_applicant_spoucename" id="c_applicant_spoucename" >
+                                        <input value="<?php echo @$userInfo['spouse_name']; ?>" class="form-control" placeholder="Name of Spouse" name="c_applicant_spoucename" id="c_applicant_spoucename" >
                                     </div>
                                 </div>
                                 <div class="col-md-6 " >
                                     <div class="col-md-12 field" >
                                         <label>(Spouse) Place of Birth</span></label>
-                                        <input class="form-control" placeholder="Indicate Town, Province" name="c_applicant_spoucebdateplace" id="c_applicant_spoucebdateplace">
+                                        <input value="<?php echo @$userInfo['spouse_birth_place']; ?>" class="form-control" placeholder="Indicate Town, Province" name="c_applicant_spoucebdateplace" id="c_applicant_spoucebdateplace">
                                     </div>
                                 </div>
                                 <div class="col-md-6 " >
                                     <div class="col-md-12 field">
                                         <label>Father's Name <span style="color:red">*</span></label>
-                                        <input class="form-control" placeholder="Father's Name" name="c_applicant_fathersname" id="c_applicant_fathersname"  required>
+                                        <input value="<?php echo @$userInfo['father_name']; ?>" class="form-control" placeholder="Father's Name" name="c_applicant_fathersname" id="c_applicant_fathersname"  required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 " >
                                     <div class="col-md-12 field" >
                                         <label>(Father's) Place of Birth <span style="color:red">*</span></label>
-                                        <input class="form-control" placeholder="Indicate Town, Province" name="c_applicant_fathersaddress" id="c_applicant_fathersaddress" required>
+                                        <input value="<?php  ?>" class="form-control" placeholder="Indicate Town, Province" name="c_applicant_fathersaddress" id="c_applicant_fathersaddress" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 " >
                                     <div class="col-md-12 field">
                                         <label>Mother's Maiden Name <span style="color:red">*</span></label>
-                                        <input class="form-control" placeholder="Mother's Maiden Name" name="c_applicant_mothersname" id="c_applicant_mothersname" required>
+                                        <input value="<?php echo @$userInfo['mother_name']; ?>" class="form-control" placeholder="Mother's Maiden Name" name="c_applicant_mothersname" id="c_applicant_mothersname" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 " >
                                     <div class="col-md-12 field" >
                                         <label>(Mother's) Place of Birth <span style="color:red">*</span></label>
-                                        <input class="form-control" placeholder="Indicate Town, Province" name="c_applicant_mothersaddress" id="c_applicant_mothersaddress" required>
+                                        <input value="<?php ?>" class="form-control" placeholder="Indicate Town, Province" name="c_applicant_mothersaddress" id="c_applicant_mothersaddress" required>
                                     </div>
                                 </div>
                                 <div class="col-md-12 headname">
@@ -508,7 +537,7 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
                                         <label>Cedula No. <span style="color:red">*</span></label>
                                     </div>
                                     <div class="col-md-8" >
-                                        <input class="form-control" placeholder="Cedula No." name="c_applicant_cedulano" id="c_applicant_cedulano" required>
+                                        <input value="<?php echo @$userInfo['cedula_no']; ?>" class="form-control" placeholder="Cedula No." name="c_applicant_cedulano" id="c_applicant_cedulano" required>
                                     </div>
                                 </div>
 
@@ -517,7 +546,7 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
                                         <label>Date Issued <span style="color:red">*</span></label>
                                     </div>
                                     <div class="col-md-8" >
-                                        <input type="date" class="form-control" placeholder="ceddateID" name="cedMonth" id="cedMonth" required>
+                                        <input value="<?php echo @$userInfo['cedula_date_issued']; ?>" type="date" class="form-control" placeholder="ceddateID" name="cedMonth" id="cedMonth" required>
                                     </div>
                                 </div>
 
