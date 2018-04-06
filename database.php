@@ -71,9 +71,6 @@
 		
 		<h4 class="alert_info">Applicants Information.</h4>
 		
-		<form class="quick_search">
-			<input type="text" value="Reference # / Full Name" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;">
-		</form>
 		
 		<article class="module width_3_quarter">
 			<header>
