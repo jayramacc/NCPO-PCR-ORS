@@ -4,6 +4,7 @@ include 'class/MySqlLeaf.php';
 // Get data - our-services.php?pk=[PRIVATE_KEY_OF_THE_USER]
 @ $privateKey = $_GET["pk"];
 
+
 if (isset($privateKey)){    
 
     // SQL Query: Get the data in the private key
@@ -18,10 +19,12 @@ if (isset($privateKey)){
     // Put the MYSQL Result in the user Info
     if ($numRow > 0){
         $userInfo = mysqli_fetch_array($query);
+        $renew_request = true;
     }
     
 }else{
     $userInfo = array();
+    $renew_request = false;
 }
 
 // Set each _POST data into a variable
@@ -95,32 +98,58 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
     // Generate Private Key
     $privateKey = md5(time());
 
-    // SQL Query
-    $sql = "INSERT INTO `applicants`
-    (`lname`, `fname`, `mname`, `suffix`, `gender`, `nickname`, `bdate`, `age`, `birth_place`, `civil_status`,
-    `complete_address`, `provincial_address`, `religion`, `educational_attainment`, `occuputation`, `complexion`,
-    `height`, `weight`, `hair_color`, `eye_color`, `body_size`, `distinguishing_marks`, `community_years`, `cellphone_no`,
-    `tel_no`, `email_address`, `spouse_name`, `father_name`, `mother_name`, `spouse_birth_place`, `cedula_date_issued`,
-        `cedula_no`, `purpose`, `private_key`, `photo`) 
-    VALUES  
-    ('$lname', '$fname', '$mname', '$suffix', '$gender', '$nickname', '$birthdate', '$age', '$bPlace', '$cStatus', 
-    '$cAddress', '$pAddress','$religion','$edAttainment', '$occupation', '$complexion', 
-    '$height', '$weight ', '$hairColor', '$eyeColor', '$bodySize', '$identityMarks', '$communityYears','$cellNo',
-    '$telNo', '$email', '$spouseName','$faName','$moName','$bplace', '$cedMonth', '$cedulaNo', '$purpose','$privateKey','$photoUrl');";
-     
-     // Prepare Query
-     $query = mysqli_query(MySqlLeaf::getCon(), $sql);
+    if ($renew_request){
+        $sql = "UPDATE `applicants` SET
+         `lname`='$lname',`fname`='$fname',`mname`='$mname',`suffix`='$suffix',`gender`='$gender',`nickname`='$gender',`bdate`='$birthdate',
+         `age`='$age',`birth_place`='$bPlace',`civil_status`='$cStatus',`complete_address`='$cAddress',`provincial_address`='$pAddress',
+         `religion`='$religion',`educational_attainment`='$edAttainment',`occuputation`='$occupation',`complexion`='$complexion',
+         `height`='$height',`weight`='$weight',`hair_color`='$hairColor',`eye_color`='$eyeColor',`body_size`='$bodySize',
+         `distinguishing_marks`='$identityMarks',`community_years`='$communityYears',`cellphone_no`='$cellNo',`tel_no`='$telNo',
+         `email_address`='$email',`spouse_name`='$spouseName',`father_name`='$faName',`mother_name`='$moName',`spouse_birth_place`='$bplace',
+         `cedula_date_issued`='$cedMonth',`cedula_no`='$cedulaNo',`purpose`='$purpose', `photo`='$photoUrl' WHERE 1";
+    
+        // Prepare Query
+        $query = mysqli_query(MySqlLeaf::getCon(), $sql);
 
-     // Execute Before Comparing.
-     if ($query === true){
-        $sql = "INSERT INTO `notification`(`private_key`) VALUES ('$privateKey');";
-        mysqli_query(MySqlLeaf::getCon(), $sql);
-        // Redirect
-        header("location: class/MailHandler.php?client_name=$fname%20$lname&client_email=$email&pk=$privateKey");
-     }else{
-        // Show Message Error
-         echo "Duplication Error";
-     }
+        // Execute Before Comparing.
+        if ($query === true){
+            $sql = "INSERT INTO `notification`(`private_key`, `type`) VALUES ('$privateKey', 'renew');";
+            mysqli_query(MySqlLeaf::getCon(), $sql);
+            // Redirect
+            header("location: index.php");
+            // TODO: Add success message
+        }else{
+            // Show Message Error
+            echo "Duplication Error";
+        }
+    }else{
+        // SQL Query
+        $sql = "INSERT INTO `applicants`
+        (`lname`, `fname`, `mname`, `suffix`, `gender`, `nickname`, `bdate`, `age`, `birth_place`, `civil_status`,
+        `complete_address`, `provincial_address`, `religion`, `educational_attainment`, `occuputation`, `complexion`,
+        `height`, `weight`, `hair_color`, `eye_color`, `body_size`, `distinguishing_marks`, `community_years`, `cellphone_no`,
+        `tel_no`, `email_address`, `spouse_name`, `father_name`, `mother_name`, `spouse_birth_place`, `cedula_date_issued`,
+            `cedula_no`, `purpose`, `private_key`, `photo`) 
+        VALUES  
+        ('$lname', '$fname', '$mname', '$suffix', '$gender', '$nickname', '$birthdate', '$age', '$bPlace', '$cStatus', 
+        '$cAddress', '$pAddress','$religion','$edAttainment', '$occupation', '$complexion', 
+        '$height', '$weight ', '$hairColor', '$eyeColor', '$bodySize', '$identityMarks', '$communityYears','$cellNo',
+        '$telNo', '$email', '$spouseName','$faName','$moName','$bplace', '$cedMonth', '$cedulaNo', '$purpose','$privateKey','$photoUrl');";
+        
+        // Prepare Query
+        $query = mysqli_query(MySqlLeaf::getCon(), $sql);
+
+        // Execute Before Comparing.
+        if ($query === true){
+            $sql = "INSERT INTO `notification`(`private_key`) VALUES ('$privateKey');";
+            mysqli_query(MySqlLeaf::getCon(), $sql);
+            // Redirect
+            header("location: class/MailHandler.php?client_name=$fname%20$lname&client_email=$email&pk=$privateKey");
+        }else{
+            // Show Message Error
+            echo "Duplication Error";
+        }
+    }
     exit;
 }   
 
@@ -202,7 +231,7 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
                                         <div class="input-group">
                                             <span class="input-group-btn">
                                                 <span class="btn btn-default btn-file">
-                                                    Browse… <input type="file" id="imgInp" accept="image/*" name="image">
+                                                    Browse… <input type="file" id="imgInp" accept="image/*" name="image" value="<?php echo @$userInfo['photo']; ?>">
                                                 </span>
                                             </span>
                                             <input type="text" class="form-control" readonly>

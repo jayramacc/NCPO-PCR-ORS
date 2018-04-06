@@ -1,7 +1,30 @@
+<?php
+include 'class/MySqlLeaf.php';
+// Get data - our-services.php?pk=[PRIVATE_KEY_OF_THE_USER]
+@ $privateKey = $_POST["pk"];
+
+if (isset($privateKey)){    
+    // SQL Query: Get the data in the private key
+    $sql = "SELECT * FROM `applicants` WHERE `private_key`='$privateKey' AND `activated`='true'LIMIT 1";
+    
+    // Prepare Query
+    $query = mysqli_query(MySqlLeaf::getCon(), $sql);
+
+    // Count Rows
+    $numRow = mysqli_num_rows($query);
+    // Put the MYSQL Result in the user Info
+    if ($numRow > 0){
+        header("location: our-services.php?pk=$privateKey");
+    }else{
+        echo "Sorry, private Key is either not yet activated or does not exist.";
+    }
+    exit;
+    
+}
+
+?>
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -14,12 +37,10 @@
     <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     <link href="assets/css/style_home.css" rel="stylesheet" />
-
+    <script src="js/jquery/jquery.min.js"></script>
 </head>
 <body>
     <?php include 'includes/nav.php' ?>
-
-
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -36,10 +57,9 @@
             </div>
         </div>
         <div class="col-md-12">
-            
-            <form method="post" id="renewform" >
+            <form method="post" id="renewform" action="request-renew.php">
 
-            <div class="panel panel-default custpanel">
+                <div class="panel panel-default custpanel">
                     <div class="panel-body mainpanel">
                         <div class="col-md-12" >
                             <div class="col-md-12" >
@@ -63,21 +83,18 @@
                                 <div class="col-md-4 lbl">
                                     <label>Private Key <span style="color:red">*</span></label>
                                 </div>
-
                                 <div class="col-md-8" >
-                                    <input type="hidden" name="_token" value="xit4z0Q6YIv0i37LIzj3JCfvD84oF9R14DPQ2ptP">
                                     <div class="input-group">
-                                                                           <input class="form-control" name="c_applicant_refcode" id="c_applicant_refcode" value="" placeholder="Private Key" autocomplete="false">
-                                                                          <span class="input-group-addon" id="searchToVerify" style="cursor:pointer"><span  class="glyphicon glyphicon-search" ></span></span>
-                                    </div>
-                                    <div  style="position: absolute;;z-index:1000;width: 100%;padding-right: 70px">
-                                        <select id="refcodeoptions" class="form-control"  size="3" style="display: none;">
-                                    </select>
+                                        <input class="form-control" name="pk" id="c_applicant_refcode" required placeholder="Enter Private Key" autocomplete="false">
+                                        <span onclick="$(this).closest('form').submit();" class="input-group-addon" id="searchToVerify" style="cursor:pointer"><span  class="glyphicon glyphicon-search" ></span></span>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
-   
 </body>
 </html>
