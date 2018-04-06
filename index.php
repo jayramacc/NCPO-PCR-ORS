@@ -4,15 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>NCPO Online Registrations Site</title>
-    <!--  Bootstrap Style -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-     <!--  Font-Awesome Style -->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-     <!--  Font-Awesome Animation Style -->
     <link href="assets/css/font-awesome-animation.css" rel="stylesheet" />
-     <!--  Custom Style -->
     <link href="assets/css/style_home.css" rel="stylesheet" />
-    <style>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <style type="text/css">
         .carousel{
             height: 200px;
         }
@@ -113,8 +111,6 @@
             </div>
         </div>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             // Initialize Carousel

@@ -1,6 +1,6 @@
 # List of Renovations
 ## Client Files
-* index.php []
+* ~~~index.php~~~
 * our-services.php []
 * request-renew.php []
 * error.php []
