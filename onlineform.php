@@ -1,4 +1,27 @@
+<?php
 
+include 'class/MySqlLeaf.php';
+
+// SQL Query: Get the data in the private key
+$sql = "SELECT notif.id, notif.type, app.fname, app.lname, app.purpose, app.photo FROM 
+	`applicants` as app LEFT JOIN `notification` AS notif ON notif.private_key=app.private_key ORDER BY `id` DESC";
+
+// Prepare Query
+$query = mysqli_query(MySqlLeaf::getCon(), $sql);
+
+// Count Rows
+$numRow = mysqli_num_rows($query);
+
+$applicants = array();
+
+// Put the MYSQL Result in the user Info
+if ($numRow > 0){
+	while ($r = mysqli_fetch_array($query)) {
+		array_push($applicants, $r);
+	}
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,6 +69,7 @@
 			border: 1px solid #7782ce; 
 			padding: 10px; 
 			cursor: pointer;
+			margin-bottom: 10px;
 		}
 	</style>
 </head>
@@ -76,12 +100,24 @@
 		<h4 class="alert_info">Notification</h4>	
 		<div class="clear"></div>
 		<div class="spacer"></div>
-		<div style="margin-left:40px">
-			<div class="notif" onclick="document.location.href='database.php';">
-				<img src="#" alt="Profile" height="80" width="80" style="display: inline-block">
-				<b>Luis Edward Miranda</b> 
-				wants to apply for a "DSWD Requirement".
-			</div>
+
+		<div style="margin-left:40px; width: calc(100% - 67px)">
+			
+			<?php foreach ($applicants as $app): ?>
+				<div class="notif" onclick="document.location.href='database.php';">
+					<img onerror="this.src='assets/img/profile_image_dummy.svg';" src="assets/img_uploads/<?php echo $app['photo']; ?>" alt="Profile" height="80" width="80" style="display: inline-block">
+					<div style="margin-left: 10px; display: inline-block; vertical-align: top;">
+						<b><?php echo $app["fname"]. " " .$app["lname"]; ?></b> 
+						<?php echo $app["type"] == "apply" ? "has successfully filled up an application form for the first time." : ""; ?>
+						<?php echo $app["type"] == "renew" ? "has successfully submitted a request." : ""; ?>
+						<?php echo $app["type"] == "verify" ? "has successfully verified his/her `private key` thru email confirmation." : ""; ?>
+						<div style="margin-top: 15px;">
+							<button disabled>Mark as Read</button> <button disabled>Delete</button>
+						</div>
+					</div>
+				</div>
+			<?php endforeach; ?>
+
 		</div>
 	</section>
 

@@ -8,7 +8,7 @@ $sql = "UPDATE `applicants` SET `activated`='true' WHERE `private_key`='$pk';";
 $query = mysqli_query(MySqlLeaf::getCon(), $sql);
 
 if ($query === true){
-    $sql = "INSERT INTO `notification`(`private_key`, `type`) VALUES ('$privateKey', 'verify');";
+    $sql = "INSERT INTO `notification`(`private_key`, `type`) VALUES ('$pk', 'verify');";
     mysqli_query(MySqlLeaf::getCon(), $sql);
     echo "Successfull registered";
 }else{
