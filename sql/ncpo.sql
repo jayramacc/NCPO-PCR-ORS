@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 06, 2018 at 05:24 PM
+-- Generation Time: Apr 06, 2018 at 07:09 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.2
 
@@ -75,7 +75,7 @@ CREATE TABLE `applicants` (
 INSERT INTO `applicants` (`id`, `lname`, `fname`, `mname`, `suffix`, `gender`, `nickname`, `bdate`, `age`, `birth_place`, `civil_status`, `complete_address`, `provincial_address`, `religion`, `educational_attainment`, `occuputation`, `complexion`, `height`, `weight`, `hair_color`, `eye_color`, `body_size`, `distinguishing_marks`, `community_years`, `cellphone_no`, `tel_no`, `email_address`, `spouse_name`, `father_name`, `mother_name`, `spouse_birth_place`, `cedula_date_issued`, `cedula_no`, `purpose`, `private_key`, `photo`, `activated`) VALUES
 (1, 'HHG', 'RQR', 'QEQEQ', 'ddadad', 'female', 'RR', '2018-04-26', 11, 'RRAWRA', 'married', '1212', 'AWRR', 'RARAR', 'elementary graduate', '121', 'light', 212121, 1212, 'green', 'brown', 'XL', '1212', 121, '1212121', ' 12121212', '2121@gmail.com', 'GDGSG', 'fawfaf', 'awfafafa', 'AFDADADAD', '2018-04-30', 'aafaf', 'airport requirement', 'jay', 'kim', 'false'),
 (4, 'HHG', 'RQR', 'QEQEQ', 'ddadad', 'female', 'RR', '2018-04-26', 11, 'RRAWRA', 'married', '1212', 'AWRR', 'RARAR', 'elementary graduate', '121', '', 212121, 1212, 'green', 'brown', 'XL', '1212', 122, '1212121', ' 12121212', 'kijjfj@gmail.com', 'GDGSG', 'fawfaf', 'awfafafa', 'AFDADADAD', '2018-04-30', 'gffg', 'airport requirement', 'hg', 'kim', 'false'),
-(12, 'Miranda', 'Edward', 'asd asdas', 'asdasdasdas', 'male', 'Ed', '2018-04-06', 15, 'dasdasdasdasdasda', 'single', 'asdasdasdas', 'asdasd', 'sdasdasd', 'associate degree', 'dasdada', 'fair', 124124, 1241, 'black', 'black', 'XXL', 'asdasdasd', 1212, '12412asda', '125', 'luisedward.miranda@gmail.com', 'asdasdasd', 'dasdasd', 'asdasdasd', 'sadasdas', '2018-04-24', 'asdasdasd', 'bjmp requirement', '5ffdcdda7dfc18af17ea4e18c9906c83', '1522962304Penguins.jpg', 'false');
+(12, 'Miranda', 'Edward', 'asd asdas', 'asdasdasdas', 'male', 'Ed', '2018-04-06', 15, 'dasdasdasdasdasda', 'single', 'asdasdasdas', 'asdasd', 'sdasdasd', 'associate degree', 'dasdada', 'fair', 124124, 1241, 'black', 'black', 'XXL', 'asdasdasd', 1212, '12412asda', '125', 'luisedward.miranda@gmail.com', 'asdasdasd', 'dasdasd', 'asdasdasd', 'sadasdas', '2018-04-24', 'asdasdasd', 'bjmp requirement', '5ffdcdda7dfc18af17ea4e18c9906c83', '1522962304Penguins.jpg', 'true');
 
 -- --------------------------------------------------------
 
@@ -86,7 +86,7 @@ INSERT INTO `applicants` (`id`, `lname`, `fname`, `mname`, `suffix`, `gender`, `
 CREATE TABLE `notification` (
   `id` int(255) NOT NULL,
   `private_key` varchar(255) NOT NULL,
-  `type` enum('apply','renew') NOT NULL DEFAULT 'apply',
+  `type` enum('apply','renew','verify') NOT NULL DEFAULT 'apply',
   `status` enum('seen','not_seen') DEFAULT 'not_seen'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 

@@ -7,7 +7,7 @@ include 'class/MySqlLeaf.php';
 if (isset($privateKey)){    
 
     // SQL Query: Get the data in the private key
-    $sql = "SELECT * FROM `applicants` WHERE `private_key`='$privateKey' LIMIT 1";
+    $sql = "SELECT * FROM `applicants` WHERE `private_key`='$privateKey' AND `activated`='true'LIMIT 1";
     
     // Prepare Query
     $query = mysqli_query(MySqlLeaf::getCon(), $sql);
