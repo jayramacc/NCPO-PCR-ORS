@@ -6,7 +6,7 @@ include_once "class/AccountHandler.php";
 if(AccountHandler::isLogin()){
     switch (AccountHandler::getAccountType()){
         case 'account':
-	        header("location: admin.php");
+	        header("location: admin/admin.php");
             break;
     }
     exit;
@@ -17,7 +17,7 @@ if(AccountHandler::isLogin()){
 @ $pw = $_POST["password"];
 if (isset($un) && isset($pw)){
     // Get the password from the pass.json file
-    $adminPW = json_decode( file_get_contents('pass.json'), true)["pass"];
+    $adminPW = json_decode( file_get_contents('admin/pass.json'), true)["pass"];
 
     // Check Credential and Authenticate
     if ($un == "ncpo_admin" && md5($pw) == $adminPW){
@@ -33,7 +33,7 @@ if (isset($un) && isset($pw)){
         setcookie( "type", $emp_type, time() + (10 * 365 * 24 * 60 * 60) );
         setcookie( "id", $id, time() + (10 * 365 * 24 * 60 * 60) );
 
-        header("location: admin.php");
+        header("location: admin/admin.php");
         exit;
         // TODO: Add sessions and cookies
     } else {
@@ -58,44 +58,27 @@ if (isset($un) && isset($pw)){
 </head>
 <body>
     <?php include 'assets/includes/nav.php' ?>
-    
-<div class="clearfix"></div>
-    <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="col-md-12"  >
-                <div style="float:left; position:absolute">
-                    <img align="left" height="90" src="assets/img/logo.jpg">
-                </div>
-                <center style="color:blue;">
-                <h1 style="font-weight:50;line-height:50px;font-size:32px"><strong>EMPLOYEE LOGIN</strong> </h1>
-                <div class="description">
-                    <p>Please provide the details below.</p>
-                </div>
-             </center>
+    <div class="container card mt-3 p-4">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="font-weight-bold mb-0 text-primary">REQUEST/RENEW FORM</h1>
+                <div class="description">Request/Renew by Enter Private Key without wasting time reintering information.</div>
             </div>
-        </div>
-        <div class="col-md-12">
-            <div class="panel panel-default custpanel">
+            <div class="col-md-12 panel panel-default custpanel">
                 <form action="login.php" method="POST" class="panel-body mainpanel">
-                    <div class="col-md-12" >
-                        <div class="card card-login mx-auto mt-5">
-                            <div class="card-body">
-                                <div class="form-group">
-                                    <label for="username">ID</label>
-                                    <input class="form-control" id="username" name="username" type="text" placeholder="Enter ID" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="Password">Password</label>
-                                    <input class="form-control" id="password" name="password" type="password" placeholder="Password" required>
-                                </div>
-                                <input type="submit" class="btn btn-primary btn-block" value="Login">
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label for="username" class="mb-0 font-weight-bold">ID</label>
+                        <input class="form-control" id="username" name="username" type="text" placeholder="Enter ID" required>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="Password" class="mb-0 font-weight-bold">Password</label>
+                        <input class="form-control" id="password" name="password" type="password" placeholder="Password" required>
+                    </div>
+                    <input type="submit" class="btn btn-primary btn-block" value="Login">
+                </form>
             </div>
         </div>
+    </div>
 </body>
 </html>
 

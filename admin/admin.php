@@ -1,4 +1,13 @@
+<?php
+include_once "../class/AccountHandler.php";
 
+// Check if the account is logged or not
+if(!AccountHandler::isLogin()){
+		header("location: ../login.php");
+    exit;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
