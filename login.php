@@ -6,7 +6,7 @@ include_once "class/AccountHandler.php";
 if(AccountHandler::isLogin()){
     switch (AccountHandler::getAccountType()){
         case 'account':
-	        header("location: admin.php");
+	        header("location: admin/admin.php");
             break;
     }
     exit;
@@ -17,7 +17,7 @@ if(AccountHandler::isLogin()){
 @ $pw = $_POST["password"];
 if (isset($un) && isset($pw)){
     // Get the password from the pass.json file
-    $adminPW = json_decode( file_get_contents('pass.json'), true)["pass"];
+    $adminPW = json_decode( file_get_contents('admin/pass.json'), true)["pass"];
 
     // Check Credential and Authenticate
     if ($un == "ncpo_admin" && md5($pw) == $adminPW){
@@ -33,7 +33,7 @@ if (isset($un) && isset($pw)){
         setcookie( "type", $emp_type, time() + (10 * 365 * 24 * 60 * 60) );
         setcookie( "id", $id, time() + (10 * 365 * 24 * 60 * 60) );
 
-        header("location: admin.php");
+        header("location: admin/admin.php");
         exit;
         // TODO: Add sessions and cookies
     } else {

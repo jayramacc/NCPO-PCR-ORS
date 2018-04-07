@@ -3,7 +3,7 @@
 * ~~~index.php~~~
 * ~~~our-services.php~~~
 * ~~~request-renew.php~~~
-* error.php []
+* ~~~error.php~~~
 * login.php []
 
 ## Administrator

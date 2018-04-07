@@ -1,6 +1,6 @@
 <?php
 
-include 'class/MySqlLeaf.php';
+include 'MySqlLeaf.php';
 
 $pk = $_GET["pk"];
 
