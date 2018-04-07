@@ -22,6 +22,7 @@ if (isset($searchURL) && !empty($searchURL)){
 	// SQL Query: Get the data in the private key
 	$sql = "SELECT `id`, `lname`, `fname`, `mname`, `private_key`, `photo` FROM `applicants` ORDER BY `id` DESC";
 }
+
 // Prepare Query
 $query = mysqli_query(MySqlLeaf::getCon(), $sql);
 
@@ -54,7 +55,6 @@ if (isset($search)){
 	header("location: database.php?search=$search");
 	exit;
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -97,14 +97,14 @@ if (isset($search)){
 							<img onerror="this.src='../assets/img/profile_image_dummy.svg';" src="../assets/img_uploads/<?php echo $app['photo']; ?>" alt="Profile" height="50" width="50" style="display: inline-block">
 						</td>
 						<td><?php echo $app["lname"]. ", " .$app["fname"]. " " .$app["mname"]; ?></td>
-						<td><?php echo $app["private_key"] ?></td>
+						<td><?php echo $app["private_key"]; ?></td>
 						<td>
-							<button data-id="<?php echo $app["id"] ?>" class="btn btn-danger deleteBtn" data-toggle="modal" data-target="#myModal">
+							<button data-id="<?php echo $app["id"]; ?>" class="btn btn-danger deleteBtn" data-toggle="modal" data-target="#myModal">
 								<i class="fa fa-trash-o"> </i> Delete
 							</button>
-							<a href="add_new_user.php?id=<?php echo $app["id"] ?>" class="btn btn-primary text-white">
+							<a href="add_new_user.php?id=<?php echo $app["id"]; ?>" class="btn btn-primary text-white">
 								<i class="fa fa-print"> </i> Print Form
-							</button>
+							</a>
 						</td>
 					</tr>
 				<?php endforeach; ?>
