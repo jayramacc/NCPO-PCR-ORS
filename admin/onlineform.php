@@ -1,6 +1,13 @@
 <?php
 
 include '../class/MySqlLeaf.php';
+include_once "../class/AccountHandler.php";
+
+// Check if the account is logged or not
+if(!AccountHandler::isLogin()){
+		header("location: ../login.php");
+    exit;
+}
 
 // SQL Query: Get the data in the private key
 $sql = "SELECT notif.id, notif.type, app.fname, app.lname, app.purpose, app.photo FROM 
