@@ -162,7 +162,6 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Application Form</title>
-    <title>NCPO Online Registrations Site</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
     <link href="assets/css/font-awesome-animation.css" rel="stylesheet" />
