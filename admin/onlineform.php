@@ -1,6 +1,6 @@
 <?php
 
-include 'class/MySqlLeaf.php';
+include '../class/MySqlLeaf.php';
 
 // SQL Query: Get the data in the private key
 $sql = "SELECT notif.id, notif.type, app.fname, app.lname, app.purpose, app.photo FROM 
@@ -94,7 +94,7 @@ if ($numRow > 0){
 		</div>
 	</section><!-- end of secondary bar -->
 	
-	<?php include 'includes/admin_side.php'; ?>
+	<?php include '../assets/includes/admin_side.php'; ?>
 
 	<section id="main" class="column">
 		<h4 class="alert_info">Notification</h4>	
@@ -105,7 +105,7 @@ if ($numRow > 0){
 			
 			<?php foreach ($applicants as $app): ?>
 				<div class="notif" onclick="document.location.href='database.php';">
-					<img onerror="this.src='assets/img/profile_image_dummy.svg';" src="assets/img_uploads/<?php echo $app['photo']; ?>" alt="Profile" height="80" width="80" style="display: inline-block">
+					<img onerror="this.src='../assets/img/profile_image_dummy.svg';" src="../assets/img_uploads/<?php echo $app['photo']; ?>" alt="Profile" height="80" width="80" style="display: inline-block">
 					<div style="margin-left: 10px; display: inline-block; vertical-align: top;">
 						<b><?php echo $app["fname"]. " " .$app["lname"]; ?></b> 
 						<?php echo $app["type"] == "apply" ? "has successfully filled up an application form for the first time." : ""; ?>
