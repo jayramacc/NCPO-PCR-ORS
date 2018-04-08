@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿<?php
+
+include 'class/FlashCard.php';
+
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -111,8 +116,48 @@
             </div>
         </div>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">	
+            <!-- Modal content-->
+            <form action="database.php" method="post" class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h4 class="modal-title text-white">Privary Key Verification</h4>
+                    <button type="button" class="close pull-right" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body font-weight-bold">
+                    <input type="hidden" value="" id="deleteID" name="deleteID">
+                    <?php 
+                        $hasFlashCard = FlashCard::hasFlashCard();
+                        $flashCard = ($hasFlashCard) ? FlashCard::getFlashCard() : "";
+
+                        if ($hasFlashCard){
+                            switch($flashCard){
+                                case 'pkWrong':
+                                    echo "Ooops. Privary Key does not exists";
+                                    break;
+                                case 'pkError':
+                                    echo "An error occurs, please try again later.";
+                                    break;
+                                case 'pkSuccess':
+                                    echo "Congratulations. Your Private Key is successfull registered.";
+                                    break;
+                            }
+                        }
+                    ?>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Dismiss</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <script type="text/javascript">
         $(document).ready(function () {
+            <?php if($hasFlashCard): ?>
+                $("#myModal").modal("show");
+            <?php endif; ?>
+
             // Initialize Carousel
             $('.carousel').carousel({
                 interval: 2000 //TIME IN MILLI SECONDS
