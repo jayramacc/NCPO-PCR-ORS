@@ -1,13 +1,13 @@
 <?php
 include_once "../class/AccountHandler.php";
 include '../class/MySqlLeaf.php';
+include_once "../class/FlashCard.php";
 
 // Check if the account is logged or not
 if(!AccountHandler::isLogin()){
 		header("location: ../login.php");
     exit;
 }
-
 
 @ $searchURL = $_GET["search"];
 if (isset($searchURL) && !empty($searchURL)){
@@ -44,11 +44,14 @@ if (isset($deleteID)){
 	$query = mysqli_query(MySqlLeaf::getCon(), $sql);
 
 	if ($query === true){
-		header("location: database.php");
+		FlashCard::setFlashCard("applicantDeleted");
 	}else{
-		echo "An error occurs. Press back, reload the page and try again.";
-		exit;
+		FlashCard::setFlashCard("applicantError");
 	}
+	
+	// Reload the page
+	header("location: database.php");
+	exit;	
 }
 @ $search = $_POST["search"];
 if (isset($search)){
@@ -76,6 +79,24 @@ if (isset($search)){
 
 		<div class="container card p-3 mt-3">
 			<h1 class="text-center">List of Applicants</h1>
+			<?php 
+				$hasFlashCard = FlashCard::hasFlashCard();
+				$flashCard = ($hasFlashCard) ? FlashCard::getFlashCard() : "";
+				if ($hasFlashCard){
+					switch($flashCard){
+						case 'applicantDeleted':
+							echo '<div class="alert alert-info mb-0 mt-2" role="alert">';
+							echo "  <b>Opps: </b> Applicant Information has been removed";
+							echo '</div>';
+							break;
+						case 'applicantError':
+							echo '<div class="alert alert-danger mb-0 mt-2" role="alert">';
+							echo "  <b>Opps: </b> An error occurs. Press back, reload the page and try again.";
+							echo '</div>';
+							break;
+					}
+				}
+			?>
 			<form action="database.php" method="post"  class="mb-2">
 				<input type="text" name="search" placeholder="Search by Name or Privatekey" class="form-control w-25 pull-right">
 			</form>

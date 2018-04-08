@@ -142,6 +142,15 @@ include 'class/FlashCard.php';
                                 case 'pkSuccess':
                                     echo "Congratulations. Your Private Key is successfull registered.";
                                     break;
+                                case 'successApply':
+                                    echo "Congratulations. Your Request/Renew Application has been sent";
+                                    break;
+                                case 'errorApply':
+                                    echo "An error occurs. Please be informed that falsification is punisable by law.";
+                                    break;
+                                case 'mailedApply':
+                                    echo "Congratulations. Your Application has been sent. Please verify Private Key to reuse your data.";
+                                    break;
                             }
                         }
                     ?>

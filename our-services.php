@@ -115,12 +115,14 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
         if ($query === true){
             $sql = "INSERT INTO `notification`(`private_key`, `type`) VALUES ('$privateKey', 'renew');";
             mysqli_query(MySqlLeaf::getCon(), $sql);
-            // Redirect
+            
+            FlashCard::setFlashCard("successApply");
             header("location: index.php");
             // TODO: Add success message
         }else{
             // Show Message Error
-            echo "Duplication Error";
+            FlashCard::setFlashCard("errorApply");
+            header("location: index.php");
         }
     }else{
         // SQL Query
@@ -144,10 +146,13 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
             $sql = "INSERT INTO `notification`(`private_key`) VALUES ('$privateKey');";
             mysqli_query(MySqlLeaf::getCon(), $sql);
             // Redirect
+            FlashCard::setFlashCard("mailedApply");
             header("location: class/MailHandler.php?client_name=$fname%20$lname&client_email=$email&pk=$privateKey");
         }else{
             // Show Message Error
-            echo "Duplication Error";
+            FlashCard::setFlashCard("errorApply");
+            header("location: index.php");
+            
         }
     }
     exit;
