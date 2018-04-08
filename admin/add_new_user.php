@@ -19,6 +19,13 @@ if(!AccountHandler::isLogin()){
 	<link href="../assets/css/admin.css" rel="stylesheet" />
 	<script src="../assets/js/jquery.min.js"></script>
 	<script src="../assets/js/bootstrap.bundle.min.js"></script>
+	<style>
+	iframe {
+    	display: block;       /* iframes are inline by default */
+		border: none;         /* Reset default border */
+		height: 100vh;        /* Viewport-relative units */
+	}
+</style>
 </head>
 <body>
 	<?php include '../assets/includes/adminnav.php'; ?>
@@ -29,7 +36,7 @@ if(!AccountHandler::isLogin()){
 			<div>
 				<button class="btn btn-primary pull-right mb-1">Print Form</button>
 			</div>
-	    	<iframe src="printing.php?id=<?php echo @$_GET['id']; ?>" width="100%"></iframe>
+	    	<iframe src="printing.php?id=<?php echo @$_GET['id']; ?>" frameborder="0" width="100%" height="100%"></iframe>
 		</div>
 		<?php include '../assets/includes/admin_foot.php'; ?>
 	</div>
