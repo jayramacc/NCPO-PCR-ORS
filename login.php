@@ -58,16 +58,16 @@ if (isset($un) && isset($pw)){
 </head>
 <body>
     <?php include 'assets/includes/nav.php' ?>
-    <div class="container card mt-3 p-4">
+    <div class="container card mt-3 p-4 w-50">
         <div class="row">
             <div class="col-12 text-center">
-                <h1 class="font-weight-bold mb-0 text-primary">REQUEST/RENEW FORM</h1>
-                <div class="description">Request/Renew by Enter Private Key without wasting time reintering information.</div>
+                <h1 class="font-weight-bold mb-0 text-primary">Employee Login</h1>
+                <div class="description">Login as an Employee by entering the required credentials</div>
             </div>
             <div class="col-md-12 panel panel-default custpanel">
                 <form action="login.php" method="POST" class="panel-body mainpanel">
                     <div class="form-group">
-                        <label for="username" class="mb-0 font-weight-bold">ID</label>
+                        <label for="username" class="mb-0 font-weight-bold">Enter ID</label>
                         <input class="form-control" id="username" name="username" type="text" placeholder="Enter ID" required>
                     </div>
                     <div class="form-group">

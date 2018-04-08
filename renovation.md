@@ -4,13 +4,13 @@
 * ~~~our-services.php~~~
 * ~~~request-renew.php~~~
 * ~~~error.php~~~
-* login.php []
+* ~~~login.php~~~
 
 ## Administrator
 * admin.php
 * database.php
 * add_new_user.php
-* changepass.php
+* ~~~changepass.php~~~
 * onlineform.php
 * cloud.php
 
