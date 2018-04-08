@@ -13,14 +13,11 @@ if ($query === true){
 
     if ($query === true){
         FlashCard::setFlashCard("pkSuccess");
-        echo "Successfull registered";
     }else{
         FlashCard::setFlashCard("pkError");
-        echo "An error occurs, please try again later.";
     }
 }else{
     FlashCard::setFlashCard("pkWrong");
 }
-
 header("location: ../index.php");
 exit;
