@@ -7,22 +7,22 @@
 * Application Form `100%`
     * Design `100%`
     * Functionlity `100%`
-* Request/Renew `50%`
+* Request/Renew `100%`
     * Design `100%`
-    * Functionality `0%`
+    * Functionality `100%`
 * Login, Logout `100%`
 * Email Format `100%`
     * Applicant w/private key or TransactionID `100%`
-* Admin Pages `67%`
-    * Notification `50%` 
+* Admin Pages `92%`
+    * Notification `100%` 
         * Design `100%`
-        * Functionality `0%`
-    * Search `50%`
+        * Functionality `100%`
+    * Search `100%`
         * Design `100%`
-        * Functionality `0%`
-    * Applicant List `50%`
+        * Functionality `100%`
+    * Applicant List `100%`
         * Design `100%`
-        * Functionality `0%`
+        * Functionality `100%`
     * Local Backup `100%`
         * Design `100%`
         * Functionality `100%`
@@ -33,4 +33,4 @@
         * Design `100%`
         * Functionlity `100%`
 ### 27 Items, 10 head
-91.7%
+99.2%
