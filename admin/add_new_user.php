@@ -19,6 +19,14 @@ if(!AccountHandler::isLogin()){
 	<link href="../assets/css/admin.css" rel="stylesheet" />
 	<script src="../assets/js/jquery.min.js"></script>
 	<script src="../assets/js/bootstrap.bundle.min.js"></script>
+	<style>
+		iframe {
+			display: block;       /* iframes are inline by default */
+			border: none;         /* Reset default border */
+			height: 100vh;        /* Viewport-relative units */
+			width: 100vw;
+		}
+	</style>
 </head>
 <body>
 	<?php include '../assets/includes/adminnav.php'; ?>
@@ -27,11 +35,17 @@ if(!AccountHandler::isLogin()){
 		<!-- Page Content will be here  -->
 		<div class="container card p-3 mt-3">
 			<div>
-				<button class="btn btn-primary pull-right mb-1">Print Form</button>
+				<button class="btn btn-primary pull-right mb-1" onclick="printForm();">Print Form</button>
 			</div>
-	    	<iframe src="printing.php?id=<?php echo @$_GET['id']; ?>" width="100%"></iframe>
+	    	<iframe id="iframe" name="iframe" src="printing.php?id=<?php echo @$_GET['id']; ?>" frameborder="0" width="100%" height="100%"></iframe>
 		</div>
 		<?php include '../assets/includes/admin_foot.php'; ?>
 	</div>
+	<script>
+		function printForm(){
+			window.frames["iframe"].focus();
+			window.frames["iframe"].print();
+		}
+	</script>
 </body>
 </html>
