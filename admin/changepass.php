@@ -1,5 +1,6 @@
 <?php
 include_once "../class/AccountHandler.php";
+include_once "../class/FlashCard.php";
 
 // Check if the account is logged or not
 if(!AccountHandler::isLogin()){
@@ -20,16 +21,15 @@ if (isset($pwd) && isset($pwd2) && isset($pwd1)){
 			$newJsonString = json_encode($data);
 			file_put_contents('pass.json', $newJsonString);
 
-			header("location: changepass.php");
-			exit;
+			FlashCard::setFlashCard("pwChangeSuccess");
 		}else{
-			echo "Password not matched.";
-			exit;
+			FlashCard::setFlashCard("pwNoMatch");
 		}
 	}else{
-		echo "Wrong Password";
-		exit;
+		FlashCard::setFlashCard("pwError");
 	}
+	header("location: changepass.php");
+	exit;	
 }
 ?>
 
@@ -74,6 +74,29 @@ if (isset($pwd) && isset($pwd2) && isset($pwd1)){
 					<button type="submit" class="btn btn-success">Change Password</button>
 				</div>
 			</div>
+			<?php 
+				$hasFlashCard = FlashCard::hasFlashCard();
+				$flashCard = ($hasFlashCard) ? FlashCard::getFlashCard() : "";
+				if ($hasFlashCard){
+					switch($flashCard){
+						case 'pwNoMatch':
+							echo '<div class="alert alert-warning mb-0 mt-2" role="alert">';
+							echo "  <b>Opps: </b> New passwords not match.";
+							echo '</div>';
+							break;
+						case 'pwError':
+							echo '<div class="alert alert-danger mb-0 mt-2" role="alert">';
+							echo "  <b>Opps: </b> Wrong password";
+							echo '</div>';
+							break;
+						case 'pwChangeSuccess':
+							echo '<div class="alert alert-success mb-0 mt-2" role="alert">';
+							echo "  <bCongratulations: </b> This account's password has been changed.";
+							echo '</div>';
+							break;
+					}
+				}
+			?>
 		</form>
 		<?php include '../assets/includes/admin_foot.php'; ?>
 	</div>
