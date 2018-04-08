@@ -1,6 +1,7 @@
 <?php
 
 include_once "class/AccountHandler.php";
+include_once "class/FlashCard.php";
 
 // Check if the account is logged or not
 if(AccountHandler::isLogin()){
@@ -35,9 +36,9 @@ if (isset($un) && isset($pw)){
 
         header("location: admin/admin.php");
         exit;
-        // TODO: Add sessions and cookies
     } else {
-        echo "Account does not exist.";
+        FlashCard::setFlashCard("errorAccount");
+        header("location: login.php");
     }
     exit;
 }
@@ -64,6 +65,8 @@ if (isset($un) && isset($pw)){
                 <h1 class="font-weight-bold mb-0 text-primary">Employee Login</h1>
                 <div class="description">Login as an Employee by entering the required credentials</div>
             </div>
+        </div>
+        <div class="row">
             <div class="col-md-12 panel panel-default custpanel">
                 <form action="login.php" method="POST" class="panel-body mainpanel">
                     <div class="form-group">
@@ -78,6 +81,19 @@ if (isset($un) && isset($pw)){
                 </form>
             </div>
         </div>
+        <?php 
+            $hasFlashCard = FlashCard::hasFlashCard();
+            $flashCard = ($hasFlashCard) ? FlashCard::getFlashCard() : "";
+            if ($hasFlashCard){
+                switch($flashCard){
+                    case 'errorAccount':
+                        echo '<div class="alert alert-danger mb-0 mt-2" role="alert">';
+                        echo "  <b>Opps: </b> Account Does not exist";
+                        echo '</div>';
+                        break;
+                }
+            }
+        ?>
     </div>
 </body>
 </html>
