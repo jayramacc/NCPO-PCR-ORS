@@ -29,7 +29,7 @@ if(!AccountHandler::isLogin()){
 			<div>
 				<button class="btn btn-primary pull-right mb-1">Print Form</button>
 			</div>
-	    	<iframe src="printing.php" width="100%"></iframe>
+	    	<iframe src="printing.php?id=<?php echo @$_GET['id']; ?>" width="100%"></iframe>
 		</div>
 		<?php include '../assets/includes/admin_foot.php'; ?>
 	</div>
