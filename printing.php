@@ -12,9 +12,9 @@ document.forms[0].elements[eN].value = datestr;
 
 <body>
 
-
-<!-- ini ang puon kng sa iframe -->	
-<section id="main" class="column">
+<form>
+        <!-- ini ang puon kng sa iframe -->	
+        <section id="main" class="column">
 
 
 
@@ -24,10 +24,9 @@ document.forms[0].elements[eN].value = datestr;
 
         <img src="images\NCPO.png" style="width:150px;height:138px;border:3;left:929px;top:13px;position: absolute;">
 
-        <b style="width:100px;height:110px;border:3;left:54px;top:39px;position: absolute;"> FILE NO:</b>
-        <form style="width:100px;height:110px;border:3;left:390px;top:205px;position: absolute; ">
-        <input type="number" id="file_num_admin" style="border: none; border-bottom: 1px solid black; position: absolute; top:-141px; right:263px;">
-        </form>
+       <h4 style="position: absolute; top:-141px; left:54px;top:39px;"> FILE NO:     </h4>
+        <input type="number" id="file_num_admin" style="border: none; border-bottom: 1px solid black; position: absolute; top:-141px; left:131px;top:56px;">
+     
 
 
         <center> 
@@ -85,112 +84,97 @@ document.forms[0].elements[eN].value = datestr;
         <b style="position: absolute; top: 640px; right: 190px;"> POLICE SENIOR SUPERINTENDENT</b>
 
 </div>
-<br>
+    <br>
 
-<right>
-    <p style="text-indent:43px"> CTC NO.<input type="text" value="" id="ctc_no" style="margin-left: 25px;">  </p>
-    <p style="text-indent:43px"> ISSUED AT.&ensp;
-    <input type="text" id="ctc_no" style="margin-left: 4px; " disabled="disabled"/><br>
+    <right>
+        <p style="text-indent:43px"> CTC NO.
+        <input type="text" value="" id="ctc_no" style="margin-left: 36px;border: none; border-bottom: 1px solid black;">  </p>
+        <p style="text-indent:43px"> ISSUED AT.&ensp;
+        <input type="text" id="ctc_no" style="margin-left: 7px;border: none; border-bottom: 1px solid black; " /><br>
+        </p>
+
+    </right>
+    <right>
+        <p style="text-indent:43px"> ISSUED ON.
+        <input type="text" value="" id="ctc_no" style="margin-left: 9px;border: none; border-bottom: 1px solid black;"></p>
+    </right>
+
+    <right>
+        <p style="text-indent:43px"> OR NO.
+        <input type="text" value="" id="ctc_no" style="margin-left: 42px;border: none; border-bottom: 1px solid black;"><Br>
+    </div>
+
+
+    <BR>
+    <center style=text-indent:43px><B > NOTE: VALID FOR SIX(6) MONTHS FROM DATE OF ISSUE. FALSIFICATION IS PUNISHABLE UNDER ARTICLE 12 RPC</B></center> <br><br><br>
+    
+    <div>
+    
+    
+    <font color="red">-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;</font> 
+    <!-- 2nd form -->
+    <center>
+        <H1  >
+            <u>POLICE CLEARANCE APPLICATION</u>
+        </H1>  
+    </center>
+    <div class="container" >
+    <p style="text-indent:43px"> <sup>(PLEASE PRINT) </sup>
+    <left style="left:150px; top:837px; margin-left:478px;" >DATE  
+    <input type="text" style="border: none; border-bottom: 1px solid black; width: 230px; "/>
+    </p>
+    
+    <p style="text-indent:43px"> FILE NO:
+    <input type="text" style="border: none; border-bottom: 1px solid black; width: 230px; "/>
+    <left style="left:150px; top:837px; margin-left:277px;" >OR NO: 
+    <input type="text" style="border: none; border-bottom: 1px solid black; width: 218px; "/>
+    </p>
+ 
+    <p style="text-indent:43px">NAME:
+    <input type="text" style="border: none; border-bottom: 1px solid black; width: 924px; "/>
+            
     </p>
 
-</right>
-<right>
-    <p style="text-indent:43px"> ISSUED ON.<input type="text" value="" id="ctc_no" style="margin-left: 5px;"></p>
-</right>
+    <p style="text-indent:43px">ADDRESS:
+    <input type="text" style="border: none; border-bottom: 1px solid black; width: 898px; "/>
+    <p>
+    <p style="text-indent:43px">SEX:
+    <input type="checkbox" name="sex" value="male">M
+    <input type="checkbox" name="sex" value="female">F 
+            <left style="left:150px; top:837px; margin-left:277px;">
+             CIVIL STATUS: 
+             <input type="checkbox" name="civilstatus" >SINGLE
+             <input type="checkbox" name="civilstatus" >MARRIED
+             <input type="checkbox" name="civilstatus" >WIDOWER
+             <input type="checkbox" name="civilstatus" >SEPARATED
+            </left>   
+    </p>
+    <p style="text-indent:43px">DATE OF BIRTH:<input type="date" style="border: none; border-bottom: 1px solid black; width: 125px; ">
+        PLACE OF BIRTH:<input type="text" style="border: none; border-bottom: 1px solid black; width: 284px; "/>
+        RELIGION:<input type="text" style="border: none; border-bottom: 1px solid black; width: 230px; "/>
+    </p>
+    <p style="text-indent:43px">NATIONALITY: <input type="text" style="border: none; border-bottom: 1px solid black; width: 338px; "/>
+        HEIGHT:<input type="text" style="border: none; border-bottom: 1px solid black; width: 181px; "/>
+        WEIGHT:<input type="text" style="border: none; border-bottom: 1px solid black; width: 205px; "/>
+        
+    </p>
+    <p style="text-indent:43px">COMM. TAX CERT. NO:<input type="text" style="border: none; border-bottom: 1px solid black; width: 285px; "/>
+        ISSUED AT:<input type="text" style="border: none; border-bottom: 1px solid black; width: 162px; "/>
+        ISSUED ON:<input type="text" style="border: none; border-bottom: 1px solid black; width: 181px; "/>
+        
+    </p>
 
-<right>
-    <p style="text-indent:43px"> OR NO.<input type="text" value="" id="ctc_no" style="margin-left: 32px;"><Br>
-</div>
+    <p style="text-indent:43px">PURPOSE IN SECURING POLICE CLEARANCE
+    <input type="text" style="border: none; border-bottom: 1px solid black; width: 637px; "/>
+    </p>
 
+</div>
+    <BR>
+    <input type="text" style="border: none; border-bottom: 1px solid black; width: 230px;left:793px;top:1246px;position: absolute; " />
+    
+    <p style="left:858px;top:1267px;position: absolute;">SIGNATURE </p>
+        </section>
 
- <BR>
- <center style=text-indent:43px><B > NOTE: VALID FOR SIX(6) MONTHS FROM DATE OF ISSUE. FALSIFICATION IS PUNISHABLE UNDER ARTICLE 12 RPC</B></center> <br><br><br>
- 
- <div>
- 
- <!-- eu man ini -->
- <font color="red">-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;-&ensp;</font> 
-
- <center>
-     <H1  >
-         <u>POLICE CLEARANCE APPLICATION</u>
-     </H1>  
- </center>
-
- <div>
-     <p style="text-indent:120px"> (PLEASE PRINT)
-         <div style="float: right;    margin-top: -29px; margin-right: 102px;"> DATE
-             <input type="text" value="" id="signature" style="margin-left:10px;">
-             </div>
-     </p>
-         
-     <p style="text-indent:120px" > FILE NO. 
-             <input type="text" value="" id="signature" style="margin-left:10px;">
-                     <div style="float: right;    margin-top: -29px; margin-right: 102px;"> OR NO.
-                         <input type="text" value="" id="signature" style="margin-left:5px;">
-                     </div><CENTER></CENTER> 
-     </p>
- </div>
- <div style="text-indent: 120px; margin-top: 30px;">NAME:
-     <input type="text" value="" id="name" style="margin-left:15px;">
-     <input type="text" value="" id="middlename" style="margin-left:45px;">
-     <input type="text" value="" id="lastname" style="margin-left:60px;">
- </div>
-         <div style="text-indent: 120px">
-             <p style="margin-left: 120px;">(LAST NAME)</p>
-             <p style="margin-left: 330px; margin-top: -27px">(FIRST NAME)</p>
-             <p style="margin-left: 565px; margin-top: -27px;">(MIDLE NAME)</p>
-         </div>
-         <div style="text-indent: 120px; margin-top: 30px;">ADDESS:<input type="text" value="" id="name" style="margin-left:15px;"></div>
-     <div style="text-indent: 120px; margin-top: 15px;">    
-         <form  action="">SEX: 
-             <input type="checkbox" name="sex" value="male">M
-             <input type="checkbox" name="sex" value="female">F
-         </form>
-         <form style="text-indent: 120px; margin-top: -19px ;margin-left: 330px;" action="">CIVIL STATUS: 
-             <input type="checkbox" name="status" value="single">SINGLE
-             <input type="checkbox" name="status" value="marreid">MARRIED
-             <input type="checkbox" name="status" value="widower">WIDOWER
-             <input type="checkbox" name="status" value="separated">SEPARATED
-         </form>
-     </div>	
-<div style="text-indent: 120px; margin-top: 10px">
- <label>DATE OF BIRTH:(MM/DD/YY):</label>
- <input type="text" id="b_date" >/
- <input type="text" id="b_date" >/
- <input type="text" id="b_date" ><br>
- <label style="margin-left: 120px">PLACE OF BIRTH:</label>
- <input type="text" id="b_place" style="margin-left: 5px" >
- <label style="margin-left: 20px">RELIGION:</label>
- <input type="text" id="b_place" style="margin-left: 5px" >
-</div>
-<div style="text-indent: 120px; margin-top: 10px;">
- <label>NATIONALITY:</label>
- <input type="text" id="signature" style="margin-left: 5px">
- <label style="margin-left: 33px">HEIGHT:</label>
- <input type="text" id="b_place" style="margin-left: 8px">
- <label style="margin-left: 20px">WEIGHT:</label>
- <input type="text" id="b_place" style="margin-left: 16px">
-</div>
-<div style="text-indent: 120px; margin-top: 10px;">
- <label>COMM. TAXTCERT.NO.:</label>
- <input type="text" id="b_place" style="margin-left: 5px">
- <label style="margin-left: 32px">ISSUE AT:</label>
- <input type="text" id="b_place" style="margin-left: 2px">
- <label style="margin-left: 20px">ISSUE ON:(MM/DD/YY)</label>
- <input type="text" id="b_date"  style="margin-left: 5px">/
- <input type="text" id="b_date" >/
- <input type="text" id="b_date" >
-</div>
-<div style="text-indent: 120px; margin-top: 10px;">
- <label>PURPOSE IN SECURING POLICE CLEARANCE</label>
- <input type="text" id="purpose" style="margin-left: 5px;">
-</div>
-<div style="text-indent: 120px;">
- <input type="text" id="signature" style="margin-left:  572px;  margin-top:  55PX">
- <label style="margin-left:  714px;  margin-top:  5PX">SIGNATURE OF Applicant</label>
-</div>
-
-</section>
+</form>        
 </body>
 </html>
