@@ -20,6 +20,8 @@ if (isset($privateKey)){
     if ($numRow > 0){
         $userInfo = mysqli_fetch_array($query);
         $renew_request = true;
+    }else{
+        $renew_request = false;
     }
     
 }else{
@@ -66,6 +68,7 @@ if (isset($privateKey)){
 @ $cedMonth = $_POST["cedMonth"];
 @ $passportNo = $_POST["c_applicant_passportno"];
 @ $passMonth = $_POST["assMonth"];
+@ $renew_request = $_POST["renew_request"];
 
 // Constraints: Check if the required _POST data is acquired.
 if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset($nickname) &&
@@ -97,7 +100,7 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
     // Generate Private Key
     $privateKey = md5(time());
 
-    if ($renew_request){
+    if (isset($renew_request)){
         $sql = "UPDATE `applicants` SET
          `lname`='$lname',`fname`='$fname',`mname`='$mname',`suffix`='$suffix',`gender`='$gender',`nickname`='$gender',`bdate`='$birthdate',
          `age`='$age',`birth_place`='$bPlace',`civil_status`='$cStatus',`complete_address`='$cAddress',`provincial_address`='$pAddress',
@@ -117,7 +120,6 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
             
             FlashCard::setFlashCard("successApply");
             header("location: index.php");
-            // TODO: Add success message
         }else{
             // Show Message Error
             FlashCard::setFlashCard("errorApply");
@@ -207,11 +209,15 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
             <b>Warning: </b>All fields with asterisk( <b class="text-danger">*</b> ) are required.
         </div>
         <form enctype="multipart/form-data" method="post" action="our-services.php" id="appform">
+            
             <h4 class="infoheader text-center font-weight-bold">APPLICANT INFORMATION</h4>
             <div class="row">
                 <div class="col-md-2">
                     <img align="center" id="imgPreview" src="assets/img_uploads/<?php echo @$userInfo['photo']; ?>" alt="Your Image preview" height="150" width="150" style="" onerror="this.src='assets/img/profile_image_dummy.svg';"/>
                 </div>
+                <?php if ($renew_request): ?>
+                    <input type="hidden" name="renew_request">
+                <?php endif; ?>
                 <div class="col-md-10">
                     <label class="mb-0 mt-2">Upload an Image</label>
                     <div class="input-group">
