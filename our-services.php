@@ -1,6 +1,6 @@
 ﻿<?php 
 include 'class/MySqlLeaf.php';
-
+include 'class/FlashCard.php';
 // Get data - our-services.php?pk=[PRIVATE_KEY_OF_THE_USER]
 @ $privateKey = $_GET["pk"];
 
@@ -81,8 +81,7 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
         // Get image name
         $image = $_FILES['image']['name'];
         $newName = time().$image;
-        // Get text
-        $image_text = mysqli_real_escape_string(MySqlLeaf::getCon(), $_POST['description']);
+        
 
         // image file directory
         $target = "assets/img_uploads/".basename($newName);
