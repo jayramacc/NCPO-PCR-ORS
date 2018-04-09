@@ -20,9 +20,9 @@ document.forms[0].elements[eN].value = datestr;
 
 
 
-        <img src="images\pnp.png" style="width:100px;height:120px;border:3;left:310px;top:15px;position: absolute;">
+        <img src="..images\pnp.png" style="width:100px;height:120px;border:3;left:310px;top:15px;position: absolute;">
 
-        <img src="images\NCPO.png" style="width:150px;height:138px;border:3;left:929px;top:13px;position: absolute;">
+        <img src="..images\NCPO.png" style="width:150px;height:138px;border:3;left:929px;top:13px;position: absolute;">
 
        <h4 style="position: absolute; top:-141px; left:54px;top:39px;"> FILE NO:     </h4>
         <input type="number" id="file_num_admin" style="border: none; border-bottom: 1px solid black; position: absolute; top:-141px; left:131px;top:56px;">

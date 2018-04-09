@@ -9,7 +9,7 @@ $sql = "SELECT notif.id, notif.type, app.fname, app.lname, app.mname, app.purpos
 $query = mysqli_query(MySqlLeaf::getCon(), $sql);
 
 // Count Rows
-$numRow = mysqli_num_rows($query);
+@ $numRow = mysqli_num_rows($query);
 
 $nofication = array();
 
