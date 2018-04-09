@@ -25,9 +25,22 @@ if(!AccountHandler::isLogin()){
 	<div class="page">
 		<?php include '../assets/includes/admin_inner.php'; ?>
 		<!-- Page Content will be here  -->
-
-
-		
+<div class="container card p-3 mt-3">
+	<div class ="alert alert-info" role="alert">
+	<h4 class="alert-heading">WELCOME! your already Sign In</h4>
+	<hr>
+<p>This system can only be used by Naga City Police Office Personels, whoever unathorized person use this system shall be punished by the law </p>
+<p>The system features are:
+<p>
+<ul>
+<li>Online Back-up
+<li>Searching of Private key
+<li>List of all Applicant
+<li>Printing of a Applicant Police clearance form
+</ul>
+</p>
+	</div>	
+	</div>
 		<?php include '../assets/includes/admin_foot.php'; ?>
 	</div>
 </body>
