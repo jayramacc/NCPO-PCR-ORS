@@ -157,7 +157,7 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
         }
     }
     exit;
-}   
+}
 
 ?>
 <!DOCTYPE html>
@@ -357,7 +357,7 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
                 </div>
                 <div class="col-2">
                     <label class="mb-0 mt-2">Age <span style="color:red">*</span></label>
-                    <input value="<?php echo @$userInfo['age']; ?>" disabled class="form-control" name="c_applicant_age" id="c_applicant_age" placeholder="Age" type="number" required>
+                    <input value="<?php echo @$userInfo['age']; ?>" readonly class="form-control" name="c_applicant_age" id="c_applicant_age" placeholder="Age" type="number" required>
                 </div>
                 <div class="col-3">
                     
