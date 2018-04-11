@@ -357,7 +357,7 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
                 </div>
                 <div class="col-2">
                     <label class="mb-0 mt-2">Age <span style="color:red">*</span></label>
-                    <input value="<?php echo @$userInfo['age']; ?>" class="form-control" name="c_applicant_age" id="c_applicant_age" placeholder="Age" type="number" required>
+                    <input value="<?php echo @$userInfo['age']; ?>" disabled class="form-control" name="c_applicant_age" id="c_applicant_age" placeholder="Age" type="number" required>
                 </div>
                 <div class="col-3">
                     
@@ -601,6 +601,21 @@ if (isset($purpose) && isset($lname) && isset($fname) && isset($gender) && isset
 		$("#imgInp").change(function(){ 
             readURL(this);
         }); 	
+
+        $("#bdatedateID").change(function(){
+            var $age = $("#c_applicant_age");
+            var $bDay = new Date($(this).val());
+            var curDay = new Date();                // Current Day
+            
+            // The date input should be valid.
+            if ( !!$bDay.valueOf() ) { 
+                $age.val(curDay.getFullYear() - $bDay.getFullYear());
+            } else {
+                 /* Invalid date */
+                 alert("Invalid Date");
+                 $(this).val("");
+            }
+        })
 	});
 </script>
 </html>
