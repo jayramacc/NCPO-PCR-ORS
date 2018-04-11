@@ -19,4 +19,9 @@ $mail->addAddress($_GET["client_email"], $_GET["client_name"]);
 $mail->Subject = 'NCPO - Verify your Private key.';
 $mail->msgHTML(file_get_contents('http://' .$_SERVER['SERVER_NAME'].'/class/email_template.php?pk='.$_GET["pk"]), __DIR__);
 $mail->send();
-header("location: ../index.php");
+if ( $mail->IsError() ) { 
+    echo "ERROR<br /><br />".$mail->ErrorInfo."<br /><br />";
+}else {
+    header("location: ../index.php");
+    exit;
+}
